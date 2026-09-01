@@ -1,0 +1,72 @@
+name: Partecipare al progetto
+description: Chiedere di mettere le mani nel codice, che sta in un repository a parte
+title: "Partecipare: "
+labels: ["partecipazione"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Il codice sta in un repository a parte, e non per tenerlo nascosto: perché
+        **chi partecipa lo fa dopo aver chiesto**, non prima. Se vuoi leggerlo,
+        correggere qualcosa, portarlo dove non arriva o collaudarlo, questa è la
+        porta — e si apre volentieri.
+
+        Per un difetto questo modulo non serve: c'è
+        [quello dei difetti](?template=difetto.yml), e il codice non c'entra.
+  - type: input
+    id: chi
+    attributes:
+      label: Chi sei
+      description: Un nome, un profilo, il contesto in cui lavori. Basta poco.
+    validations:
+      required: true
+  - type: dropdown
+    id: cosa
+    attributes:
+      label: Cosa vorresti fare
+      options:
+        - Leggere il codice, per capire come è fatta una cosa
+        - Correggere un difetto che ho trovato usandolo
+        - Aggiungere una funzione
+        - Provarlo o collaudarlo su un Mac
+        - Compilarlo per una piattaforma che non ha una build
+        - Guardarlo dal punto di vista della sicurezza
+        - Altro, lo spiego sotto
+    validations:
+      required: true
+  - type: textarea
+    id: cosa_hai_in_mente
+    attributes:
+      label: Che cosa hai in mente
+      description: |
+        La parte che conta, ed è quella che fa rispondere in fretta: se hai già
+        un'idea precisa — un difetto, una funzione, un dubbio su come funziona
+        qualcosa — scrivila. Non serve un progetto, serve un motivo.
+      placeholder: |
+        Nel mio catalogo l'ISBN di un libro Sellerio non viene riconosciuto da
+        nessuna delle tre fonti. Vorrei vedere dove si ferma la cascata e, se è
+        una cosa piccola, proporre la correzione.
+    validations:
+      required: true
+  - type: input
+    id: dove
+    attributes:
+      label: Il tuo profilo GitHub
+      description: >-
+        Serve a darti l'accesso, se ci accordiamo. Se stai scrivendo da quel
+        profilo, lascia pure vuoto.
+    validations:
+      required: false
+  - type: checkboxes
+    id: patti
+    attributes:
+      label: Due cose messe in chiaro
+      options:
+        - label: >-
+            So che l'accesso si concede caso per caso, e che la risposta può
+            essere no.
+          required: true
+        - label: >-
+            Se partecipo, seguo le convenzioni scritte nel repository — che sono
+            poche, spiegate e non negoziabili una per volta.
+          required: true

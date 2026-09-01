@@ -1,0 +1,96 @@
+name: Segnalare un difetto
+description: Qualcosa non funziona, o funziona in un modo che non ti aspettavi
+title: "Difetto: "
+labels: ["difetto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per il tempo che ci stai mettendo. Due cose prima di cominciare:
+
+        > [!CAUTION]
+        > **Non incollare qui il contenuto di `impostazioni.json`**: dentro c'è la
+        > tua chiave API di Google Books, e questa pagina è pubblica. Se serve
+        > qualcosa da quel file, verrà chiesto il campo preciso.
+
+        Il catalogo (`libreria.db`) non serve mai: è tuo e resta sul tuo computer.
+  - type: input
+    id: versione
+    attributes:
+      label: Quale versione
+      description: >-
+        Sta in Impostazioni → Aggiornamenti, in cima. Se il programma non parte,
+        il numero è nel nome del file che hai installato.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: Su che sistema
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS, Apple Silicon (M1 e successivi)
+        - macOS, Intel
+    validations:
+      required: true
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Che cosa è successo
+      description: >-
+        Racconta quello che hai visto. Se puoi allegare una schermata,
+        trascinala qui dentro: vale più di una descrizione.
+    validations:
+      required: true
+  - type: textarea
+    id: come
+    attributes:
+      label: Come ci si arriva
+      description: >-
+        I passi per farlo succedere di nuovo. Anche «non so, è capitato una volta
+        sola» è una risposta utile — dillo, invece di lasciare il campo vuoto.
+      placeholder: |
+        1. Aggiungi libro
+        2. Scrivo l'ISBN 9788806219352 e premo Invio
+        3. La copertina non arriva e il campo Editore resta vuoto
+    validations:
+      required: true
+  - type: textarea
+    id: atteso
+    attributes:
+      label: Che cosa ti aspettavi invece
+    validations:
+      required: false
+  - type: input
+    id: errore
+    attributes:
+      label: Il messaggio d'errore, se ce n'era uno
+      description: >-
+        Copialo per intero, compresa la parte tecnica in fondo: quella dice
+        **dove** si è rotto.
+    validations:
+      required: false
+  - type: input
+    id: libro
+    attributes:
+      label: L'ISBN o il titolo
+      description: >-
+        Solo se il difetto riguarda la ricerca dei dati di un libro o la sua
+        copertina. Serve a riprovare la stessa strada.
+    validations:
+      required: false
+  - type: checkboxes
+    id: prima
+    attributes:
+      label: Prima di inviare
+      options:
+        - label: >-
+            Ho controllato in Impostazioni → Aggiornamenti che non ci sia una
+            versione più recente della mia.
+          required: true
+        - label: >-
+            Non ho incollato la mia chiave API né il contenuto di
+            `impostazioni.json`.
+          required: true

@@ -1,0 +1,72 @@
+name: Take part in the project
+description: Ask to get your hands on the code, which lives in a separate repository
+title: "Taking part: "
+labels: ["partecipazione"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The code lives in a separate repository, and not to keep it hidden:
+        because **taking part starts with asking**, not with cloning. If you want
+        to read it, fix something, carry it where it does not reach yet, or test
+        it, this is the door — and it opens gladly.
+
+        For a bug you do not need this form: there is
+        [the one for bugs](?template=bug.yml), and the code does not come into it.
+  - type: input
+    id: who
+    attributes:
+      label: Who you are
+      description: A name, a profile, the context you work in. A little is enough.
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What you would like to do
+      options:
+        - Read the code, to understand how something is done
+        - Fix a bug I ran into while using it
+        - Add a feature
+        - Try it out or test it on a Mac
+        - Build it for a platform that has no build yet
+        - Look at it from a security standpoint
+        - Something else, explained below
+    validations:
+      required: true
+  - type: textarea
+    id: what_you_have_in_mind
+    attributes:
+      label: What you have in mind
+      description: |
+        The part that matters, and the one that gets you a quick answer: if you
+        already have something specific — a bug, a feature, a doubt about how
+        something works — write it down. A plan is not needed, a reason is.
+      placeholder: |
+        In my catalogue the ISBN of a book from a small Italian publisher is not
+        recognised by any of the three sources. I would like to see where the
+        cascade stops and, if it is a small thing, offer the fix.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Your GitHub profile
+      description: >-
+        Needed to give you access, if we agree. If you are writing from that
+        profile, leave it empty.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Two things made clear
+      options:
+        - label: >-
+            I know access is granted case by case, and that the answer may be no.
+          required: true
+        - label: >-
+            If I take part, I follow the conventions written in the repository —
+            there are few, they are explained, and they are not renegotiated one
+            at a time.
+          required: true

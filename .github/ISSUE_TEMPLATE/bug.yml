@@ -1,0 +1,97 @@
+name: Report a bug
+description: Something does not work, or works in a way you did not expect
+title: "Bug: "
+labels: ["difetto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the time you are putting in. Two things first:
+
+        > [!CAUTION]
+        > **Do not paste the contents of `impostazioni.json` here**: it holds your
+        > Google Books API key, and this page is public. If something from that
+        > file is needed, you will be asked for the one field.
+
+        The catalogue (`libreria.db`) is never needed: it is yours and it stays on
+        your computer.
+  - type: input
+    id: version
+    attributes:
+      label: Which version
+      description: >-
+        It is at the top of Settings → Updates. If the program will not start,
+        the number is in the name of the file you installed.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: On which system
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS, Apple Silicon (M1 and later)
+        - macOS, Intel
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: >-
+        Tell what you saw. If you can attach a screenshot, drag it in here: it is
+        worth more than a description.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How to get there
+      description: >-
+        The steps to make it happen again. Even “no idea, it happened once” is a
+        useful answer — say that, rather than leaving the field empty.
+      placeholder: |
+        1. Add book
+        2. I type ISBN 9788806219352 and press Enter
+        3. The cover never arrives and the Publisher field stays empty
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: false
+  - type: input
+    id: error
+    attributes:
+      label: The error message, if there was one
+      description: >-
+        Copy it whole, including the technical part at the end: that is the bit
+        that says **where** it broke.
+    validations:
+      required: false
+  - type: input
+    id: book
+    attributes:
+      label: The ISBN or the title
+      description: >-
+        Only if the bug is about looking up a book's details or its cover. It is
+        what lets the same road be tried again.
+    validations:
+      required: false
+  - type: checkboxes
+    id: before
+    attributes:
+      label: Before sending
+      options:
+        - label: >-
+            I checked in Settings → Updates that there is no version newer than
+            mine.
+          required: true
+        - label: >-
+            I have not pasted my API key, nor the contents of
+            `impostazioni.json`.
+          required: true
