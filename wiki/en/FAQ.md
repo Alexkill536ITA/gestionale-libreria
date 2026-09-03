@@ -42,8 +42,10 @@ What to try, in order:
    same button;
 2. if it is **manga**, search by title anyway: AniList only shows up there, and
    on manga it is the best source;
-3. **check the digits** of the ISBN: if one is missing, the application says so
-   («check the code again: it is not an ISBN»);
+3. **check the digits** of the ISBN: if one is missing the application refuses it
+   («Not a valid ISBN: …»), whereas if there are thirteen but the code is not a
+   book's, it asks whether to save it anyway — and in that case no source will
+   ever know it, however many times you try;
 4. fill it in by hand. That is not a defeat: the sources do not know everything.
 
 ## A source answers with an HTTP error

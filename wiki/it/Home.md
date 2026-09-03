@@ -21,7 +21,7 @@ nessuno ha ancora aperto su un Mac: cosa aspettarsi sta in
 | **[Cercare i metadati](Cercare-i-metadati.md)** | Un pulsante riempie la scheda da OpenLibrary, Google Books, SBN e AniList |
 | **[Le copertine](Le-copertine.md)** | Scendono da sole, oppure le metti tu da un file o da un indirizzo |
 | **[Cercare e filtrare](Cercare-e-filtrare.md)** | La barra in alto, i nove filtri, il ripiego quando sbagli a scrivere |
-| **[Le serie](Le-serie.md)** | Quali volumi ti mancano, mostrati come buchi in una fila di dorsi |
+| **[Le serie](Le-serie.md)** | Quali volumi ti mancano, e i valori che una serie passa ai suoi volumi |
 | **[Scansionare il codice a barre](Scansionare-il-codice-a-barre.md)** | La webcam legge l'ISBN dalla quarta di copertina |
 | **[Impostazioni](Impostazioni.md)** | Tema, lingua, valuta, le fonti dei metadati, la cartella dei backup |
 | **[Backup e ripristino](Backup-e-ripristino.md)** | Una copia al giorno, l'esportazione in CSV, la strada per tornare indietro |

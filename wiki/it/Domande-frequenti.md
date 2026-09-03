@@ -42,8 +42,10 @@ Cosa provare, nell'ordine:
    stesso pulsante;
 2. se è **manga**, cerca per titolo comunque: AniList compare solo lì, e su
    quello è la fonte migliore;
-3. **controlla le cifre** dell'ISBN: se ne manca una, l'applicazione lo dice
-   («ricontrolla il codice: non è un ISBN»);
+3. **controlla le cifre** dell'ISBN: se ne manca una l'applicazione lo rifiuta
+   («ISBN non valido: …»), mentre se sono tredici ma il codice non è di quelli
+   dei libri ti chiede se salvarlo lo stesso — e in quel caso nessuna fonte lo
+   conoscerà mai, per quanto tu riprovi;
 4. compila a mano. Non è una sconfitta: le fonti non sanno tutto.
 
 ## Una fonte risponde con un errore HTTP

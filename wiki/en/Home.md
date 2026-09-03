@@ -21,7 +21,7 @@ nobody has opened on a Mac yet: what to expect is in
 | **[Looking up metadata](Looking-up-metadata.md)** | One button fills the record from OpenLibrary, Google Books, SBN and AniList |
 | **[Covers](Covers.md)** | They come down on their own, or you supply one from a file or a web address |
 | **[Search and filters](Search-and-filters.md)** | The top bar, the nine filters, the fallback when you mistype |
-| **[Series](Series.md)** | Which volumes you are missing, shown as gaps in a row of spines |
+| **[Series](Series.md)** | Which volumes you are missing, and the values a series passes to its volumes |
 | **[Scanning the barcode](Scanning-the-barcode.md)** | The webcam reads the ISBN off the back cover |
 | **[Settings](Settings.md)** | Theme, language, currency, the metadata sources, the backup folder |
 | **[Backup and restore](Backup-and-restore.md)** | A copy a day, the CSV export, the way back |

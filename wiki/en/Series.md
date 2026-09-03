@@ -39,8 +39,65 @@ The name is enough. The total can be left empty, and it is worth doing while the
 series is still running: with no total, the application will never tell you that
 the volume after your last one is missing.
 
+Underneath sit the four values of the section below — tags, genre, publisher and
+imprint — which you can fill in right away or let the series learn on its own.
+
 The volumes get catalogued later, from a book's form, by typing that name in the
 Series field.
+
+## The series' values
+
+Besides the name and the total, a series carries four things of its own: **tags,
+genre, publisher and imprint**. There is nothing to declare: **the series learns
+them from the volumes you assign to it.**
+
+- **tags** add up — each volume's tags join the series, and never leave it on
+  their own;
+- **genre, publisher and imprint** are set by the **first volume that carries
+  one**, and no volume saved later moves them. Without that rule the series would
+  chase the last book you touched, and the publisher would wobble on every save.
+
+From there they come back. **A book that joins that series finds them already
+filled in on the form**, and carefully so:
+
+- **tags** are added to the ones you already put in;
+- **genre, publisher and imprint** are filled in **only where they were empty** —
+  what you typed is never touched;
+- a tag you removed **does not come back** while you stay in that series.
+
+If the series filled something under **More details**, that panel opens by
+itself: you get to see it, instead of finding out after saving.
+
+## Correcting the values by hand
+
+The pencil opens the dialog, where the four values sit under the name and the
+total. They are boxes like the form's, with the same suggestions.
+
+![A series' values](images/serie-valori.png)
+
+When editing, a checkbox turns up too, **ticked**: *«Apply to the N catalogued
+volumes as well»*. It is how you fix forty volumes in one go, and it is **not a
+replacement**:
+
+| What you change in the dialog | What happens to the volumes |
+|---|---|
+| You add a tag | it lands on all of them |
+| You remove a tag | it leaves every volume that had it |
+| You change genre, publisher or imprint | it is written **only** where the volume carried the previous value, or carried none |
+| You **clear** a box | **nothing**: it means "the series no longer dictates it", not "delete it from the books" |
+
+The last two rows are why this is not a blunt replacement: the volume reprinted
+by another publisher is not flattened onto the others, and a box cleared by
+accident does not take a field away from forty books.
+
+**On removed tags, though, look twice before saving.** Since the series has
+already learnt the tags of *all* its volumes, what you take out of the box really
+does leave every volume that had it — even one you had put there yourself, on a
+single volume. It is intended, but it is the thing you notice afterwards.
+
+Unticking the box leaves the catalogued volumes as they are, and the values will
+only apply to the ones you add later. When you create a new series there is no
+checkbox: there are no volumes to touch yet.
 
 ## Editing and deleting
 
@@ -48,7 +105,7 @@ Hover a row: the pencil and the bin appear on the right.
 
 ![A series' actions](images/serie-riga-azioni.png)
 
-The pencil changes name and total. The bin asks first:
+The pencil opens the dialog above. The bin asks first:
 
 ![The delete confirmation](images/serie-elimina.png)
 

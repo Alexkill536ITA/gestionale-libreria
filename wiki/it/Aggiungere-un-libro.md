@@ -71,6 +71,20 @@ Non è solo comodità. Se scrivi `Manga` in un libro e `manga` in un altro, ti
 ritrovi **due generi** che si dividono i conteggi nei filtri. Accettando il
 suggerimento resti sulla grafia che hai già scelto.
 
+## Entrare in una serie riempie qualche casella
+
+Scrivi nel campo **Serie** il nome di una serie che hai già, e il modulo si
+riempie da sé di quello che quella serie ha imparato dagli altri volumi: **tag,
+genere, editore e collana**. I tag si aggiungono ai tuoi, i tre campi singoli
+entrano **solo dove erano vuoti** — quello che hai scritto tu resta com'è. Se
+qualcosa è finito sotto **Altri dettagli**, il pannello si apre da sé.
+
+Anche i **volumi totali** arrivano da lì, se la serie ne ha uno e tu non ne hai
+già scritto uno tuo.
+
+Come una serie impara quei valori, e come si correggono per tutti i volumi in un
+colpo, sta in [Le serie](Le-serie.md).
+
 ## Salvare
 
 Tre pulsanti in fondo:
@@ -85,6 +99,27 @@ Se hai scritto qualcosa, `Esc` e **Annulla** non chiudono subito: chiedono
 conferma.
 
 ![La conferma di uscita](immagini/modulo-conferma-uscita.png)
+
+## Un codice che non è un ISBN
+
+I codici dei libri cominciano per `978` o `979`. Se ne scrivi uno di tredici
+cifre che non è di quella famiglia — o un `978` con l'ultima cifra che non torna
+— **il salvataggio non si blocca: ti fa una domanda.** In fondo al modulo compare
+il codice per intero, la riga che dice che nessuna fonte lo conoscerà, e due
+strade:
+
+![La conferma di un codice non standard](immagini/modulo-conferma-isbn.png)
+
+- **Correggi il codice** — riporta il fuoco sulla casella dell'ISBN;
+- **Salva lo stesso** — lo scrive nel catalogo così com'è. I metadati di quel
+  libro andranno riempiti a mano: quel codice non lo cerca nessuno.
+
+Confermato una volta, non te lo richiede a ogni modifica di quel libro. Ma basta
+che tu **tocchi il campo ISBN** perché torni a chiedere, e va bene così: un
+codice storto scritto dopo una conferma non deve passare in silenzio.
+
+Sotto le tredici cifre invece è un rifiuto, non una domanda — `97888` non è un
+codice da salvare lo stesso, è un codice sbagliato.
 
 ## Modificare un libro che c'è già
 

@@ -35,6 +35,16 @@ descending, third back to the original order.
 
 ![Sorted by year](images/ordinamento-anno.png)
 
+**By title the order follows the numbers, not the digits.** `Vol. 2` comes
+before `Vol. 10`, instead of landing between `Vol. 1` and `Vol. 19` the way an
+alphabetical order would put it. It does one thing only, and it is the one that
+counts when you catalogue a series: the run of volumes reads in the order you
+read them. Leading zeroes change nothing — `Vol. 007` still comes before
+`Vol. 8`.
+
+On the other columns the order is alphabetical and case does not count, while
+accented letters go last.
+
 ## Editing and deleting
 
 Hover a row: two icons appear on the right.

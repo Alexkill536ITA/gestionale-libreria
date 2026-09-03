@@ -35,6 +35,15 @@ decrescente, terzo torna all'ordine di partenza.
 
 ![Ordinato per anno](immagini/ordinamento-anno.png)
 
+**Per titolo l'ordine segue i numeri, non le cifre.** `Vol. 2` viene prima di
+`Vol. 10`, e non finisce fra `Vol. 1` e `Vol. 19` come farebbe un ordine
+alfabetico. Fa una cosa sola, ma è quella che conta se cataloghi una serie: la
+fila dei volumi si legge nell'ordine in cui li leggi tu. Gli zeri davanti non
+cambiano niente — `Vol. 007` sta comunque prima di `Vol. 8`.
+
+Sulle altre colonne l'ordine è alfabetico e maiuscole e minuscole non contano,
+mentre le lettere accentate vanno in fondo.
+
 ## Modificare ed eliminare
 
 Passa il puntatore su una riga: a destra compaiono due icone.

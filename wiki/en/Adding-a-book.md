@@ -70,6 +70,20 @@ This is not just convenience. Type `Manga` in one book and `manga` in another an
 you end up with **two genres** splitting the counts in the filters. Taking the
 suggestion keeps you on the spelling you already chose.
 
+## Joining a series fills a few boxes
+
+Type the name of a series you already have in the **Series** field, and the form
+fills itself with what that series learnt from the other volumes: **tags, genre,
+publisher and imprint**. Tags are added to yours, the three single fields land
+**only where they were empty** — what you typed stays as it is. If something
+ended up under **More details**, the panel opens by itself.
+
+The **total volumes** come from there too, if the series has one and you have not
+already typed one of your own.
+
+How a series learns those values, and how you correct them for every volume in
+one go, is in [Series](Series.md).
+
 ## Saving
 
 Three buttons at the bottom:
@@ -84,6 +98,26 @@ If you have written something, `Esc` and **Cancel** do not close straight away:
 they ask.
 
 ![The exit confirmation](images/modulo-conferma-uscita.png)
+
+## A code that is not an ISBN
+
+Book codes start with `978` or `979`. Type a thirteen-digit one that is not from
+that family — or a `978` whose last digit does not add up — and **saving is not
+blocked: you get a question.** The bottom of the form shows the code in full, the
+line saying no source will know it, and two ways out:
+
+![The confirmation for a non-standard code](images/modulo-conferma-isbn.png)
+
+- **Fix the code** — puts the focus back on the ISBN box;
+- **Save anyway** — writes it to the catalogue as it is. That book's metadata
+  will have to be typed in by hand: nobody looks up a code like that.
+
+Confirm once and it will not ask again on every edit of that book. But **touch
+the ISBN field** and it goes back to asking, which is the point: a wrong code
+typed after a confirmation must not slip through in silence.
+
+Below thirteen digits it is a refusal, not a question — `97888` is not a code to
+save anyway, it is a wrong code.
 
 ## Editing a book that already exists
 

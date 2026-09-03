@@ -39,8 +39,65 @@ Il nome basta. Il totale si può lasciare vuoto, e conviene farlo quando la seri
 è ancora in corso: senza totale, l'applicazione non ti dirà mai che manca il
 volume dopo l'ultimo che hai.
 
+Sotto ci sono già i quattro valori della sezione qui sotto — tag, genere, editore
+e collana — e si possono riempire subito o lasciare che li impari da sé.
+
 I volumi si catalogano dopo, dal modulo del libro, scrivendo quel nome nel campo
 Serie.
+
+## I valori della serie
+
+Oltre al nome e al totale, una serie porta con sé quattro cose: **tag, genere,
+editore e collana**. Non c'è da dichiararle: **la serie le impara dai volumi che
+le assegni.**
+
+- i **tag** si sommano — quelli di ogni volume entrano nella serie, e da soli non
+  ne escono più;
+- **genere, editore e collana** li detta il **primo volume che ne porta uno**, e
+  nessun volume salvato dopo li sposta. Senza questa regola la serie inseguirebbe
+  l'ultimo libro toccato, e l'editore ballerebbe a ogni salvataggio.
+
+Da lì tornano indietro. **Un libro che entra in quella serie se li trova già
+scritti nel modulo**, e con prudenza:
+
+- i **tag** si aggiungono a quelli che hai già messo;
+- **genere, editore e collana** si riempiono **solo dove erano vuoti** — quello
+  che hai scritto tu non si tocca;
+- un tag che hai tolto **non ritorna** finché resti in quella serie.
+
+Se la serie ha riempito qualcosa sotto **Altri dettagli**, quel pannello si apre
+da sé: così lo vedi invece di scoprirlo dopo aver salvato.
+
+## Correggere i valori a mano
+
+La matita apre il dialogo, dove i quattro valori stanno sotto il nome e il
+totale. Sono caselle come quelle del modulo, con gli stessi suggerimenti.
+
+![I valori di una serie](immagini/serie-valori.png)
+
+In modifica compare anche una spunta, **accesa**: *«Applica anche ai N volumi già
+catalogati»*. È il modo di sistemare quaranta volumi in un colpo, e **non è una
+sostituzione**:
+
+| Cosa cambi nel dialogo | Cosa succede ai volumi |
+|---|---|
+| Aggiungi un tag | entra su tutti |
+| Togli un tag | esce da tutti quelli che ce l'hanno |
+| Cambi genere, editore o collana | si scrive **solo** dove il volume portava il valore di prima, o non ne aveva nessuno |
+| **Svuoti** una casella | **niente**: vuol dire «la serie non lo detta più», non «cancellalo dai libri» |
+
+Le ultime due righe sono la ragione per cui questa non è una sostituzione secca:
+il volume ristampato da un altro editore non viene appiattito sugli altri, e una
+casella svuotata per distrazione non porta via un dato da quaranta libri.
+
+**Sui tag tolti, invece, guarda due volte prima di salvare.** Siccome la serie ha
+già imparato i tag di *tutti* i suoi volumi, quello che togli dalla casella se ne
+va davvero da tutti i volumi che ce l'avevano — anche se ce l'avevi messo tu, su
+un volume solo. È voluto, ma è la cosa che si nota dopo.
+
+Togliendo la spunta i volumi già catalogati restano come sono, e i valori
+varranno solo per quelli che aggiungerai dopo. Quando crei una serie nuova la
+spunta non c'è: non ci sono ancora volumi da toccare.
 
 ## Modificare ed eliminare
 
@@ -48,7 +105,7 @@ Passa il puntatore su una riga: a destra compaiono la matita e il cestino.
 
 ![Le azioni di una serie](immagini/serie-riga-azioni.png)
 
-La matita cambia nome e totale. Il cestino chiede conferma:
+La matita apre il dialogo qui sopra. Il cestino chiede conferma:
 
 ![La conferma di eliminazione](immagini/serie-elimina.png)
 
