@@ -15,15 +15,45 @@ things down.
 | Column | What it shows |
 |---|---|
 | Cover | the thumbnail, or a spine drawn in the publisher's colour |
-| Title | in bold |
+| Title | in bold, with the **subtitle** below it in small, where there is one |
 | Author | every author of the book, comma separated |
 | Year | the year of **this** edition, not of the first one |
 | Genre | just one, the one you typed in the form |
-| Shelf | where the book physically is: `SAL-1`, `STUDIO-2`, `Lent to…` |
+| Shelf | where the book physically is: `SAL-1`, `Libreria-Camera`, `Lent to…` |
 | Read | `To read`, `Reading`, `Read`, with a coloured dot |
 
 A dash `—` means the field is empty: not an error, just a field you have not
-filled in.
+filled in. Books with no subtitle do not leave an empty line: every row is the
+same height, and the title centres itself.
+
+**If a column cuts something off, rest the pointer on it.** After a moment the
+whole value appears — the title with its subtitle, the author, the year, the
+genre, the shelf — with no need to widen the column. On the cover you get the
+title of the book, which is written nowhere there. The exception is **Read**,
+which already has its word on screen.
+
+## Resizing the columns
+
+The right edge of **Title**, **Author** and **Genre** can be dragged: hover it
+and the pointer turns into a double arrow, with a thin vertical line showing up.
+
+![The handle between two columns](images/colonne-ridimensiona.png)
+
+Whatever one column takes, the ones to its right give up, so the table **always
+fills the card** and there is never anything to scroll sideways. No column goes
+below a minimum width: once there, the others stop giving and the handle goes no
+further.
+
+It works **from the keyboard** too: `Tab` after the header moves the focus onto
+the handle, and `←` and `→` move it one step at a time.
+
+**Year and Read stay narrow and cannot be resized.** They take the minimum their
+header and their longest word (`To read`) need, and they carry no handle: they
+are two short fields, and the room they save goes to the titles, which are not
+short. The same holds for the cover and for the two icons at the end.
+
+The width you choose **survives a restart**. It does not go into backups: it is a
+preference of this window, not a piece of the catalogue.
 
 ## Sorting
 

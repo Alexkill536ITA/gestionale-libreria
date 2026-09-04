@@ -60,7 +60,7 @@ In cima c'è una casella per **cercare un filtro**, che serve quando i tag sono
 ventinove e scorrerli è più lento che scriverne tre lettere.
 
 Le sezioni oltre le prime due sono chiuse: un clic sulla riga le apre. Il numero
-accanto al titolo (`AUTORE 8 disponibili`) dice quanti valori ci sono da
+accanto al titolo (`AUTORE 10 disponibili`) dice quanti valori ci sono da
 scegliere.
 
 **Applica** chiude il pannello e filtra; **Azzera** toglie tutto.
@@ -77,6 +77,11 @@ I filtri attivi restano in vista sotto il titolo, uno per chip.
 La `×` su un chip toglie quel filtro solo; **Azzera tutto** li toglie tutti. Il
 pulsante Filtri porta un contatore, così sai quanti ne hai lasciati attivi anche
 a pannello chiuso.
+
+**Un chip arriva anche da fuori.** Il nome di una serie in [**Le
+serie**](Le-serie.md), e una card del carosello in [**Gli
+editori**](Gli-editori.md), aprono il catalogo già filtrato: il chip `Serie:` è
+lì che dice perché stai vedendo quei libri, e si toglie come tutti gli altri.
 
 ## Ricerca e filtri insieme
 

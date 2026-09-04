@@ -26,6 +26,19 @@ book. **Close the scanner** turns the webcam off.
 You can always type the ISBN into the field below instead: the viewfinder forces
 nothing on you.
 
+## Which codes it reads
+
+Four kinds, not one: **EAN-13**, **UPC-A**, **Code 39** and **ITF**. The first
+is the one carrying the ISBN on today's books; the others are for older
+editions, which have the ISBN printed in plain sight but not in a barcode of
+its own.
+
+The scanner **only reads**: it does not decide whether what it read is an ISBN,
+it writes it into the field and lets the program say whether it stands up. The
+flip side is that on a book with several barcodes — the price, the shop label —
+it can pick the wrong one: if the number that shows up looks nothing like an
+ISBN, press **Scan again** and frame the other one.
+
 ## The viewfinder is black
 
 This is the commonest case, and it is almost never a fault: Windows has picked a

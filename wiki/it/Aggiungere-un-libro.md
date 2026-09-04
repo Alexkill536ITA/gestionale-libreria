@@ -139,3 +139,24 @@ differenze:
   togliere davvero un totale si passa da [Le serie](Le-serie.md).
 
 **Elimina** sta in basso a sinistra, lontano da Salva.
+
+## Passare da un libro all'altro senza chiudere
+
+In modifica la testata porta due frecce e dice a che punto sei: `3 di 11`.
+
+![Le frecce per scorrere i libri](immagini/modulo-scorrimento.png)
+
+Servono quando stai sistemando una serie intera: apri il primo volume, correggi,
+freccia, correggi il secondo. Funzionano anche con `Alt`+`←` e `Alt`+`→`.
+
+Tre cose che vale la pena sapere:
+
+- **il conto è quello del catalogo come lo stai guardando** — con la ricerca e i
+  filtri che hai attivi, e nell'ordine che hai scelto. Se hai filtrato per una
+  posizione, scorri solo quei libri;
+- **la pagina non ti ferma.** Arrivato all'ultimo libro della pagina, la freccia
+  apre il primo della successiva e la tabella sotto volta pagina con te;
+- **se hai scritto qualcosa e non l'hai salvato, la freccia chiede prima** — la
+  stessa domanda di `Esc`. «Continua a scrivere» ti lascia dove sei.
+
+Sul primo libro la freccia indietro è spenta, e sull'ultimo quella avanti.

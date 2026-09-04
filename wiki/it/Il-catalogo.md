@@ -15,15 +15,45 @@ hanno ristretto il campo.
 | Colonna | Cosa mostra |
 |---|---|
 | Copertina | la miniatura, oppure un dorso disegnato col colore dell'editore |
-| Titolo | in grassetto |
+| Titolo | in grassetto, e sotto il **sottotitolo** in piccolo, dove c'è |
 | Autore | tutti gli autori del libro, separati da virgola |
 | Anno | l'anno di **questa** edizione, non della prima |
 | Genere | uno solo, quello che hai scritto nel modulo |
-| Posizione | dove sta fisicamente: `SAL-1`, `STUDIO-2`, `Prestato a…` |
+| Posizione | dove sta fisicamente: `SAL-1`, `Libreria-Camera`, `Prestato a…` |
 | Letto | `Da leggere`, `In lettura`, `Letto`, con un pallino colorato |
 
 Un trattino `—` vuol dire che quel campo è vuoto: non è un errore, è un campo
-che non hai riempito.
+che non hai riempito. I libri senza sottotitolo non lasciano una riga vuota: la
+riga resta alta uguale per tutti, e il titolo si centra da solo.
+
+**Se una colonna taglia qualcosa, fermaci sopra il puntatore.** Dopo un attimo
+compare il valore intero — il titolo con il suo sottotitolo, l'autore, l'anno,
+il genere, la posizione — senza bisogno di allargare la colonna. Sulla
+copertina compare il titolo del libro, che lì non è scritto da nessuna parte.
+Fa eccezione **Letto**, che la sua parola ce l'ha già a schermo.
+
+## Ridimensionare le colonne
+
+Il bordo destro di **Titolo**, **Autore** e **Genere** si trascina: passandoci
+sopra il puntatore diventa una doppia freccia e compare un filo verticale.
+
+![La maniglia fra due colonne](immagini/colonne-ridimensiona.png)
+
+Quello che una colonna prende lo perdono quelle alla sua destra, quindi la
+tabella **riempie sempre la scheda** e non c'è mai niente da scorrere di lato.
+Nessuna colonna scende sotto una larghezza minima: arrivate lì, le altre smettono
+di cedere e la maniglia non va oltre.
+
+Si fa anche **da tastiera**: `Tab` dopo l'intestazione porta il fuoco sulla
+maniglia, e `←` e `→` la muovono un passo per volta.
+
+**Anno e Letto restano strette e non si toccano.** Prendono il minimo che serve
+alla loro intestazione e alla parola più lunga (`Da leggere`), e non hanno una
+maniglia: sono due campi corti, e lo spazio che risparmiano va ai titoli, che
+corti non sono. Lo stesso vale per la copertina e per le due icone in fondo.
+
+La larghezza che scegli **resta al riavvio**. Non finisce nei backup: è una
+preferenza di questa finestra, non un dato del catalogo.
 
 ## Ordinare
 

@@ -17,13 +17,18 @@ niente da preparare prima.
 Da sinistra:
 
 - **il nome** della serie;
-- **quanti ne hai su quanti** — `2 / 20`. Il totale sta in una casella
+- **quanti ne hai su quanti** — `2 / 12`. Il totale sta in una casella
   modificabile: correggilo lì e basta, si salva da solo;
-- **quali mancano**, con i buchi accorpati: `mancano 2, 4–20` invece di
-  diciotto numeri in fila;
-- a destra, la pastiglia con il conto: `mancano 18 volumi`;
+- **quali mancano**, con i buchi accorpati: `mancano 3–12` invece di
+  dieci numeri in fila;
+- a destra, la pastiglia con il conto: `mancano 10 volumi`;
 - sotto, **la fila dei dorsi**: copertina vera per i volumi che hai, riquadro
   tratteggiato col numero per quelli che mancano.
+
+Fermando il puntatore su una casella si legge **di che volume si tratta** —
+`vol. 9 · My dress up darling. Bisque doll Vol.9`, col sottotitolo dove c'è —
+e su un riquadro tratteggiato, quale volume manca. Serve soprattutto sulle serie
+lunghe, dove venti copertine piccole si somigliano tutte.
 
 L'ordine dell'elenco non è alfabetico: **in cima i totali da correggere** — le
 serie dove hai più volumi di quanti il totale dichiari, che è il segno di un

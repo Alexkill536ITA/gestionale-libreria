@@ -11,17 +11,24 @@ It is greyed out only when there is neither. `Enter` inside the ISBN field does
 the same thing. On a book you are editing the same button reads **Refresh from
 metadata**.
 
-## The four sources
+## The five sources
 
 | | Source | What it gives |
 |---|---|---|
 | 1 | **OpenLibrary** | leads the cascade, and brings the cover too |
-| 2 | **Google Books** | the only one that knows niche Italian publishing |
-| 3 | **OPAC SBN** | the Italian library catalogue, last to fill the gaps |
+| 2 | **Google Books** | knows niche Italian publishing |
+| 3 | **OPAC SBN** | the Italian library catalogue |
+| 4 | **NiceBooks** | the Italian publishing the others do not have, manga included |
 | — | **AniList** | manga and Japanese comics, **outside** the cascade |
 
-The first three are queried **all three together**, not one after another. The
+The first four are queried **all four together**, not one after another. The
 first one leads: the others only fill in the fields it left empty.
+
+**NiceBooks comes last because it fills the other three's gaps**, and it is
+often the only one that knows anything about Italian manga and small publishers.
+There is nothing to set up, and it brings the cover too when OpenLibrary has
+none. In exchange it is the slowest: for every book it asks twice instead of
+once, so it adds **a couple of seconds** to each ISBN.
 
 AniList sits outside because **it does not know ISBNs** — it catalogues works,
 not editions. It only shows up in the search by title, where you pick the right
@@ -73,15 +80,16 @@ back empty and the form already holds a title or an author.
 
 ![The search by title](images/ricerca-per-titolo.png)
 
-The **SBN** rows carry publisher, year and the Italian edition's ISBN, with the
-volume number on the left. Scroll to the bottom of the list and you find the
-**AniList** ones, with the cover thumbnail and the year of the work.
+The **SBN** and **NiceBooks** rows carry publisher, year and the Italian
+edition's ISBN, with the volume number on the left. Scroll to the bottom of the
+list and you find the **AniList** ones, with the cover thumbnail and the year of
+the work. Every row says which source it comes from.
 
 ![The AniList rows at the bottom of the list](images/ricerca-titolo-anilist.png)
 
 ## Manga from AniList
 
-Picking an AniList work brings things none of the other three can give:
+Picking an AniList work brings things none of the other four can give:
 
 ![A record filled in from AniList](images/anilist-riempito.png)
 
@@ -96,11 +104,17 @@ What AniList does **not** have, and will stay empty: publisher, imprint, pages,
 price and the year of the Italian edition. Those come from the other sources, or
 from you.
 
-## Editing a book already in the catalogue
+## What you typed is not overwritten
 
-If you look up metadata for a book that is already catalogued, the values found
-**do not overwrite yours**: they appear as pills next to what you have, and you
-decide field by field.
+**It does not matter whether you are adding or editing: what matters is whether
+the form already holds something.** If it does, the values found **do not write
+over them** — they appear as pills next to yours, and you decide field by field.
+An empty form is filled straight in, because there is nothing to confirm.
+
+It holds for **authors** too: a source's proposal arrives as a single pill, with
+the names joined by `·` and not by a comma — which inside «Miura, Kentaro» would
+split one surname into two people. Pick it and the names go back to separate
+rows.
 
 ## If it finds nothing
 

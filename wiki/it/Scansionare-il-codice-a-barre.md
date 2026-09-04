@@ -26,6 +26,19 @@ sbagliato. **Chiudi la scansione** spegne la webcam.
 Se preferisci, puoi sempre scrivere l'ISBN a mano nel campo qui sotto: il mirino
 non ti obbliga a nulla.
 
+## Che codici legge
+
+Quattro tipi, non uno: **EAN-13**, **UPC-A**, **Code 39** e **ITF**. Il primo è
+quello che porta l'ISBN sui libri di oggi; gli altri servono alle edizioni
+vecchie, che l'ISBN ce l'hanno stampato in chiaro ma non in un codice a barre
+suo.
+
+Lo scanner **legge e basta**: non decide se quello che ha letto sia un ISBN, lo
+scrive nel campo e lascia dire al programma se sta in piedi. Il rovescio è che su
+un libro con più codici — il prezzo, l'etichetta del negozio — può prendere
+quello sbagliato: se il numero che compare non somiglia a un ISBN, **Riscansiona**
+e inquadra l'altro.
+
 ## Il mirino è nero
 
 È il caso più comune, e quasi sempre non è un guasto: Windows ha scelto da sé

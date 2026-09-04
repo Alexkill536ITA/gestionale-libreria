@@ -117,8 +117,12 @@ quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
 <td width="50%"><img src="wiki/it/immagini/anilist-riempito.png" alt="Un manga da AniList"><br><sub><b>Il manga da AniList</b> — autore e disegnatore distinti, il totale dei volumi, i tag proposti.</sub></td>
 </tr>
 <tr>
+<td width="50%"><img src="wiki/it/immagini/editori.png" alt="La pagina di un editore"><br><sub><b>Gli editori</b> — un editore per volta: le sue opere in un carosello, le altre grafie con cui si presenta, e quattro grafici nella sua tinta.</sub></td>
 <td width="50%"><img src="wiki/it/immagini/scanner.png" alt="Lo scanner del codice a barre"><br><sub><b>Lo scanner</b> — mirino nel modulo, decodifica in WebAssembly, tendina per scegliere la fotocamera.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="wiki/it/immagini/impostazioni-preferenze.png" alt="Le impostazioni"><br><sub><b>Le impostazioni</b> — il binario non elenca le sezioni, le riassume: sotto ogni voce c'è il valore di adesso.</sub></td>
+<td width="50%"><img src="wiki/it/immagini/modulo-scorrimento.png" alt="Le frecce del modulo"><br><sub><b>Scorrere il catalogo</b> — dal modulo di un libro si passa al successivo senza chiudere, anche oltre il bordo della pagina.</sub></td>
 </tr>
 </table>
 
@@ -140,7 +144,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.2.0_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.3.0_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -157,7 +161,7 @@ cancella**.
 
 ### macOS
 
-`Gestionale Libreria_0.2.0_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.3.0_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple
@@ -179,8 +183,8 @@ Qui i dati stanno in
 
 | | |
 |---|---|
-| 📘 [**Guida d'uso**](wiki/it/Home.md) | tredici pagine con le schermate: catalogo, metadati, copertine, serie, scanner, backup, aggiornamenti |
-| 📗 [**User guide**](wiki/en/Home.md) | the same thirteen pages, in English |
+| 📘 [**Guida d'uso**](wiki/it/Home.md) | quattordici pagine con le schermate: catalogo, metadati, copertine, serie, editori, scanner, backup, aggiornamenti |
+| 📗 [**User guide**](wiki/en/Home.md) | the same fourteen pages, in English |
 
 ## Partecipare
 

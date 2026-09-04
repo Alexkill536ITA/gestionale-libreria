@@ -33,7 +33,7 @@ It is not there: the install is for the current user only, so the program sits i
 
 ## I looked up an ISBN and it found nothing
 
-It means **none of the three sources knows that edition**. This happens with
+It means **none of the four sources knows that edition**. This happens with
 Italian non-fiction from small publishers and with certain niche editions.
 
 What to try, in order:
@@ -56,6 +56,22 @@ in a few minutes. The other sources have answered in the meantime anyway.
 
 If **Google Books** is always wrong, check the key in Settings → Metadata with
 the **Verify** button.
+
+## Where do I find this guide from the program?
+
+The **question mark** at the top right, next to the gear: it opens these pages
+in the browser, in the language you are using. Change the language in
+[Settings](Settings.md) and the page that opens changes with it.
+
+## The labels next to the icons at the top have gone
+
+The window is too narrow for them to fit. **Catalogue**, **Series** and
+**Publishers** stay where they are as icons, and resting the pointer on one
+tells you its name: widen the window and the labels come back on their own.
+
+The search box sits at the centre of the window, and to stay there it needs the
+same room on the left as on the right: when there is not enough, the labels are
+what gives way — they used to end up *on top of* the search box.
 
 ## The webcam viewfinder is black
 

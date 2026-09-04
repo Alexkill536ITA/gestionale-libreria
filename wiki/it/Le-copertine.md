@@ -9,8 +9,9 @@ Il riquadro tratteggiato a sinistra nel modulo. Ci si arriva per tre strade.
 ## 1. Da sola, cercando i metadati
 
 Quando il riquadro è vuoto e [la ricerca dei metadati](Cercare-i-metadati.md) trova
-un'immagine, questa scende senza che tu prema niente. Succede con **OpenLibrary**
-e con **AniList**.
+un'immagine, questa scende senza che tu prema niente. Succede con **OpenLibrary**,
+con **NiceBooks** e con **AniList** — e la riga sotto l'ISBN dice sempre di chi è
+l'immagine arrivata.
 
 Se una copertina c'è già, non viene sostituita: te lo dice una riga sotto l'ISBN
 — *«OpenLibrary ha una copertina, ma il riquadro ne ha già una»* — e se la vuoi

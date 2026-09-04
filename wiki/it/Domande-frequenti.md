@@ -33,8 +33,8 @@ in `%LOCALAPPDATA%\Gestionale Libreria\`.
 
 ## Ho cercato un ISBN e non ha trovato niente
 
-Vuol dire che **nessuna delle tre fonti conosce quell'edizione**. Capita con la
-saggistica italiana di piccoli editori e con certe edizioni di nicchia.
+Vuol dire che **nessuna delle quattro fonti conosce quell'edizione**. Capita con
+la saggistica italiana di piccoli editori e con certe edizioni di nicchia.
 
 Cosa provare, nell'ordine:
 
@@ -56,6 +56,22 @@ qualche minuto. Le altre fonti intanto hanno risposto lo stesso.
 
 Se **Google Books** sbaglia sempre, controlla la chiave in Impostazioni →
 Metadati con il pulsante **Verifica**.
+
+## Dove trovo questa guida, dal programma?
+
+Il **punto interrogativo** in alto a destra, accanto all'ingranaggio: apre queste
+pagine nel browser, nella lingua che stai usando. Cambiando lingua dalle
+[Impostazioni](Impostazioni.md) cambia anche la pagina che si apre.
+
+## Sono sparite le scritte accanto alle icone in alto
+
+La finestra è troppo stretta perché ci stiano. **Catalogo**, **Serie** ed
+**Editori** restano al loro posto come icone, e fermandoci sopra il puntatore si
+legge il nome: allargando la finestra le scritte tornano da sole.
+
+La ricerca sta al centro della finestra, e per restarci ha bisogno che a sinistra
+e a destra ci sia lo stesso spazio: quando non ce n'è abbastanza, a cedere sono
+le scritte — prima finivano *sopra* la casella di ricerca.
 
 ## Il mirino della webcam è nero
 

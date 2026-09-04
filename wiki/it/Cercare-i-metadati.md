@@ -10,18 +10,25 @@ Un pulsante solo, **Cerca i metadati**, e decide da sé da dove partire:
 È spento solo quando non c'è né l'uno né gli altri. `Invio` dentro il campo ISBN
 fa la stessa cosa.
 
-## Le quattro fonti
+## Le cinque fonti
 
 | | Fonte | Cosa dà |
 |---|---|---|
 | 1 | **OpenLibrary** | comanda la cascata, e porta anche la copertina |
-| 2 | **Google Books** | l'unica che conosce l'editoria italiana di nicchia |
-| 3 | **OPAC SBN** | il catalogo delle biblioteche italiane, ultimo a riempire i buchi |
+| 2 | **Google Books** | conosce l'editoria italiana di nicchia |
+| 3 | **OPAC SBN** | il catalogo delle biblioteche italiane |
+| 4 | **NiceBooks** | l'editoria italiana che le altre non hanno, manga compresi |
 | — | **AniList** | manga e fumetto giapponese, **fuori** dalla cascata |
 
-Le prime tre si interrogano **tutte e tre insieme**, non una dopo l'altra.
-Comanda la prima che risponde: le altre riempiono soltanto i campi che ha
-lasciato vuoti.
+Le prime quattro si interrogano **tutte e quattro insieme**, non una dopo
+l'altra. Comanda la prima che risponde: le altre riempiono soltanto i campi che
+ha lasciato vuoti.
+
+**NiceBooks sta in fondo perché riempie i buchi degli altri tre**, ed è spesso
+l'unica che sa qualcosa dei manga italiani e dei piccoli editori. Non chiede
+niente da impostare, e porta anche la copertina quando OpenLibrary non ce l'ha.
+In cambio è la più lenta: per ogni libro fa due domande invece di una, quindi
+mette **un paio di secondi in più** su ogni ISBN.
 
 AniList sta fuori perché **non conosce gli ISBN** — cataloga opere, non edizioni.
 Compare solo nella ricerca per titolo, dove sei tu a scegliere la riga giusta.
@@ -72,15 +79,16 @@ per ISBN torna a mani vuote e nel modulo c'è già un titolo o un autore.
 
 ![La ricerca per titolo](immagini/ricerca-per-titolo.png)
 
-Le righe **SBN** portano editore, anno e l'ISBN dell'edizione italiana, con il
-numero del volume a sinistra. Scorrendo in fondo alla lista si trovano quelle di
-**AniList**, con la miniatura della copertina e l'anno dell'opera.
+Le righe **SBN** e **NiceBooks** portano editore, anno e l'ISBN dell'edizione
+italiana, con il numero del volume a sinistra. Scorrendo in fondo alla lista si
+trovano quelle di **AniList**, con la miniatura della copertina e l'anno
+dell'opera. Ogni riga dice da quale fonte viene.
 
 ![Le righe di AniList in fondo alla lista](immagini/ricerca-titolo-anilist.png)
 
 ## Il manga da AniList
 
-Scegliendo un'opera di AniList arrivano cose che nessuna delle altre tre dà:
+Scegliendo un'opera di AniList arrivano cose che nessuna delle altre quattro dà:
 
 ![Una scheda riempita da AniList](immagini/anilist-riempito.png)
 
@@ -94,11 +102,17 @@ Scegliendo un'opera di AniList arrivano cose che nessuna delle altre tre dà:
 Quello che AniList **non** ha, e che resterà vuoto: editore, collana, pagine,
 prezzo e anno dell'edizione italiana. Quelli li riempiono le altre fonti, o tu.
 
-## Modificare un libro già catalogato
+## Quello che hai scritto tu non si sovrascrive
 
-Se cerchi i metadati di un libro che è già nel catalogo, i valori trovati **non
-ci scrivono sopra**: compaiono come pastiglie accanto a quelli che hai già, e
-decidi campo per campo.
+**Non conta se stai aggiungendo o modificando: conta se nel modulo c'è già
+qualcosa.** Se c'è, i valori trovati **non ci scrivono sopra** — compaiono come
+pastiglie accanto ai tuoi, e decidi campo per campo. Un modulo vuoto invece si
+riempie dritto, perché non c'è niente da far confermare.
+
+Vale anche per gli **autori**: la proposta di una fonte arriva come una pastiglia
+sola, con i nomi uniti da `·` e non da una virgola — che dentro «Miura, Kentaro»
+spezzerebbe un cognome in due persone. Scegliendola, i nomi tornano righe
+separate.
 
 ## Se non trova niente
 

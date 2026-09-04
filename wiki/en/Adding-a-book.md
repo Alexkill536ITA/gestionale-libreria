@@ -137,3 +137,26 @@ Three differences:
   others. To really remove a total, go through [Series](Series.md).
 
 **Delete** sits bottom left, away from Save.
+
+## Moving from one book to the next without closing
+
+In edit mode the header carries two arrows and tells you where you are:
+`3 of 11`.
+
+![The arrows that move through the books](images/modulo-scorrimento.png)
+
+They earn their keep when you are going through a whole series: open the first
+volume, fix it, arrow, fix the second. `Alt`+`←` and `Alt`+`→` do the same.
+
+Three things worth knowing:
+
+- **the count is the catalogue as you are looking at it** — with the search and
+  the filters you have on, in the order you chose. Filter by one shelf and you
+  move through those books only;
+- **the page does not stop you.** On the last book of a page, the arrow opens the
+  first of the next one, and the table behind turns the page with you;
+- **if you have typed something and not saved it, the arrow asks first** — the
+  same question `Esc` asks. "Keep writing" leaves you where you are.
+
+On the first book the back arrow is off, and on the last one the forward arrow
+is.

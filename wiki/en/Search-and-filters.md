@@ -59,7 +59,7 @@ At the top there is a box to **search a filter**, which earns its keep when the
 tags number twenty-nine and scrolling them is slower than typing three letters.
 
 The sections past the first two start collapsed: one click on the row opens them.
-The number next to the heading (`AUTHOR 8 available`) says how many values there
+The number next to the heading (`AUTHOR 10 available`) says how many values there
 are to choose from.
 
 **Apply** closes the panel and filters; **Reset** clears everything.
@@ -76,6 +76,12 @@ Active filters stay in sight under the title, one chip each.
 The `×` on a chip removes just that filter; **Clear all** removes the lot. The
 Filters button carries a counter, so you know how many are still on even with the
 panel closed.
+
+**A chip can also arrive from elsewhere.** A series name in
+[**Series**](Series.md), and a carousel card in
+[**Publishers**](Publishers.md), open the catalogue already filtered: the
+`Series:` chip is there to say why you are seeing those books, and it comes off
+like any other.
 
 ## Search and filters together
 

@@ -61,8 +61,20 @@ di un libro ne spende **una**: catalogando a mano non le si raggiunge.
 
 ### 3 · OPAC SBN
 
-Il catalogo delle biblioteche italiane, ultimo a riempire i buchi. **Niente da
-impostare**: risponde senza chiave e senza presentazioni.
+Il catalogo delle biblioteche italiane. **Niente da impostare**: risponde senza
+chiave e senza presentazioni.
+
+### 4 · NiceBooks
+
+Ultima a riempire i buchi, ed è quella che tiene su **l'editoria italiana che le
+altre non conoscono** — manga compresi. **Niente da impostare**: nessuna chiave,
+nessuna registrazione, un ritmo di una richiesta al secondo fissato nel
+programma.
+
+Per ogni libro fa **due richieste** invece di una, quindi è anche la ragione per
+cui una ricerca per ISBN ci mette un paio di secondi in più. È il prezzo della
+copertura: sta in fondo, quindi lavora solo dove le altre tre non hanno saputo
+rispondere.
 
 ### AniList — fuori dalla cascata
 

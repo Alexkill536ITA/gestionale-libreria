@@ -62,8 +62,18 @@ spends **one**: cataloguing by hand you will not reach them.
 
 ### 3 · OPAC SBN
 
-The Italian library catalogue, last to fill the gaps. **Nothing to set**: it
-answers with no key and no introductions.
+The Italian library catalogue. **Nothing to set**: it answers with no key and no
+introductions.
+
+### 4 · NiceBooks
+
+Last to fill the gaps, and the one that carries **the Italian publishing the
+others do not know** — manga included. **Nothing to set**: no key, no sign-up, a
+rate of one request a second fixed in the program.
+
+For every book it makes **two requests** instead of one, which is also why an
+ISBN lookup takes a couple of seconds longer. That is the price of the coverage:
+it comes last, so it only works where the other three had no answer.
 
 ### AniList — outside the cascade
 

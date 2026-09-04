@@ -17,13 +17,18 @@ nothing to set up first.
 From the left:
 
 - **the name** of the series;
-- **how many you have out of how many** — `2 / 20`. The total sits in an editable
+- **how many you have out of how many** — `2 / 12`. The total sits in an editable
   box: correct it right there, it saves itself;
-- **which ones are missing**, with the gaps merged: `missing 2, 4–20` instead of
-  eighteen numbers in a row;
-- on the right, the pill with the tally: `18 volumes missing`;
+- **which ones are missing**, with the gaps merged: `missing 3–12` instead of
+  ten numbers in a row;
+- on the right, the pill with the tally: `10 volumes missing`;
 - underneath, **the row of spines**: real cover for the volumes you have, dashed
   box with the number for the ones you do not.
+
+Rest the pointer on a slot and it tells you **which volume it is** —
+`vol. 9 · My dress up darling. Bisque doll Vol.9`, with the subtitle where there
+is one — and on a dashed box, which volume is missing. It earns its keep on long
+series, where twenty small covers all look alike.
 
 The list is not alphabetical: **wrong totals come first** — the series where you
 hold more volumes than the total claims, which is the sign of a wrong total —

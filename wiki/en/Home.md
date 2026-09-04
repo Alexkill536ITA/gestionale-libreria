@@ -4,7 +4,7 @@
 
 A personal catalogue for paper books, on Windows. It lives on one computer, asks
 for no account and works offline — except when you go looking up a book's
-details, which come from four public catalogues.
+details, which come from five public catalogues.
 
 Since September 2026 every version also carries a file for **macOS**, which
 nobody has opened on a Mac yet: what to expect is in
@@ -18,15 +18,19 @@ nobody has opened on a Mac yet: what to expect is in
 |---|---|
 | **[The catalogue](The-catalogue.md)** | The table of your books: sorting, paging, editing, deleting |
 | **[Adding a book](Adding-a-book.md)** | The form, the twenty fields, what is required (very little) |
-| **[Looking up metadata](Looking-up-metadata.md)** | One button fills the record from OpenLibrary, Google Books, SBN and AniList |
+| **[Looking up metadata](Looking-up-metadata.md)** | One button fills the record from OpenLibrary, Google Books, SBN, NiceBooks and AniList |
 | **[Covers](Covers.md)** | They come down on their own, or you supply one from a file or a web address |
 | **[Search and filters](Search-and-filters.md)** | The top bar, the nine filters, the fallback when you mistype |
 | **[Series](Series.md)** | Which volumes you are missing, and the values a series passes to its volumes |
+| **[Publishers](Publishers.md)** | One publisher at a time: its works in a carousel, and the rule that holds its different names together |
 | **[Scanning the barcode](Scanning-the-barcode.md)** | The webcam reads the ISBN off the back cover |
 | **[Settings](Settings.md)** | Theme, language, currency, the metadata sources, the backup folder |
 | **[Backup and restore](Backup-and-restore.md)** | A copy a day, the CSV export, the way back |
 | **[Updates](Updates.md)** | It tells you when a new version is out, and installs nothing by itself |
 | **[FAQ](FAQ.md)** | When something does not add up |
+
+These pages open **from the program**: the question mark at the top right, next
+to the gear, brings you here in the language you are using.
 
 ## The whole round, in four moves
 

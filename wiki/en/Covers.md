@@ -10,7 +10,8 @@ The dashed box on the left of the form. There are three ways in.
 
 When the box is empty and [the metadata lookup](Looking-up-metadata.md) finds an
 image, it comes down without you pressing anything. This happens with
-**OpenLibrary** and with **AniList**.
+**OpenLibrary**, with **NiceBooks** and with **AniList** — and the line under the
+ISBN always says whose the image is.
 
 If a cover is already there it is not replaced: a line under the ISBN tells you
 — *«OpenLibrary has a cover, but the box already holds one»* — and if you do want
