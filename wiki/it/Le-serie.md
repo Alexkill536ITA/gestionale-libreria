@@ -122,6 +122,11 @@ Attenzione alla spunta, che è **attiva di default**:
 Non si annulla. Una serie senza volumi non mostra la spunta, perché non c'è
 niente da portarsi dietro.
 
+**Se un volume della serie è in prestito, con la spunta accesa l'eliminazione si
+ferma** e dice chi ce l'ha: un libro che è a casa di qualcuno non può sparire dal
+catalogo. Te lo fai restituire — il giro è in [I prestiti](I-prestiti.md) — oppure
+togli la spunta, e la serie se ne va lasciando i volumi dove sono.
+
 ## Il totale dei volumi: due strade
 
 Lo stesso numero si tocca in due posti, e non fanno la stessa cosa:

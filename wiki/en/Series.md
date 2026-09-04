@@ -123,6 +123,11 @@ Mind the checkbox, which is **ticked by default**:
 It cannot be undone. A series with no volumes shows no checkbox, because there is
 nothing to take along.
 
+**If a volume of the series is on loan, deleting with the box ticked stops** and
+says who has it: a book sitting in somebody's house cannot vanish from the
+catalogue. Either get it back — the round is in [Loans](Loans.md) — or untick the
+box, and the series goes leaving the volumes where they are.
+
 ## The total volumes: two routes
 
 The same number can be touched in two places, and they do not do the same thing:

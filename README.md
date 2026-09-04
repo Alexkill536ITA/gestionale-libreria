@@ -24,17 +24,17 @@ Inquadri il codice a barre, e il libro si cataloga da solo.
 
 ## Che cos'è
 
-Un catalogo personale di libri **di carta**, per Windows. Sta su un computer solo,
-non chiede un account e funziona **senza rete** — tranne quando vai a cercare i
-dati di un libro, che arrivano da quattro cataloghi pubblici.
+Un catalogo personale di libri **di carta**, per Windows e macOS. Sta su un
+computer solo, non chiede un account e funziona **senza rete** — tranne quando
+vai a cercare i dati di un libro, che arrivano da cinque cataloghi pubblici.
 
 Non è una libreria digitale, non sincronizza niente, non ti manda notifiche:
-tiene il conto di quello che hai sugli scaffali, di dove sta, e di cosa manca a
-una serie.
+tiene il conto di quello che hai sugli scaffali, di dove sta, di cosa manca a una
+serie e di chi non ti ha ancora ridato quel volume.
 
 Dal 1° settembre 2026 ogni release porta anche un **DMG universale per macOS**,
-che il CI costruisce accanto all'installer di Windows. Nessuno l'ha ancora aperto
-su un Mac: cosa questo comporta sta in [macOS](#macos).
+che il CI costruisce accanto all'installer di Windows: è stato aperto su un Mac e
+funziona. Come si installa sta in [macOS](#macos).
 
 <table>
 <tr>
@@ -47,9 +47,9 @@ Con «Salva e aggiungi un altro» smaltisci una pila senza mai riaprire nulla.
 </td>
 <td width="50%" valign="top">
 
-### 🔎 Quattro fonti, una scheda
-OpenLibrary, Google Books e OPAC SBN interrogate insieme; AniList per il manga.
-Dove non sono d'accordo, scegli tu con un clic.
+### 🔎 Cinque fonti, una scheda
+OpenLibrary, Google Books, OPAC SBN e NiceBooks interrogate insieme; AniList per
+il manga. Dove non sono d'accordo, scegli tu con un clic.
 
 </td>
 </tr>
@@ -66,11 +66,19 @@ per poi passarli al prossimo che aggiungi.
 
 ### ⚡ Cerca e perdona i refusi
 Ricerca full-text mentre digiti. Se scrivi `camileri`, ti mostra Camilleri —
-e nove filtri per genere, autore, editore, posizione, tag.
+e dieci filtri per genere, autore, editore, posizione, tag.
 
 </td>
 </tr>
 <tr>
+<td width="50%" valign="top">
+
+### 🤝 Sai a chi l'hai prestato
+Chi ha quale libro e da quanto, con la striscia di quello che non è sulla
+mensola. Il libro che torna lo riconosci col codice a barre — e finché è fuori,
+non si può eliminare per sbaglio.
+
+</td>
 <td width="50%" valign="top">
 
 ### 💾 Backup che non devi ricordarti
@@ -78,6 +86,8 @@ Uno all'avvio, uno al giorno, ultime sette copie. Con catalogo **e** copertine,
 e un ripristino che nomina i due conteggi prima di sostituire.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🌍 Due lingue, tema chiaro e scuro
@@ -85,8 +95,6 @@ Italiano e inglese, cambio istantaneo, errori compresi.
 I tuoi dati restano scritti come li hai inseriti.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🔔 Ti dice se esce una versione nuova
@@ -95,6 +103,8 @@ non ti interessa. **Non scarica e non installa niente da sé**: apre la pagina
 della release, il resto lo decidi tu.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🔒 Nessun account, nessuna telemetria
@@ -113,7 +123,7 @@ quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
 <td width="50%"><img src="wiki/it/immagini/serie.png" alt="La vista delle serie"><br><sub><b>Le serie</b> — quanti volumi hai su quanti, quali mancano, e la fila dei dorsi.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="wiki/it/immagini/filtri-pannello.png" alt="Il pannello dei filtri"><br><sub><b>I filtri</b> — nove faccette con i conteggi, così sai in anticipo quanti libri resteranno.</sub></td>
+<td width="50%"><img src="wiki/it/immagini/filtri-pannello.png" alt="Il pannello dei filtri"><br><sub><b>I filtri</b> — dieci faccette con i conteggi, così sai in anticipo quanti libri resteranno.</sub></td>
 <td width="50%"><img src="wiki/it/immagini/anilist-riempito.png" alt="Un manga da AniList"><br><sub><b>Il manga da AniList</b> — autore e disegnatore distinti, il totale dei volumi, i tag proposti.</sub></td>
 </tr>
 <tr>
@@ -131,12 +141,13 @@ quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
 | | Fonte | Che cosa porta | Chiave |
 |:--:|---|---|:--:|
 | 1 | **OpenLibrary** | comanda la cascata, e porta la copertina | — |
-| 2 | **Google Books** | l'unica che conosce l'editoria italiana di nicchia | serve |
+| 2 | **Google Books** | i dati dell'editoria che le altre non hanno | serve |
 | 3 | **OPAC SBN** | il catalogo delle biblioteche italiane, riempie i buchi | — |
+| 4 | **NiceBooks** | la copertura italiana, manga compresi, con la sua copertina | — |
 | ★ | **AniList** | manga: autore e disegnatore distinti, serie, copertina | — |
 
-Le prime tre partono **insieme**, non in fila: comanda la prima che risponde, le
-altre riempiono solo i campi lasciati vuoti. AniList sta fuori dalla cascata
+Le prime quattro partono **insieme**, non in fila: comanda la prima che risponde,
+le altre riempiono solo i campi lasciati vuoti. AniList sta fuori dalla cascata
 perché non conosce gli ISBN — cataloga opere, non edizioni — quindi compare solo
 nella ricerca per titolo, dove scegli tu.
 
@@ -144,7 +155,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.3.0_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.4.0_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -161,16 +172,11 @@ cancella**.
 
 ### macOS
 
-`Gestionale Libreria_0.3.0_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.4.0_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple
 Silicon rifiuta di eseguire un binario preso dalla rete.
-
-> [!WARNING]
-> **Questa build non è mai stata aperta su un Mac.** La costruisce il CI a ogni
-> tag, i test girano e nel codice Rust non c'è una riga specifica di Windows, ma
-> niente di macOS è stato verificato a mano: chi la prova per primo la collauda.
 
 Gatekeeper avvisa comunque, perché la notarizzazione non c'è: **Impostazioni di
 sistema → Privacy e sicurezza → Apri comunque**, oppure
@@ -183,8 +189,8 @@ Qui i dati stanno in
 
 | | |
 |---|---|
-| 📘 [**Guida d'uso**](wiki/it/Home.md) | quattordici pagine con le schermate: catalogo, metadati, copertine, serie, editori, scanner, backup, aggiornamenti |
-| 📗 [**User guide**](wiki/en/Home.md) | the same fourteen pages, in English |
+| 📘 [**Guida d'uso**](wiki/it/Home.md) | quindici pagine con le schermate: catalogo, metadati, copertine, serie, editori, prestiti, scanner, backup, aggiornamenti |
+| 📗 [**User guide**](wiki/en/Home.md) | the same fifteen pages, in English |
 
 ## Partecipare
 

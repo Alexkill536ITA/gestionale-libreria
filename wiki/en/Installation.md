@@ -2,16 +2,16 @@
 
 # Installation
 
-The application runs on **Windows 10 and 11**, and since September 2026 every
-version also carries a file for **macOS** — which nobody has opened on a Mac yet:
-what to expect is in [On a Mac](#on-a-mac).
+The application runs on **Windows 10 and 11**, and since September 2026 on
+**macOS** too: every version carries a file of its own, and how to install it is
+in [On a Mac](#on-a-mac).
 
 On Windows nothing else is needed: the system component that draws the window
 (WebView2) is bundled inside the installer, so it is not downloaded during setup.
 
 ## Installing on Windows
 
-1. Download `Gestionale Libreria_0.3.0_x64-setup.exe`.
+1. Download `Gestionale Libreria_0.4.0_x64-setup.exe`.
 2. Double-click it. The installer speaks Italian and asks very little.
 3. Done: you get a shortcut **on the desktop** and **in the Start menu**.
 
@@ -29,15 +29,12 @@ To go on: **More info** → **Run anyway**.
 
 ## On a Mac
 
-The file is `Gestionale Libreria_0.3.0_universal.dmg`, a single one for Intel Macs
+The file is `Gestionale Libreria_0.4.0_universal.dmg`, a single one for Intel Macs
 and Apple Silicon ones: open it, drag the application into **Applications**, and
 start it from there.
 
-> [!WARNING]
-> **Nobody has opened it on a Mac yet.** The file is built by the same automated
-> procedure that produces the Windows one, but nothing on macOS has been tried by
-> hand: the webcam, the covers and the rest may not work. If you try it and
-> something is off, that is a
+> [!NOTE]
+> If something is off, that is a
 > [bug to report](https://github.com/alexkill536ita/gestionale-libreria/issues/new?template=bug.yml)
 > — not a mistake of yours.
 

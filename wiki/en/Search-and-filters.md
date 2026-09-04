@@ -41,7 +41,7 @@ The **Filters** button opens a panel on the right.
 
 ![The filters panel](images/filtri-pannello.png)
 
-Nine ways to narrow down:
+Ten ways to narrow down:
 
 | | |
 |---|---|
@@ -53,7 +53,13 @@ Nine ways to narrow down:
 | **Tags** | |
 | **Language** | |
 | **Cover** | with or without |
+| **Loan** | on loan · at home |
 | **Year** | a range, `from` and `to` |
+
+**Loan** keeps both of its counts on screen, even when one of them is zero:
+`on loan 3` next to `at home 190` is already the answer, and clicking it leaves
+you with a catalogue of what you are missing. Who has which book is told by
+[Loans](Loans.md).
 
 At the top there is a box to **search a filter**, which earns its keep when the
 tags number twenty-nine and scrolling them is slower than typing three letters.

@@ -42,7 +42,7 @@ Il pulsante **Filtri** apre un pannello a destra.
 
 ![Il pannello dei filtri](immagini/filtri-pannello.png)
 
-Nove modi di restringere:
+Dieci modi di restringere:
 
 | | |
 |---|---|
@@ -54,7 +54,13 @@ Nove modi di restringere:
 | **Tag** | |
 | **Lingua** | |
 | **Copertina** | con o senza |
+| **Prestito** | fuori casa · in casa |
 | **Anno** | un intervallo, `da` e `a` |
+
+**Prestito** ha i suoi due conti sempre a schermo, anche quando uno dei due è
+zero: `fuori casa 3` accanto a `in casa 190` è già la risposta, e cliccandolo
+resta il catalogo di quello che ti manca. Chi ha quale libro lo dice
+[I prestiti](I-prestiti.md).
 
 In cima c'è una casella per **cercare un filtro**, che serve quando i tag sono
 ventinove e scorrerli è più lento che scriverne tre lettere.

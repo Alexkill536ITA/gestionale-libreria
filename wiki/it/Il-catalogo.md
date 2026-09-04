@@ -19,8 +19,15 @@ hanno ristretto il campo.
 | Autore | tutti gli autori del libro, separati da virgola |
 | Anno | l'anno di **questa** edizione, non della prima |
 | Genere | uno solo, quello che hai scritto nel modulo |
-| Posizione | dove sta fisicamente: `SAL-1`, `Libreria-Camera`, `Prestato a…` |
+| Posizione | dove sta fisicamente: `SAL-1`, `STUDIO-2`, `Comodino` |
 | Letto | `Da leggere`, `In lettura`, `Letto`, con un pallino colorato |
+
+**Un libro che è fuori casa lo dice la cella «Letto».** Accanto allo stato di
+lettura compare un segno, e fermandoci sopra il puntatore si legge tutto quello
+che c'è da sapere: *«Luca Ferraro · prestato il 4 set 2026 (oggi)»*. Non è una
+nona colonna perché non ci sta — le larghezze sono tarate al pixel — ed è il
+segno che ti spiega perché quel volume non è sullo scaffale dove dovrebbe. Tutto
+il resto sta in [I prestiti](I-prestiti.md).
 
 Un trattino `—` vuol dire che quel campo è vuoto: non è un errore, è un campo
 che non hai riempito. I libri senza sottotitolo non lasciano una riga vuota: la
@@ -86,6 +93,10 @@ Passa il puntatore su una riga: a destra compaiono due icone.
 L'eliminazione **non si annulla**. Se sbagli, la strada indietro è
 [ripristinare un backup](Backup-e-ripristino.md) — che però riporta indietro
 *tutto* il catalogo, non solo quel libro.
+
+**Un libro che è in prestito non si elimina.** Il cestino rifiuta e nomina chi ce
+l'ha: prima te lo fai restituire, poi lo togli. Vale anche per la spunta di
+[Le serie](Le-serie.md) che porta via i volumi.
 
 ## Sfogliare
 

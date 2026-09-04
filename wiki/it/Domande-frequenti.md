@@ -10,15 +10,15 @@ comunque**. Le ragioni sono in [Installazione](Installazione.md).
 
 ## Gira su un Mac?
 
-In ogni versione c'è un `.dmg`, uno solo per i Mac Intel e per quelli con Apple
-Silicon — ma **nessuno l'ha ancora aperto su un Mac**, quindi non è una promessa:
-è un tentativo. Il programma è nato per Windows, ed è su Windows che è stato
-provato in una finestra vera, funzione per funzione.
+Sì. In ogni versione c'è un `.dmg`, uno solo per i Mac Intel e per quelli con
+Apple Silicon, ed è stato aperto e provato. Il programma è nato per Windows, ma
+su un Mac funziona.
 
-Se lo provi, la cosa più utile è raccontare com'è andata — soprattutto lo scanner
-della webcam e le copertine, i due pezzi che dipendono più di tutti dal sistema.
-Il file da scaricare e come si passa l'avviso di macOS stanno in
-[Installazione](Installazione.md).
+Al primo avvio macOS avvisa lo stesso, perché non c'è un certificato pagato ad
+Apple: come si passa quell'avviso sta in [Installazione](Installazione.md),
+insieme al file da scaricare. Se qualcosa non torna, raccontalo — soprattutto lo
+scanner della webcam e le copertine, i due pezzi che dipendono più di tutti dal
+sistema.
 
 ## Ho disinstallato: ho perso il catalogo?
 
@@ -65,9 +65,9 @@ pagine nel browser, nella lingua che stai usando. Cambiando lingua dalle
 
 ## Sono sparite le scritte accanto alle icone in alto
 
-La finestra è troppo stretta perché ci stiano. **Catalogo**, **Serie** ed
-**Editori** restano al loro posto come icone, e fermandoci sopra il puntatore si
-legge il nome: allargando la finestra le scritte tornano da sole.
+La finestra è troppo stretta perché ci stiano. **Catalogo**, **Serie**,
+**Editori** e **Prestiti** restano al loro posto come icone, e fermandoci sopra
+il puntatore si legge il nome: allargando la finestra le scritte tornano da sole.
 
 La ricerca sta al centro della finestra, e per restarci ha bisogno che a sinistra
 e a destra ci sia lo stesso spazio: quando non ce n'è abbastanza, a cedere sono
@@ -107,6 +107,37 @@ cestino.
 Quando scansioni un ISBN che hai già, l'applicazione te lo dice — *«ne hai già
 uno con questo ISBN»* — ma non ti ferma, proprio perché due copie sono
 legittime.
+
+## Non riesco a eliminare un libro: dice che ce l'ha qualcuno
+
+È in prestito, e finché è fuori non si elimina — né col cestino del catalogo né
+con la spunta che porta via i volumi di una serie. Il messaggio nomina chi ce
+l'ha: fattelo restituire da **Prestiti → Registra una restituzione**, e poi
+eliminalo.
+
+Non è una prudenza esagerata: il prestito aperto è la sola cosa che dice che quel
+volume non è sullo scaffale, e portarlo via lo farebbe risultare disponibile
+mentre è a casa di qualcuno.
+
+## Ho letto il codice a barre di un libro che torna, e dice che è in casa
+
+Vuol dire che per il registro quel libro non è mai uscito, e ci sono due
+possibilità: o non l'avevi mai registrato come prestito, o **il codice letto è di
+un altro libro**. Su un volume ce ne sono stampati due o tre — il prezzo, il
+codice interno del negozio — e lo scanner legge quello che gli capita davanti.
+
+Riprova inquadrando il codice sotto l'ISBN, oppure passa dall'altra via: **Chi te
+lo riporta**, che mostra solo i libri che quella persona ha davvero fuori. Il
+giro completo è in [I prestiti](I-prestiti.md).
+
+## A chi ho prestato questo libro?
+
+Non serve aprire la pagina dei prestiti: nel catalogo, la cella **Letto** del
+libro porta un segno accanto allo stato di lettura, e fermandoci sopra il
+puntatore si legge il nome, la data e da quanto tempo è via.
+
+Per vederli tutti insieme, il filtro **Prestito → fuori casa**, oppure la voce
+**Prestiti** nella barra.
 
 ## Ho due generi uguali: `Manga` e `manga`
 

@@ -2,13 +2,12 @@
 
 # Gestionale Libreria
 
-Catalogo personale di libri di carta per Windows. Sta su un computer solo, non
-chiede un account e funziona senza rete — tranne quando vai a cercare i dati di
-un libro, che arrivano da cinque cataloghi pubblici.
+Catalogo personale di libri di carta per Windows e macOS. Sta su un computer
+solo, non chiede un account e funziona senza rete — tranne quando vai a cercare
+i dati di un libro, che arrivano da cinque cataloghi pubblici.
 
-Da settembre 2026 ogni versione porta anche un file per **macOS**, che però
-nessuno ha ancora aperto su un Mac: cosa aspettarsi sta in
-[Installazione](Installazione.md).
+Da settembre 2026 gira anche su **macOS**: ogni versione porta un file suo, e
+come si installa sta in [Installazione](Installazione.md).
 
 ![Il catalogo](immagini/catalogo.png)
 
@@ -20,9 +19,10 @@ nessuno ha ancora aperto su un Mac: cosa aspettarsi sta in
 | **[Aggiungere un libro](Aggiungere-un-libro.md)** | Il modulo, i venti campi, cosa è obbligatorio (poco) |
 | **[Cercare i metadati](Cercare-i-metadati.md)** | Un pulsante riempie la scheda da OpenLibrary, Google Books, SBN, NiceBooks e AniList |
 | **[Le copertine](Le-copertine.md)** | Scendono da sole, oppure le metti tu da un file o da un indirizzo |
-| **[Cercare e filtrare](Cercare-e-filtrare.md)** | La barra in alto, i nove filtri, il ripiego quando sbagli a scrivere |
+| **[Cercare e filtrare](Cercare-e-filtrare.md)** | La barra in alto, i dieci filtri, il ripiego quando sbagli a scrivere |
 | **[Le serie](Le-serie.md)** | Quali volumi ti mancano, e i valori che una serie passa ai suoi volumi |
 | **[Gli editori](Gli-editori.md)** | Un editore per volta: le sue opere in un carosello, e la regola che tiene insieme i suoi nomi diversi |
+| **[I prestiti](I-prestiti.md)** | Chi ha quale libro, da quanto, e come te lo fai ridare |
 | **[Scansionare il codice a barre](Scansionare-il-codice-a-barre.md)** | La webcam legge l'ISBN dalla quarta di copertina |
 | **[Impostazioni](Impostazioni.md)** | Tema, lingua, valuta, le fonti dei metadati, la cartella dei backup |
 | **[Backup e ripristino](Backup-e-ripristino.md)** | Una copia al giorno, l'esportazione in CSV, la strada per tornare indietro |

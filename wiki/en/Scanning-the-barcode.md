@@ -23,6 +23,11 @@ is how you catalogue a stack of books without reopening anything.
 **Scan again** puts it back into listening after a read, if you framed the wrong
 book. **Close the scanner** turns the webcam off.
 
+**The same viewfinder is also how you take a book back.** In
+[Loans → Record a return](Loans.md) it is the quick way: you frame the code of
+the volume being handed back and the register says who had it, ticking the right
+loan. It is the same panel, with the same buttons.
+
 You can always type the ISBN into the field below instead: the viewfinder forces
 nothing on you.
 

@@ -2,9 +2,9 @@
 
 # Installazione
 
-L'applicazione gira su **Windows 10 e 11**, e da settembre 2026 ogni versione
-porta anche un file per **macOS** — che però nessuno ha ancora aperto su un Mac:
-cosa aspettarsi lo dice [Su un Mac](#su-un-mac).
+L'applicazione gira su **Windows 10 e 11**, e da settembre 2026 anche su
+**macOS**: ogni versione porta un file suo, e come si installa lo dice
+[Su un Mac](#su-un-mac).
 
 Su Windows non serve altro: il componente di sistema che disegna la finestra
 (WebView2) è dentro l'installatore, quindi non viene scaricato durante
@@ -12,7 +12,7 @@ l'installazione.
 
 ## Installare su Windows
 
-1. Scarica il file `Gestionale Libreria_0.3.0_x64-setup.exe`.
+1. Scarica il file `Gestionale Libreria_0.4.0_x64-setup.exe`.
 2. Doppio clic. L'installatore parla italiano e chiede poco.
 3. Finito: trovi il collegamento **sul desktop** e **nel menu Start**.
 
@@ -30,15 +30,12 @@ Per proseguire: **Ulteriori informazioni** → **Esegui comunque**.
 
 ## Su un Mac
 
-Il file è `Gestionale Libreria_0.3.0_universal.dmg`, uno solo per i Mac Intel e
+Il file è `Gestionale Libreria_0.4.0_universal.dmg`, uno solo per i Mac Intel e
 per quelli con Apple Silicon: si apre, si trascina l'applicazione in
 **Applicazioni**, e da lì si avvia.
 
-> [!WARNING]
-> **Nessuno l'ha ancora aperto su un Mac.** Il file lo costruisce la stessa
-> procedura automatica che produce quello di Windows, ma su macOS non è stato
-> provato niente a mano: la webcam, le copertine e il resto potrebbero non
-> funzionare. Se lo provi e qualcosa non va, è un
+> [!NOTE]
+> Se qualcosa non va, è un
 > [difetto da segnalare](https://github.com/alexkill536ita/gestionale-libreria/issues/new?template=difetto.yml)
 > — non un tuo errore.
 

@@ -19,8 +19,15 @@ things down.
 | Author | every author of the book, comma separated |
 | Year | the year of **this** edition, not of the first one |
 | Genre | just one, the one you typed in the form |
-| Shelf | where the book physically is: `SAL-1`, `Libreria-Camera`, `Lent to…` |
+| Shelf | where the book physically is: `SAL-1`, `STUDIO-2`, `Comodino` |
 | Read | `To read`, `Reading`, `Read`, with a coloured dot |
+
+**A book that is away from home is announced by the «Read» cell.** A mark shows
+up next to the reading state, and resting the pointer on it reads out everything
+there is to know: *“Luca Ferraro · lent on Sep 4, 2026 (today)”*. It is not a
+ninth column because there is no room for one — the widths are tuned to the pixel
+— and it is the mark that explains why that volume is not on the shelf where it
+should be. The rest is in [Loans](Loans.md).
 
 A dash `—` means the field is empty: not an error, just a field you have not
 filled in. Books with no subtitle do not leave an empty line: every row is the
@@ -87,6 +94,10 @@ Hover a row: two icons appear on the right.
 Deleting **cannot be undone**. If you get it wrong, the way back is
 [restoring a backup](Backup-and-restore.md) — which brings back the *whole*
 catalogue, though, not just that book.
+
+**A book that is on loan cannot be deleted.** The bin refuses and names whoever
+has it: get it back first, then remove it. The same goes for the tick in
+[Series](Series.md) that takes the volumes away.
 
 ## Paging
 

@@ -2,13 +2,12 @@
 
 # Gestionale Libreria
 
-A personal catalogue for paper books, on Windows. It lives on one computer, asks
-for no account and works offline — except when you go looking up a book's
-details, which come from five public catalogues.
+A personal catalogue for paper books, on Windows and macOS. It lives on one
+computer, asks for no account and works offline — except when you go looking up
+a book's details, which come from five public catalogues.
 
-Since September 2026 every version also carries a file for **macOS**, which
-nobody has opened on a Mac yet: what to expect is in
-[Installation](Installation.md).
+Since September 2026 it also runs on **macOS**: every version carries a file of
+its own, and how to install it is in [Installation](Installation.md).
 
 ![The catalogue](images/catalogo.png)
 
@@ -20,9 +19,10 @@ nobody has opened on a Mac yet: what to expect is in
 | **[Adding a book](Adding-a-book.md)** | The form, the twenty fields, what is required (very little) |
 | **[Looking up metadata](Looking-up-metadata.md)** | One button fills the record from OpenLibrary, Google Books, SBN, NiceBooks and AniList |
 | **[Covers](Covers.md)** | They come down on their own, or you supply one from a file or a web address |
-| **[Search and filters](Search-and-filters.md)** | The top bar, the nine filters, the fallback when you mistype |
+| **[Search and filters](Search-and-filters.md)** | The top bar, the ten filters, the fallback when you mistype |
 | **[Series](Series.md)** | Which volumes you are missing, and the values a series passes to its volumes |
 | **[Publishers](Publishers.md)** | One publisher at a time: its works in a carousel, and the rule that holds its different names together |
+| **[Loans](Loans.md)** | Who has which book, for how long, and how you get it back |
 | **[Scanning the barcode](Scanning-the-barcode.md)** | The webcam reads the ISBN off the back cover |
 | **[Settings](Settings.md)** | Theme, language, currency, the metadata sources, the backup folder |
 | **[Backup and restore](Backup-and-restore.md)** | A copy a day, the CSV export, the way back |

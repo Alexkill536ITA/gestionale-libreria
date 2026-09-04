@@ -10,15 +10,15 @@ are in [Installation](Installation.md).
 
 ## Does it run on a Mac?
 
-Every version carries a `.dmg`, a single one for Intel Macs and Apple Silicon
-ones — but **nobody has opened it on a Mac yet**, so it is not a promise: it is an
-attempt. The program was built for Windows, and Windows is where it was tried in a
-real window, feature by feature.
+Yes. Every version carries a `.dmg`, a single one for Intel Macs and Apple
+Silicon ones, and it has been opened and tried. The program was built for
+Windows, but it works on a Mac.
 
-If you do try it, the most useful thing is to say how it went — above all the
-webcam scanner and the covers, the two pieces that lean hardest on the system.
-Which file to download, and how to get past the macOS warning, are in
-[Installation](Installation.md).
+macOS still warns you the first time, because there is no certificate paid for to
+Apple: how to get past that warning is in [Installation](Installation.md), along
+with the file to download. If something does not add up, do say so — above all
+the webcam scanner and the covers, the two pieces that lean hardest on the
+system.
 
 ## I uninstalled it — have I lost my catalogue?
 
@@ -65,9 +65,10 @@ in the browser, in the language you are using. Change the language in
 
 ## The labels next to the icons at the top have gone
 
-The window is too narrow for them to fit. **Catalogue**, **Series** and
-**Publishers** stay where they are as icons, and resting the pointer on one
-tells you its name: widen the window and the labels come back on their own.
+The window is too narrow for them to fit. **Catalogue**, **Series**,
+**Publishers** and **Loans** stay where they are as icons, and resting the
+pointer on one tells you its name: widen the window and the labels come back on
+their own.
 
 The search box sits at the centre of the window, and to stay there it needs the
 same room on the left as on the right: when there is not enough, the labels are
@@ -104,6 +105,38 @@ bin.
 When you scan an ISBN you already have, the application says so — *«you already
 have one with this ISBN»* — but does not stop you, precisely because two copies
 are legitimate.
+
+## I cannot delete a book: it says somebody has it
+
+It is on loan, and while it is away it cannot be deleted — neither with the
+catalogue's bin nor with the tick that takes a series' volumes along. The message
+names whoever has it: get it back from **Loans → Record a return**, and then
+delete it.
+
+This is not excessive caution: the open loan is the only thing saying that volume
+is not on the shelf, and taking it away would make the book look available while
+it sits in somebody's house.
+
+## I scanned the barcode of a book coming back, and it says it is at home
+
+It means that as far as the register is concerned that book never went out, and
+there are two possibilities: either you never recorded it as a loan, or **the
+code you read belongs to another book**. A volume has two or three printed on it
+— the price, the shop's own code — and the scanner reads whatever lands in front
+of it.
+
+Try again framing the code under the ISBN, or take the other route: **Who is
+bringing it back**, which shows only the books that person really has out. The
+whole round is in [Loans](Loans.md).
+
+## Who did I lend this book to?
+
+You do not need to open the loans page: in the catalogue, the book's **Read**
+cell carries a mark next to the reading state, and resting the pointer on it
+reads out the name, the date and how long it has been away.
+
+To see them all together, the **Loan → on loan** filter, or the **Loans** entry
+in the bar.
 
 ## I have two identical genres: `Manga` and `manga`
 

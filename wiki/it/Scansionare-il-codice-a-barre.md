@@ -23,6 +23,11 @@ accesa**: è il modo di catalogare una pila di libri senza riaprire niente.
 **Riscansiona** rimette in ascolto dopo una lettura, se hai inquadrato il libro
 sbagliato. **Chiudi la scansione** spegne la webcam.
 
+**Lo stesso mirino serve anche a farsi restituire un libro.** In
+[Prestiti → Registra una restituzione](I-prestiti.md) è la via rapida: inquadri
+il codice del volume che ti riportano e il registro dice da chi era, spuntando il
+prestito giusto. È lo stesso pannello, con gli stessi tasti.
+
 Se preferisci, puoi sempre scrivere l'ISBN a mano nel campo qui sotto: il mirino
 non ti obbliga a nulla.
 
