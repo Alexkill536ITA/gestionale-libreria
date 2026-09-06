@@ -17,6 +17,26 @@ Se una copertina c'è già, non viene sostituita: te lo dice una riga sotto l'IS
 — *«OpenLibrary ha una copertina, ma il riquadro ne ha già una»* — e se la vuoi
 davvero basta togliere quella di adesso e ricercare.
 
+### Quando ne trovano più di una
+
+OpenLibrary e NiceBooks possono averla tutte e due, e **non è la stessa
+immagine**. Quando succede, sotto il riquadro compare una fila di miniature, una
+per fonte: quella cerchiata è la copertina che stai vedendo sopra, e cliccando
+un'altra prende il suo posto. Sotto la fila c'è scritto da chi viene quella di
+adesso.
+
+![La fila delle copertine trovate](immagini/copertina-proposte.png)
+
+Non devi scegliere per forza: **la prima scende da sé come sempre**, e la fila è
+lì per quando l'immagine arrivata non è quella dell'edizione che hai in mano —
+il caso tipico di un manga o di un libro ristampato. Con una fonte sola la fila
+non compare, perché non ci sarebbe niente da scegliere.
+
+Vale la pena guardarla anche quando l'immagine è giusta: **le copertine di
+NiceBooks sono circa quattro volte più grandi di quelle di OpenLibrary**, che si
+ferma sui 500 pixel di altezza. Cambiare fonte scarica la nuova immagine e butta
+la precedente al salvataggio.
+
 Le immagini di **Google Books non si scaricano**, anche quando Google le ha: i
 termini d'uso della loro API non permettono di riospitarle. Non è un limite
 tecnico ed è inutile riprovare.

@@ -17,6 +17,25 @@ If a cover is already there it is not replaced: a line under the ISBN tells you
 — *«OpenLibrary has a cover, but the box already holds one»* — and if you do want
 it, remove the current one and look up again.
 
+### When more than one is found
+
+OpenLibrary and NiceBooks may both have one, and **it is not the same image**.
+When that happens, a row of thumbnails appears under the box, one per source: the
+ringed one is the cover you see above, and clicking another puts it in its place.
+The line under the row says where the current one comes from.
+
+![The row of covers found](images/copertina-proposte.png)
+
+You do not have to choose: **the first one comes down on its own as always**, and
+the row is there for when the image that arrived is not the edition you are
+holding — typically a manga, or a reprint. With a single source the row does not
+appear, because there would be nothing to choose.
+
+It is worth a look even when the image is right: **NiceBooks covers are about
+four times larger than OpenLibrary's**, which tops out around 500 pixels tall.
+Switching source downloads the new image and throws the previous one away when
+you save.
+
 **Google Books images are not downloaded**, even when Google has them: their API
 terms do not allow rehosting them. This is not a technical limit and retrying
 will not help.

@@ -26,8 +26,9 @@ first one leads: the others only fill in the fields it left empty.
 
 **NiceBooks comes last because it fills the other three's gaps**, and it is
 often the only one that knows anything about Italian manga and small publishers.
-There is nothing to set up, and it brings the cover too when OpenLibrary has
-none. In exchange it is the slowest: for every book it asks twice instead of
+There is nothing to set up, and it **always brings its own cover**: when
+OpenLibrary has one too you get both and pick — see [Covers](Covers.md). In
+exchange it is the slowest: for every book it asks twice instead of
 once, so it adds **a couple of seconds** to each ISBN.
 
 AniList sits outside because **it does not know ISBNs** — it catalogues works,
@@ -55,7 +56,8 @@ The whole record after a successful lookup:
 
 ![The record filled in by the cascade](images/cascata-riempito.png)
 
-The cover came down on its own, and each contested field has its pill.
+The cover came down on its own, and each contested field has its pill. When more
+than one source has a cover, a row to switch appears under the box.
 
 ## When an ISBN has more than one edition
 

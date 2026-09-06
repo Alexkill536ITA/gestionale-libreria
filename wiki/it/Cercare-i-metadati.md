@@ -26,7 +26,9 @@ ha lasciato vuoti.
 
 **NiceBooks sta in fondo perché riempie i buchi degli altri tre**, ed è spesso
 l'unica che sa qualcosa dei manga italiani e dei piccoli editori. Non chiede
-niente da impostare, e porta anche la copertina quando OpenLibrary non ce l'ha.
+niente da impostare, e **porta sempre la sua copertina**: quando ce l'ha anche
+OpenLibrary te le mostra tutte e due e scegli tu — vedi
+[Le copertine](Le-copertine.md).
 In cambio è la più lenta: per ogni libro fa due domande invece di una, quindi
 mette **un paio di secondi in più** su ogni ISBN.
 
@@ -54,7 +56,8 @@ La scheda intera, dopo una ricerca riuscita:
 
 ![La scheda riempita dalla cascata](immagini/cascata-riempito.png)
 
-La copertina è scesa da sola, e sotto ogni campo conteso c'è la sua pastiglia.
+La copertina è scesa da sola, e sotto ogni campo conteso c'è la sua pastiglia. Se
+più fonti hanno una copertina, sotto il riquadro compare la fila per cambiarla.
 
 ## Quando un ISBN ha più edizioni
 

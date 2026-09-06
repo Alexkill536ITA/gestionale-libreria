@@ -119,7 +119,7 @@ quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
 
 <table>
 <tr>
-<td width="50%"><img src="wiki/it/immagini/cascata-riempito.png" alt="La cascata dei metadati"><br><sub><b>Una scheda riempita dalle fonti</b> — la copertina scende da sola, e sotto ogni campo conteso c'è la pastiglia con le alternative.</sub></td>
+<td width="50%"><img src="wiki/it/immagini/cascata-riempito.png" alt="La cascata dei metadati"><br><sub><b>Una scheda riempita dalle fonti</b> — la copertina scende da sola, e quando più fonti ne hanno una si sceglie da una fila di miniature; sotto ogni campo conteso c'è la pastiglia con le alternative.</sub></td>
 <td width="50%"><img src="wiki/it/immagini/serie.png" alt="La vista delle serie"><br><sub><b>Le serie</b> — quanti volumi hai su quanti, quali mancano, e la fila dei dorsi.</sub></td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.4.1_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.4.2_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -172,7 +172,7 @@ cancella**.
 
 ### macOS
 
-`Gestionale Libreria_0.4.1_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.4.2_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple
