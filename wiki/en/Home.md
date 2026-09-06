@@ -49,9 +49,9 @@ to the gear, brings you here in the language you are using.
 filled in later.
 
 **The data is yours and it sits on your disk.** No account, no sync, no cloud.
-The flip side is that if the disk dies the catalogue goes with it: every now and
-then copy a backup onto a USB stick — [Backup and restore](Backup-and-restore.md)
-says where to find them.
+The flip side is that if the disk dies the catalogue goes with it, and no backup
+is ever made on its own: every now and then make one and copy it onto a USB
+stick — [Backup and restore](Backup-and-restore.md) explains how.
 
 ## A note on the language
 

@@ -169,9 +169,10 @@ libri che somigliano.
 
 ## Come sposto tutto su un altro computer
 
-Con un backup. Copia lo `.zip` più recente, installa l'applicazione sul computer
-nuovo e usa **Ripristina da un backup…**. Tornano libri e copertine; tema,
-lingua e chiave API si rimettono a mano.
+Con un backup. Fanne uno con **Crea backup adesso** — nessuno nasce da sé —
+copia lo `.zip`, installa l'applicazione sul computer nuovo e usa **Ripristina
+da un backup…**. Tornano libri e copertine; tema, lingua e chiave API si
+rimettono a mano.
 Il giro completo è in [Backup e ripristino](Backup-e-ripristino.md).
 
 ## Posso usarlo su due computer insieme?
@@ -185,9 +186,10 @@ il catalogo.
 
 ## Ho cancellato un libro per sbaglio
 
-Non si annulla. L'unica strada è [ripristinare un backup](Backup-e-ripristino.md),
-che però riporta indietro **tutto** il catalogo allo stato di quel giorno — e
-quindi perdi anche quello che hai fatto dopo.
+Non si annulla. L'unica strada è [ripristinare un backup](Backup-e-ripristino.md)
+— se ne hai fatto uno, perché il programma non ne fa da sé — e comunque riporta
+indietro **tutto** il catalogo allo stato di quel giorno, quindi perdi anche
+quello che hai fatto dopo.
 
 ## L'applicazione parte in inglese
 

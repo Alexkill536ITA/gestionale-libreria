@@ -6,10 +6,12 @@ All under **Settings → Backup**.
 
 ![The Backup section](images/impostazioni-backup.png)
 
-## The automatic backups
+## You ask for the backup
 
-One **at startup**, then **once a day**. The **last seven copies** are kept: the
-oldest goes on its own, so the folder does not grow forever.
+**Back up now** makes one — and it is the only way one is ever made: the
+application writes none by itself, neither at startup nor on a schedule of its
+own. The **last seven copies** are kept: the oldest goes on its own, so the
+folder does not grow forever.
 
 Each copy is a `.zip` holding the catalogue **and the covers**, named by date:
 
@@ -17,13 +19,14 @@ Each copy is a `.zip` holding the catalogue **and the covers**, named by date:
 libreria-2026-08-31.zip
 ```
 
-**Back up now** makes one straight away, without waiting for tomorrow — handy
-before a big import or a clear-out.
+The name carries the day, so a second backup made **today** overwrites this
+morning's one instead of sitting next to it: the seven copies are seven days,
+not seven clicks.
 
 **Open folder** opens File Explorer where the files are.
 
-If a backup fails, a warning appears at the top of the window that **does not
-dismiss itself**: it is the only way you would notice.
+If a backup fails, the reason appears under the buttons, and a warning stays at
+the top of the window that **does not dismiss itself**.
 
 ### Where they end up
 

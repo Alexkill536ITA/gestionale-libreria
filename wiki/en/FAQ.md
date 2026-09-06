@@ -168,8 +168,9 @@ close.
 
 ## How do I move everything to another computer?
 
-With a backup. Copy the most recent `.zip`, install the application on the new
-computer and use **Restore from a backup…**. Books and covers come back; theme,
+With a backup. Make one with **Back up now** — none is ever made on its own —
+copy the `.zip`, install the application on the new computer and use **Restore
+from a backup…**. Books and covers come back; theme,
 language and API key you set again by hand.
 The whole round is in [Backup and restore](Backup-and-restore.md).
 
@@ -184,8 +185,9 @@ database files can **corrupt** them. Sync the backups, not the catalogue.
 ## I deleted a book by mistake
 
 It cannot be undone. The only way is
-[restoring a backup](Backup-and-restore.md), which brings the **whole** catalogue
-back to that day's state — so you also lose whatever you did afterwards.
+[restoring a backup](Backup-and-restore.md) — if you made one, because the
+program makes none by itself — and it brings the **whole** catalogue back to
+that day's state anyway, so you also lose whatever you did afterwards.
 
 ## The application starts in Italian
 

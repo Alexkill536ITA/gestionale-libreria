@@ -81,9 +81,9 @@ non si può eliminare per sbaglio.
 </td>
 <td width="50%" valign="top">
 
-### 💾 Backup che non devi ricordarti
-Uno all'avvio, uno al giorno, ultime sette copie. Con catalogo **e** copertine,
-e un ripristino che nomina i due conteggi prima di sostituire.
+### 💾 Backup quando lo chiedi tu
+Un archivio con catalogo **e** copertine, e niente che parta da solo. Ultime
+sette copie, e un ripristino che nomina i due conteggi prima di sostituire.
 
 </td>
 </tr>
@@ -155,7 +155,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.4.0_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.4.1_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -172,7 +172,7 @@ cancella**.
 
 ### macOS
 
-`Gestionale Libreria_0.4.0_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.4.1_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple

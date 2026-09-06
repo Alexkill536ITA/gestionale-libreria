@@ -11,7 +11,7 @@ On Windows nothing else is needed: the system component that draws the window
 
 ## Installing on Windows
 
-1. Download `Gestionale Libreria_0.4.0_x64-setup.exe`.
+1. Download `Gestionale Libreria_0.4.1_x64-setup.exe`.
 2. Double-click it. The installer speaks Italian and asks very little.
 3. Done: you get a shortcut **on the desktop** and **in the Start menu**.
 
@@ -29,7 +29,7 @@ To go on: **More info** → **Run anyway**.
 
 ## On a Mac
 
-The file is `Gestionale Libreria_0.4.0_universal.dmg`, a single one for Intel Macs
+The file is `Gestionale Libreria_0.4.1_universal.dmg`, a single one for Intel Macs
 and Apple Silicon ones: open it, drag the application into **Applications**, and
 start it from there.
 
@@ -63,7 +63,7 @@ Paste that path into the File Explorer address bar and you are there. Inside:
 |---|---|
 | `libreria.db` | the catalogue — this is the file that matters |
 | `covers\` | the covers, one JPEG per book |
-| `backups\` | the automatic copies, unless you picked another folder |
+| `backups\` | the backups you ask for, unless you picked another folder |
 | `impostazioni.json` | theme, language, currency, API key, backup folder |
 
 The **program** itself lives elsewhere, in `%LOCALAPPDATA%\Gestionale Libreria\` —

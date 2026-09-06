@@ -6,11 +6,12 @@ Tutto in **Impostazioni → Backup**.
 
 ![La sezione Backup](immagini/impostazioni-backup.png)
 
-## I backup automatici
+## Il backup lo chiedi tu
 
-Uno **all'avvio**, poi **una volta al giorno**. Restano le **ultime sette
-copie**: la più vecchia se ne va da sé, quindi la cartella non cresce
-all'infinito.
+**Crea backup adesso** ne fa uno — ed è l'unico modo che ha di nascere:
+l'applicazione non ne scrive nessuno da sé, né all'avvio né a un orario suo.
+Restano le **ultime sette copie**: la più vecchia se ne va da sé, quindi la
+cartella non cresce all'infinito.
 
 Ogni copia è un file `.zip` con dentro il catalogo **e le copertine**, chiamato
 per data:
@@ -19,13 +20,14 @@ per data:
 libreria-2026-08-31.zip
 ```
 
-**Crea backup adesso** ne fa uno subito, senza aspettare domani — utile prima di
-un'importazione grossa o di una ripulita.
+Il nome porta il giorno, quindi un secondo backup fatto **oggi** riscrive quello
+di stamattina invece di mettersi accanto: le sette copie sono sette giorni, non
+sette clic.
 
 **Apri cartella** apre Esplora risorse dove sono i file.
 
-Se un backup fallisce, in cima alla finestra compare un avviso che **non si
-chiude da solo**: è l'unico modo perché tu te ne accorga.
+Se un backup fallisce, il motivo compare sotto i pulsanti, e in cima alla
+finestra resta un avviso che **non si chiude da solo**.
 
 ### Dove finiscono
 

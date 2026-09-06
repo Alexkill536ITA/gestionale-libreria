@@ -50,5 +50,5 @@ e riempire dopo.
 
 **I dati sono tuoi e stanno sul tuo disco.** Niente account, niente sincronia,
 niente cloud. Il rovescio è che se il disco si guasta il catalogo se ne va con
-lui: ogni tanto copia un backup su una chiavetta — la pagina
-[Backup e ripristino](Backup-e-ripristino.md) dice dove trovarli.
+lui, e nessun backup nasce da sé: ogni tanto falne uno e copialo su una
+chiavetta — lo spiega [Backup e ripristino](Backup-e-ripristino.md).
