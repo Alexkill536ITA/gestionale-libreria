@@ -89,6 +89,11 @@ serie**](Le-serie.md), e una card del carosello in [**Gli
 editori**](Gli-editori.md), aprono il catalogo già filtrato: il chip `Serie:` è
 lì che dice perché stai vedendo quei libri, e si toglie come tutti gli altri.
 
+Lo stesso fa **Vedi in catalogo** su un tag o su un autore in [**I dizionari del
+catalogo**](I-dizionari-del-catalogo.md): il catalogo si apre col chip `Tag:` o
+`Autore:` già in cima. Da qualunque parte arrivi, un chip è un chip — la sua `×`
+lo toglie, e **Azzera tutto** li toglie tutti.
+
 ## Ricerca e filtri insieme
 
 Si sommano: la ricerca cerca dentro i libri che i filtri hanno lasciato passare.

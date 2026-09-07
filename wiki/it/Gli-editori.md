@@ -15,6 +15,13 @@ niente da preparare prima.
 In alto a sinistra la tendina con tutti gli editori, e accanto le pastiglie dei
 **cinque più grandi**, per non doverli cercare. A destra il conto di quanti sono.
 
+**La tendina si scrive**, e con qualche decina di editori è il gesto giusto:
+aperta ha una casella in cima, e digitando l'elenco si assottiglia senza badare
+né alle maiuscole né agli accenti — `citta` trova `Città Studi`. È lo stesso
+controllo delle tendine di [**Le serie**](Le-serie.md), con una differenza: qui
+non c'è nessuna voce «Qualsiasi», perché un editore è sempre scelto e la pagina
+parla sempre di qualcuno.
+
 Sotto, la scheda: il nome, le **collane** che pubblica, e a destra tre numeri —
 quante **serie**, quanti **volumi**, e l'**arco degli anni** delle edizioni che
 hai. Ogni editore ha una tinta sua, presa dal suo nome, e i suoi grafici la
@@ -91,6 +98,10 @@ entra già ricondotto»*.
 quello che entrerà domani.** I libri che avevi sono già passati al nome buono; la
 regola serve perché la prossima ricerca dei metadati non riporti dentro la grafia
 sbagliata.
+
+**Tag e autori hanno la stessa faccenda in una pagina loro**: rinominare una
+grafia, unire due voci che sono la stessa cosa, togliere quelle che non usa più
+nessuno si fa da [I dizionari del catalogo](I-dizionari-del-catalogo.md).
 
 ## Aggiungere una grafia
 

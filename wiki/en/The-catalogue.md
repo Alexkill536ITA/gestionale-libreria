@@ -68,9 +68,16 @@ Click a column header to sort. **Six columns out of seven are sortable** — all
 but the cover.
 
 Each header cycles through **three states**: first click ascending, second
-descending, third back to the original order.
+descending, third back to the order books were added in.
 
 ![Sorted by year](images/ordinamento-anno.png)
+
+**That click counts for now, and is not remembered.** Next time you open it the
+catalogue starts again from the order chosen in [Settings](Settings.md), which
+with nothing chosen is the most recent addition: the books you catalogued last
+stay on top. Not even the third click takes you back there — that one returns to
+the order books were added in, which is the same thing only if you chose nothing
+in Preferences.
 
 **By title the order follows the numbers, not the digits.** `Vol. 2` comes
 before `Vol. 10`, instead of landing between `Vol. 1` and `Vol. 19` the way an
@@ -107,6 +114,10 @@ of the window, with the count on the left (`1–11 of 11`).
 The footer stays **pinned to the bottom of the window** whether you have ten
 books or two hundred: only the table scrolls, and the column headers stay in
 view while it does.
+
+**Turning the page starts the list from the top again**: press **Next** at the
+bottom of the list and the new rows show from the first one, not from halfway
+down.
 
 ## The light theme
 

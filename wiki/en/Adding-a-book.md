@@ -59,6 +59,18 @@ Two boxes deserve a line:
   which one is the default is decided in [Settings](Settings.md).
 - **Bought** — the year alone is fine.
 
+Several boxes **will not let you type what would be refused**, so there is
+nothing left to find out when you save: **Price paid** takes digits and one
+separator, two decimals at most; **Bought** takes only what can sit in a date;
+**Year**, **First edition** and **Pages** take digits only. A refused character
+**does not go in and does not wipe what was there** — the box stays as it was.
+The same goes for a person's **Phone** in [loans](Loans.md), which also takes
+`+`, spaces, hyphens and brackets: those are the ways a number is written.
+
+The **ISBN** is the exception, and it is deliberate: there you paste from
+anywhere, hyphens and spaces included, and the code is cleaned up by itself.
+Narrowing that box would throw away a good code buried in a paste.
+
 ## Suggestions as you type
 
 Seven fields offer you what you have used before: shelf, genre, publisher,
@@ -136,7 +148,9 @@ Three differences:
   copy: resetting it while saving *one* volume would take it away from all the
   others. To really remove a total, go through [Series](Series.md).
 
-**Delete** sits bottom left, away from Save.
+**Delete** sits bottom left, away from Save. Next to it sits **Duplicate**, for
+when the same edition has come into the house twice: how it works is
+[further down](#duplicating-a-volume).
 
 ## Moving from one book to the next without closing
 
@@ -160,3 +174,42 @@ Three things worth knowing:
 
 On the first book the back arrow is off, and on the last one the forward arrow
 is.
+
+## Duplicating a volume
+
+Two copies of the same book are not a mistake: they are **two items**, and the
+catalogue holds them as two rows. One bought new and one second-hand, one in the
+living room and one out on loan, the same volume of a series twice. In edit mode,
+next to **Delete**, sits **Duplicate**.
+
+**It makes a one-to-one copy of the book you have open, and does not save it.**
+The form stays open and changes job: from editing that book it becomes the
+creation of another one that looks like it, and the header says so — *Duplicate
+the volume*, «this is a copy that has not been saved yet».
+
+The copy has everything, **ISBN and volume number included**: it is the same
+edition, and the second «15» of a series carries the same number as the first.
+You change what differs — the shelf, the price, the reading status — and press
+**Save**.
+
+Until then **nothing has been written**. `Esc` and **Cancel** ask what to do with
+it, just as they do for any new book, and "Throw the changes away" leaves the
+catalogue as it was.
+
+With the copy in hand three things disappear, and it is not an oversight:
+
+- **Delete**, because it spoke about the previous book;
+- **the arrows** that move through the catalogue, and their `3 of 11` with them:
+  that count names the row you started from, and the copy is not in the
+  catalogue yet;
+- **Save and add another**, which would clear the form instead of making a
+  further copy. At the bottom you are left with **Cancel** and **Save**.
+
+The **cover becomes a file of its own**, copied straight away and not on save.
+The two rows do not share the image, so deleting one of the two books does not
+leave the other one without it; and changing the copy's cover does not touch the
+cover of the book you started from.
+
+Under the ISBN you will see *«you already have one with this ISBN»*: **that is
+right, and it does not stop you.** The book with that code really does exist, and
+it is the one you started from — the one in your hands is the second item.

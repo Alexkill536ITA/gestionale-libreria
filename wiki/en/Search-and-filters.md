@@ -89,6 +89,11 @@ panel closed.
 `Series:` chip is there to say why you are seeing those books, and it comes off
 like any other.
 
+**See in the catalogue** does the same, on a tag or an author in [**Library
+dictionaries**](Library-dictionaries.md): the catalogue opens with the `Tag:` or
+`Author:` chip already at the top. Wherever it comes from, a chip is a chip — its
+`×` takes it off, and **Clear all** takes them all off.
+
 ## Search and filters together
 
 They add up: the search looks inside the books the filters let through. When you

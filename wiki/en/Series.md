@@ -34,6 +34,49 @@ The list is not alphabetical: **wrong totals come first** — the series where y
 hold more volumes than the total claims, which is the sign of a wrong total —
 then the ones missing the least, and the complete ones last.
 
+## Narrowing the list
+
+Under the heading sits a bar that cuts the list while you use it. There is
+nothing to confirm: the rows shrink on every keystroke.
+
+- **the box** searches the **series name**, paying no mind to case: `bisque`
+  finds *My dress up darling. Bisque doll*;
+- **the row of statuses** — **To fix**, **Incomplete**, **Ongoing**,
+  **Complete** — holds one at a time, and each carries its own tally beside it.
+  **All** takes it back. The four entries **stay in the row even when they are
+  worth zero**: a row that changes its number of entries while you pick is
+  worse than an entry saying zero;
+- **the dropdowns** for the four values of the series — publisher, genre,
+  imprint and tags — hold one value at a time, and **Any** takes it back.
+
+**Every dropdown can be typed in.** Open, it has a box at the top: type, and the
+entries thin out paying no mind to case or accents either — `citta` finds
+`Città Studi`. **Any** stays reachable while you type, so the way out does not
+vanish just as you look for it.
+
+**A dropdown only shows up where there is more than one value to choose
+between.** If the series you can see are all from the same publisher, the
+publisher dropdown is not there: a single choice is no choice. But if the value
+you already picked is left as the only one, the dropdown does not go — otherwise
+that filter could no longer be removed.
+
+**The tallies beside the statuses look at the other filters, not at the whole
+list.** With a publisher already picked, the number beside "Incomplete" says how
+many series *of that publisher* are incomplete. So a tally of zero means one
+thing only: picking that leaves nothing, and no pill ever promises twelve series
+and then gives you none.
+
+With a filter on, the tally at the head of the page changes shape — **12 of 47
+series** instead of *47 series* — and **Clear** turns up at the end of the bar,
+taking them all off in one go. If no row is left, the panel you get is not the
+one for an empty list: it says *"No series match these filters"*, recalls how
+many there are in all, and offers **Clear the filters**.
+
+**One thing worth knowing before you see it.** Filter by **To fix**, type the
+right total on a row, and a moment later that row goes. It is not a fault: it
+has stopped being one to fix, and going is the confirmation that the total now
+adds up.
+
 ## Adding a series
 
 **Add series**, top right.

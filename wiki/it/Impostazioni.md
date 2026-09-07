@@ -2,7 +2,13 @@
 
 # Impostazioni
 
-L'ingranaggio in alto a destra. Quattro sezioni su un binario a sinistra.
+**L'ingranaggio in alto a destra apre un menu**, sempre: «Dizionari del
+catalogo», «Storico delle azioni» quando è acceso, e sotto un separatore
+**Impostazioni**, che apre questa finestra. Le due pagine hanno un capitolo
+loro — [I dizionari del catalogo](I-dizionari-del-catalogo.md) e
+[Lo storico delle azioni](Lo-storico-delle-azioni.md).
+
+Quattro sezioni su un binario a sinistra.
 
 ![Le preferenze](immagini/impostazioni-preferenze.png)
 
@@ -10,7 +16,8 @@ L'ingranaggio in alto a destra. Quattro sezioni su un binario a sinistra.
 una parola: è la riga sotto ogni voce del binario, che riassume lo stato di
 adesso — `Scuro · Italiano · EUR`, `chiave presente · 1/s`, `oggi, 12:41 · 4
 copie`, `0.1.0 · controllo all'avvio` — e si riscrive appena cambi qualcosa,
-anche da un'altra sezione.
+anche da un'altra sezione. Con lo storico acceso, la riga delle Preferenze
+prende `· storico` in coda.
 
 ## Preferenze
 
@@ -25,8 +32,33 @@ tag, posizioni e la lingua dei libri restano come li hai inseriti.
 nuovo: nel modulo si cambia libro per libro, e i libri già catalogati restano
 come sono.
 
+**Ordinamento del catalogo** — dice **da dove parte** il catalogo quando si
+apre, non dov'è adesso. Una tendina con sette voci: «Aggiunta recente» più le
+sei colonne ordinabili — Titolo, Autore, Anno, Genere, Posizione, Letto — e
+accanto la pista **Crescente** / **Decrescente**.
+
+Cliccando l'intestazione di una colonna del catalogo l'ordine cambia **per
+quella sessione**, e non torna qui: alla prossima apertura si riparte da questa
+scelta. Senza sceglierne una vale «Aggiunta recente», che è quello che il
+catalogo ha sempre fatto — e allora la pista del verso è spenta, perché gli
+ultimi libri catalogati stanno in cima e quel verso non si negozia.
+
+**Storico delle azioni** — una casella, e nasce spenta. Accesa, registra quello
+che fai — un libro creato, un campo cambiato, un prestito — e lo mostra nella
+pagina che l'ingranaggio aggiunge al suo menu: il resto sta in
+[Lo storico delle azioni](Lo-storico-delle-azioni.md).
+
+**Spegnerla cancella quello che ha registrato**, e prima te lo chiede: sotto la
+casella compare la domanda, che dice quanti eventi porta via, con **Spegni e
+cancella** e **Lascia acceso**. La spunta non si muove finché non confermi —
+spegnere e cancellare sono lo stesso gesto, e una casella già spenta direbbe che
+è cosa fatta. Accendere invece non chiede niente, perché non porta via niente.
+
 Nessuna di queste scelte entra nel catalogo né nei backup: stanno in un file a
 parte, su questo computer.
+
+Gli eventi che lo storico registra sono un'altra cosa: quelli stanno nel
+catalogo, quindi entrano nei backup, e un ripristino sostituisce anche loro.
 
 ## Metadati
 

@@ -17,6 +17,13 @@ Top left, the dropdown with every publisher, and next to it the pills of the
 **five biggest ones**, so you do not have to go looking. On the right, how many
 there are in all.
 
+**The dropdown can be typed in**, and with a few dozen publishers that is the
+right move: open, it has a box at the top, and as you type the list thins out
+paying no mind to case or accents either — `citta` finds `Città Studi`. It is
+the same control as the dropdowns in [**Series**](Series.md), with one
+difference: there is no "Any" entry here, because a publisher is always picked
+and the page always talks about somebody.
+
 Below it, the card: the name, the **imprints** it publishes, and on the right
 three numbers — how many **series**, how many **volumes**, and the **span of
 years** of the editions you own. Every publisher has a tint of its own, taken
@@ -90,6 +97,10 @@ these comes in already reconciled"*.
 **An alias is not the history of a merge done once: it is a rule about what will
 come in tomorrow.** The books you had have already moved to the good name; the
 rule is there so the next metadata lookup does not bring the wrong spelling back.
+
+**Tags and authors have the same business in a page of their own**: renaming a
+spelling, merging two entries that are the same thing, removing the ones nobody
+uses any more is done from [Library dictionaries](Library-dictionaries.md).
 
 ## Adding a spelling
 

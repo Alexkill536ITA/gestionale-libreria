@@ -107,6 +107,24 @@ della release, il resto lo decidi tu.
 <tr>
 <td width="50%" valign="top">
 
+### 🗂 I nomi del catalogo li correggi tu
+Tag e autori nascono da soli catalogando, e da soli restavano. Adesso si
+rinominano, si uniscono quando sono due nomi della stessa cosa — `アネコユサギ` e
+`Yusagi Aneko` — e si tolgono quando non li usa più nessuno.
+
+</td>
+<td width="50%" valign="top">
+
+### 🕰 Lo storico, se lo vuoi
+Nasce spento. Acceso, registra cosa hai cambiato e quando, con il `campo ·
+vecchio → nuovo` di ogni modifica e la storia completa di ogni libro.
+**Spegnerlo cancella quello che ha registrato**, e prima te lo chiede.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 🔒 Nessun account, nessuna telemetria
 Il catalogo sta su questo computer e non esce. Le uniche richieste in rete sono
 quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
@@ -155,7 +173,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.5.0_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.6.1_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -172,7 +190,7 @@ cancella**.
 
 ### macOS
 
-`Gestionale Libreria_0.5.0_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.6.1_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple
@@ -189,8 +207,8 @@ Qui i dati stanno in
 
 | | |
 |---|---|
-| 📘 [**Guida d'uso**](wiki/it/Home.md) | quindici pagine con le schermate: catalogo, metadati, copertine, serie, editori, prestiti, scanner, backup, aggiornamenti |
-| 📗 [**User guide**](wiki/en/Home.md) | the same fifteen pages, in English |
+| 📘 [**Guida d'uso**](wiki/it/Home.md) | diciassette pagine con le schermate: catalogo, metadati, copertine, serie, editori, prestiti, scanner, storico, dizionari, backup, aggiornamenti |
+| 📗 [**User guide**](wiki/en/Home.md) | the same seventeen pages, in English |
 
 ## Partecipare
 

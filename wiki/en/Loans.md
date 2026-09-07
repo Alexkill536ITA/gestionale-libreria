@@ -51,6 +51,11 @@ is the one piece of information that matters the day you lend them the next book
 Clicking a row does the same thing as a cover in the strip: it narrows the table
 on the right down to that person.
 
+The list has its own footer at the bottom too, **fifty people at a time**, with
+the same count and the same two buttons as the catalogue. The box that searches
+for a person, when you record a loan, looks at the whole register and not at the
+page in front of you: whoever sits on page 2 is found all the same.
+
 ## The loans
 
 On the right, **a single table** with four columns: the book, who has it, the

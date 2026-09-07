@@ -24,7 +24,9 @@ its own, and how to install it is in [Installation](Installation.md).
 | **[Publishers](Publishers.md)** | One publisher at a time: its works in a carousel, and the rule that holds its different names together |
 | **[Loans](Loans.md)** | Who has which book, for how long, and how you get it back |
 | **[Scanning the barcode](Scanning-the-barcode.md)** | The webcam reads the ISBN off the back cover |
-| **[Settings](Settings.md)** | Theme, language, currency, the metadata sources, the backup folder |
+| **[The activity log](The-activity-log.md)** | What you changed and when, if you turn it on — and what happens when you turn it off |
+| **[Library dictionaries](Library-dictionaries.md)** | Tags and authors: rename them, merge two names for the same thing, remove the ones nobody uses |
+| **[Settings](Settings.md)** | Theme, language, currency, the starting sort order, the metadata sources, the backup folder |
 | **[Backup and restore](Backup-and-restore.md)** | A copy a day, the CSV export, the way back |
 | **[Updates](Updates.md)** | It tells you when a new version is out, and installs nothing by itself |
 | **[FAQ](FAQ.md)** | When something does not add up |

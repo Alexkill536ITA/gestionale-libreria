@@ -68,9 +68,15 @@ Clic sull'intestazione di una colonna per ordinare. **Sei colonne su sette sono
 ordinabili** — tutte tranne la copertina.
 
 Ogni intestazione gira su **tre stati**: primo clic crescente, secondo
-decrescente, terzo torna all'ordine di partenza.
+decrescente, terzo torna all'ordine di inserimento.
 
 ![Ordinato per anno](immagini/ordinamento-anno.png)
+
+**Quel clic vale per adesso, e non si ricorda.** Alla prossima apertura il
+catalogo riparte dall'ordinamento scelto in [Impostazioni](Impostazioni.md), che
+senza una scelta è l'aggiunta più recente: i libri catalogati per ultimi stanno
+in cima. Nemmeno il terzo clic ti riporta là — quello torna all'ordine di
+inserimento, che è la stessa cosa solo se in Preferenze non hai scelto niente.
 
 **Per titolo l'ordine segue i numeri, non le cifre.** `Vol. 2` viene prima di
 `Vol. 10`, e non finisce fra `Vol. 1` e `Vol. 19` come farebbe un ordine
@@ -106,6 +112,9 @@ Quando i libri sono più di una pagina, in fondo alla finestra compaiono
 Il piede resta **incollato al fondo della finestra**, che tu abbia dieci libri o
 duecento: a scorrere è solo la tabella, e l'intestazione delle colonne resta
 visibile mentre scorri.
+
+**Voltando pagina la lista riparte dall'alto**: premi **Successiva** in fondo
+alla lista e le righe nuove si vedono dalla prima, non da metà.
 
 ## Il tema chiaro
 

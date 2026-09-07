@@ -52,6 +52,11 @@ presi, com'è andata, come si chiama davvero.
 Cliccare una riga fa la stessa cosa di una copertina della striscia: stringe la
 tabella a destra su quella persona.
 
+Anche l'elenco ha il suo piede in fondo, **cinquanta persone per volta**, con lo
+stesso conteggio e gli stessi due pulsanti del catalogo. La casella che cerca una
+persona, quando registri un prestito, guarda tutto il registro e non la pagina
+che hai davanti: chi sta a pagina 2 si trova comunque.
+
 ## I prestiti
 
 A destra **una tabella sola**, con quattro colonne: il libro, chi lo ha, il tempo

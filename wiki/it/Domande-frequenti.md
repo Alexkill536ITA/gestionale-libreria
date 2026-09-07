@@ -147,6 +147,37 @@ riapri i libri della grafia sbagliata e scegli quella giusta **dai suggerimenti*
 invece di riscriverla: quando l'ultimo libro l'abbandona, la voce sparisce dai
 filtri.
 
+Per i **tag** e gli **autori** non serve passare dai libri: si correggono da
+[I dizionari del catalogo](I-dizionari-del-catalogo.md).
+
+## Un autore compare due volte, uno in giapponese e uno in caratteri latini
+
+Sono due nomi della stessa persona, e nessun confronto di lettere può unirli: le
+fonti giapponesi scrivono `アネコユサギ`, le altre `Yusagi Aneko`. Si uniscono da
+**I dizionari del catalogo** — dall'ingranaggio in alto a destra — con **Unisci
+in un altro**: scegli il nome che resta, e i libri dell'altro passano a lui. Lo
+stesso vale per due tag che dicono la stessa cosa.
+
+Da lì si **rinomina** anche una grafia sbagliata e si **toglie** un valore che
+non usa più nessuno. Il giro completo è in
+[I dizionari del catalogo](I-dizionari-del-catalogo.md).
+
+## Ho spento lo storico delle azioni: dov'è finito quello che aveva registrato
+
+Cancellato — e la domanda che compare quando togli la spunta lo dice, con quanti
+eventi porta via. «Spento» qui vuol dire che di quello che hai fatto non resta
+niente, non che si smette di scrivere sopra un elenco che rimane. Riaccendendolo
+riparte da zero, e il primo evento registrato è l'accensione stessa. Tutto in
+[Lo storico delle azioni](Lo-storico-delle-azioni.md).
+
+## Ordino il catalogo per anno, lo riapro e torna com'era
+
+Il clic sull'intestazione vale per questa sessione e non si ricorda. L'ordine da
+cui il catalogo **parte** si sceglie in Impostazioni → Preferenze →
+**Ordinamento del catalogo**, e senza una scelta è l'aggiunta più recente. È
+voluto: un ordine che si salvasse da sé cambierebbe le carte in tavola a ogni
+clic distratto.
+
 ## Nella colonna Autore vedo un trattino
 
 Il campo è vuoto, non c'è un errore. Vale per tutte le colonne: `—` significa

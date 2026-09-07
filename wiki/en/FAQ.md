@@ -146,6 +146,37 @@ before, reopen the books with the wrong spelling and pick the right one **from
 the suggestions** rather than retyping it: when the last book leaves it, the
 entry disappears from the filters.
 
+For **tags** and **authors** you do not have to go through the books: you fix
+them in [Library dictionaries](Library-dictionaries.md).
+
+## One author shows up twice, once in Japanese and once in Latin letters
+
+Those are two names for the same person, and no comparison of letters can join
+them: Japanese sources write `アネコユサギ`, the others `Yusagi Aneko`. You join
+them in **Library dictionaries** — from the gear at the top right — with **Merge
+into another**: you pick the name that stays, and the other one's books move to
+it. The same holds for two tags that say the same thing.
+
+From there you can also **rename** a wrong spelling and **remove** a value
+nobody uses any more. The whole round is in
+[Library dictionaries](Library-dictionaries.md).
+
+## I turned the activity log off: where did what it recorded go?
+
+Deleted — and the question that appears when you clear the checkbox says so,
+along with how many events it takes away. «Off» here means that nothing is left
+of what you did, not that it stops writing onto a list that stays. Turning it
+back on starts from scratch, and the first event recorded is the switching on
+itself. All of it in [The activity log](The-activity-log.md).
+
+## I sort the catalogue by year, reopen it, and it is back as it was
+
+The click on the heading holds for this session and is not remembered. The order
+the catalogue **starts** from is chosen in Settings → Preferences → **Library
+sort order**, and without a choice it is the most recently added. It is
+deliberate: an order that saved itself would move the goalposts on every
+absent-minded click.
+
 ## I see a dash in the Author column
 
 The field is empty, there is no error. This holds for every column: `—` means

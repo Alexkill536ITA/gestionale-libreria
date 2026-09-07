@@ -60,6 +60,19 @@ Due caselle meritano una riga:
   libro; quale sia quella predefinita si decide nelle [Impostazioni](Impostazioni.md).
 - **Acquistato** — va bene anche solo l'anno.
 
+Diverse caselle **non ti lasciano digitare quello che verrebbe rifiutato**, così
+non resta niente da scoprire al salvataggio: nel **Prezzo pagato** entrano solo
+cifre e un separatore, con due decimali al massimo; in **Acquistato** solo quello
+che può stare in una data; in **Anno**, **Prima edizione** e **Pagine** solo
+cifre. Un carattere rifiutato **non entra e non cancella quello che c'era** — la
+casella resta com'era. Lo stesso vale per il **Telefono** di una persona nei
+[prestiti](I-prestiti.md), che tiene anche `+`, spazi, trattini e parentesi: sono
+le forme in cui un numero si scrive.
+
+L'**ISBN** è l'eccezione, ed è voluta: là si incolla da qualunque parte, con i
+trattini e gli spazi che si porta dietro, e il codice viene ripulito da sé.
+Restringere quella casella butterebbe via un codice buono sepolto in un incolla.
+
 ## I suggerimenti mentre scrivi
 
 Sette campi ti propongono quello che hai già usato: posizione, genere, editore,
@@ -138,7 +151,9 @@ differenze:
   copia: azzerarlo salvando *un* volume lo toglierebbe a tutti gli altri. Per
   togliere davvero un totale si passa da [Le serie](Le-serie.md).
 
-**Elimina** sta in basso a sinistra, lontano da Salva.
+**Elimina** sta in basso a sinistra, lontano da Salva. Accanto sta **Duplica**,
+che serve quando la stessa edizione ti è entrata in casa due volte: come funziona
+sta [più sotto](#duplicare-un-volume).
 
 ## Passare da un libro all'altro senza chiudere
 
@@ -160,3 +175,41 @@ Tre cose che vale la pena sapere:
   stessa domanda di `Esc`. «Continua a scrivere» ti lascia dove sei.
 
 Sul primo libro la freccia indietro è spenta, e sull'ultimo quella avanti.
+
+## Duplicare un volume
+
+Due copie dello stesso libro non sono un errore: sono **due esemplari**, e nel
+catalogo stanno come due righe. Una comprata nuova e una usata, una in salotto e
+una prestata, due volte lo stesso volume di una serie. In modifica, accanto a
+**Elimina**, c'è **Duplica**.
+
+**Fa una copia uno a uno del libro che hai aperto, e non la salva.** Il modulo
+resta aperto e cambia mestiere: da modifica di quel libro diventa la creazione di
+un altro che gli somiglia, e la testata lo dice — *Duplica il volume*, «è una
+copia non ancora salvata».
+
+Nella copia c'è tutto, **ISBN e numero del volume compresi**: è la stessa
+edizione, e il secondo «15» di una serie porta lo stesso numero del primo. Tu
+correggi quello che cambia — la posizione, il prezzo, lo stato di lettura — e
+premi **Salva**.
+
+Fino a quel momento **non è stato scritto niente**. `Esc` e **Annulla** chiedono
+cosa farne come per qualunque libro nuovo, e «Butta le modifiche» lascia il
+catalogo com'era.
+
+Con la copia in mano tre cose spariscono, e non è una dimenticanza:
+
+- **Elimina**, perché parlava del libro di prima;
+- **le frecce** che scorrono il catalogo, con il loro `3 di 11`: quel conto nomina
+  la riga da cui sei partito, e la copia non è ancora nel catalogo;
+- **Salva e aggiungi un altro**, che azzererebbe il modulo invece di rifare
+  un'altra copia. In fondo restano **Annulla** e **Salva**.
+
+La **copertina diventa un file suo**, copiato subito e non al salvataggio. Le due
+righe non condividono l'immagine, quindi eliminando uno dei due libri l'altro non
+resta senza; e cambiare la copertina della copia non tocca quella del libro di
+partenza.
+
+Sotto l'ISBN comparirà *«ne hai già uno con questo ISBN»*: **è giusto così, e non
+ti ferma.** Il libro con quel codice esiste davvero, ed è quello da cui sei
+partito — quello che hai in mano è il secondo esemplare.

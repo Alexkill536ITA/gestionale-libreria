@@ -24,7 +24,9 @@ come si installa sta in [Installazione](Installazione.md).
 | **[Gli editori](Gli-editori.md)** | Un editore per volta: le sue opere in un carosello, e la regola che tiene insieme i suoi nomi diversi |
 | **[I prestiti](I-prestiti.md)** | Chi ha quale libro, da quanto, e come te lo fai ridare |
 | **[Scansionare il codice a barre](Scansionare-il-codice-a-barre.md)** | La webcam legge l'ISBN dalla quarta di copertina |
-| **[Impostazioni](Impostazioni.md)** | Tema, lingua, valuta, le fonti dei metadati, la cartella dei backup |
+| **[Lo storico delle azioni](Lo-storico-delle-azioni.md)** | Cosa hai cambiato e quando, se lo accendi — e cosa succede quando lo spegni |
+| **[I dizionari del catalogo](I-dizionari-del-catalogo.md)** | Tag e autori: rinominarli, unire due nomi della stessa cosa, togliere quelli che non usa nessuno |
+| **[Impostazioni](Impostazioni.md)** | Tema, lingua, valuta, l'ordine di partenza, le fonti dei metadati, la cartella dei backup |
 | **[Backup e ripristino](Backup-e-ripristino.md)** | Una copia al giorno, l'esportazione in CSV, la strada per tornare indietro |
 | **[Aggiornamenti](Aggiornamenti.md)** | Ti avvisa se esce una versione nuova, e non installa niente da sé |
 | **[Domande frequenti](Domande-frequenti.md)** | Quando qualcosa non torna |

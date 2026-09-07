@@ -34,6 +34,49 @@ L'ordine dell'elenco non è alfabetico: **in cima i totali da correggere** — l
 serie dove hai più volumi di quanti il totale dichiari, che è il segno di un
 totale sbagliato — poi quelle a cui manca meno, e in fondo le complete.
 
+## Restringere l'elenco
+
+Sotto la testata c'è una barra che taglia l'elenco mentre la usi. Non c'è niente
+da confermare: le righe si riducono a ogni tasto.
+
+- **la casella** cerca nel **nome della serie**, senza badare alle maiuscole:
+  `bisque` trova *My dress up darling. Bisque doll*;
+- **la fila degli stati** — **Da correggere**, **Incomplete**, **In corso**,
+  **Complete** — ne tiene uno per volta, e ognuno porta accanto il suo conto.
+  **Tutte** li ritira. Le quattro voci **restano in fila anche quando valgono
+  zero**: una fila che cambia numero di voci mentre scegli è peggio di una voce
+  che dice zero;
+- **le tendine** dei quattro valori della serie — editore, genere, collana e tag
+  — tengono un valore per volta, e **Qualsiasi** lo ritira.
+
+**Ogni tendina si scrive.** Aperta ha una casella in cima: digita, e le voci si
+assottigliano senza badare né alle maiuscole né agli accenti — `citta` trova
+`Città Studi`. **Qualsiasi** resta raggiungibile anche mentre scrivi, così la
+via d'uscita non sparisce proprio quando la cerchi.
+
+**Una tendina compare solo dove c'è più di un valore fra cui scegliere.** Se le
+serie che vedi sono tutte dello stesso editore, la tendina dell'editore non c'è:
+una scelta sola non è una scelta. Ma se il valore che hai già scelto resta
+l'unico, la tendina non se ne va — altrimenti quel filtro non si potrebbe più
+togliere.
+
+**I conti accanto agli stati guardano gli altri filtri, non l'elenco intero.**
+Con un editore già scelto, il numero accanto a «Incomplete» dice quante serie
+*di quell'editore* sono incomplete. Perciò un conto a zero vuol dire una cosa
+sola: scegliendo quello non resta niente, e nessuna pastiglia ti promette dodici
+serie per poi dartene zero.
+
+Con un filtro addosso il conteggio in testa alla pagina cambia forma — **12 di
+47 serie** invece di *47 serie* — e in fondo alla barra compare **Azzera**, che
+li toglie tutti in un colpo. Se non resta nessuna riga, il riquadro che vedi non
+è quello di un elenco vuoto: dice *«Nessuna serie con questi filtri»*, ricorda
+quante sono in tutto, e offre **Togli i filtri**.
+
+**Una cosa che vale la pena sapere prima di vederla.** Filtra per **Da
+correggere**, scrivi il totale giusto in una riga, e dopo un attimo quella riga
+se ne va. Non è un difetto: ha smesso di essere da correggere, e sparire è la
+conferma che il totale adesso torna.
+
 ## Aggiungere una serie
 
 **Aggiungi serie**, in alto a destra.

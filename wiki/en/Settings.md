@@ -2,7 +2,13 @@
 
 # Settings
 
-The gear top right. Four sections on a rail down the left.
+**The gear top right always opens a menu**: “Library dictionaries”, “Activity
+log” when it is on, and under a separator **Settings**, which opens this window.
+Both of those pages have a chapter of their own —
+[Library dictionaries](Library-dictionaries.md) and
+[The activity log](The-activity-log.md).
+
+Four sections on a rail down the left.
 
 ![Preferences](images/impostazioni-preferenze.png)
 
@@ -10,7 +16,8 @@ The gear top right. Four sections on a rail down the left.
 it is the line under each rail entry, summing up the state right now —
 `Dark · English · EUR`, `key set · 1/s`, `today, 12:41 · 4 copies`,
 `0.1.0 · checked at startup` — and it rewrites itself the moment you change
-something, even from another section.
+something, even from another section. With the log on, the Preferences line
+takes `· log` at the end.
 
 ## Preferences
 
@@ -25,8 +32,34 @@ shelves and book languages stay written the way you entered them.
 in**: in the form you change it book by book, and books already catalogued stay
 as they are.
 
+**Catalogue order** — it says **where the catalogue starts from** when it opens,
+not where it is right now. A dropdown with seven entries: “Recently added” plus
+the six sortable columns — Title, Author, Year, Genre, Shelf, Read — and next to
+it the **Ascending** / **Descending** track.
+
+Clicking a column header in the catalogue changes the order **for that session**,
+and it does not come back here: the next time you open it, you start from this
+choice again. With nothing chosen it is “Recently added”, which is what the
+catalogue has always done — and then the direction track is off, because the
+books you catalogued last stay on top and that direction is not up for
+discussion.
+
+**Activity log** — a box, and it starts off. Turned on, it records what you do —
+a book created, a field changed, a loan — and shows it in the page the gear adds
+to its menu: the rest is in [The activity log](The-activity-log.md).
+
+**Turning it off deletes what it has recorded**, and it asks you first: the
+question appears under the box, saying how many events it is taking away, with
+**Turn off and delete** and **Keep it on**. The tick does not move until you
+confirm — turning it off and deleting are the same gesture, and a box already
+unticked would say the thing was done. Turning it on asks nothing, because it
+takes nothing away.
+
 None of these choices goes into the catalogue or the backups: they live in a
 separate file, on this computer.
+
+The events the log records are another matter: those live in the catalogue, so
+they go into the backups, and a restore replaces them too.
 
 ## Metadata
 
