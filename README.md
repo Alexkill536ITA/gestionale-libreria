@@ -173,7 +173,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.6.1_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.6.2_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -190,7 +190,7 @@ cancella**.
 
 ### macOS
 
-`Gestionale Libreria_0.6.1_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.6.2_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple
