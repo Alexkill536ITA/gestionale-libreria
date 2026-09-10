@@ -56,9 +56,14 @@ when it is not:
 | *The series total says 15* | you have catalogued more than the series declares |
 | *Single title* | it is not a series |
 
-The first three are also what the pill top right counts — *"5 works to sort
-out"* — and that pill is the only place in the strip where the publisher's tint
-comes in. A wrong or missing total is fixed from [**Series**](Series.md).
+Top right the first two become **two separate counts**, because they are two
+different things: *"1 to fix"* are the series that declare fewer volumes than
+you own — a wrong total — and *"4 incomplete"* the ones with volumes missing. **A
+series with no total is in neither**: not knowing how many volumes there will be
+is not a defect, it is a series still coming out. Both pills **can be pressed**,
+and take you to the first card of their group, which may well be off screen; the
+one for wrong totals is the only place in the strip where the publisher's tint
+comes in. A wrong total is fixed from [**Series**](Series.md).
 
 ![A work's record](images/editori-opera.png)
 

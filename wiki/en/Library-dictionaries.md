@@ -4,15 +4,17 @@
 
 There are values in the catalogue you never typed: the program put them there by
 itself, cataloguing a book, accepting an edition from the sources or picking a
-work on AniList. They are the **tags** and the **authors** — two lists that grow
-on their own — and until today there was nowhere to correct them.
+work on AniList. They are the **tags**, the **authors** and the **genres** —
+lists that grow on their own — and until today there was nowhere to correct
+them.
 
 This page is that door. **The gear top right is a menu**, and the first entry is
 *Library dictionaries*.
 
 ## One dictionary at a time
 
-At the top the selector, **Tags** or **Authors**: you look at one list at a time,
+At the top the selector, **Tags**, **Authors** or **Genres**: you look at one
+list at a time,
 the way [Publishers](Publishers.md) looks at one publisher at a time. Next to the
 title, the tally of how many entries the one you are looking at has —
 *«112 tags»* — which turns into *«12 of 112»* as soon as you filter.
@@ -21,7 +23,9 @@ title, the tally of how many entries the one you are looking at has —
   and `SHONEN` finds `shonen`. A piece of the name is enough;
 - the **Unused** toggle keeps only the entries that sit on nothing, and carries
   their tally next to the label. It is the tally of the chosen dictionary —
-  1 on tags and 3 on authors, not 4;
+  1 on tags and 3 on authors, not 4. **On genres it is not there**, for the
+  reason written further down: a genre is in the list only as long as something
+  carries it;
 - the list is sorted from the header, **by use or by name**. It opens on tags in
   order of use, most used first: an alphabetical list is already there in the
   form's suggestions;
@@ -53,12 +57,13 @@ A tag on **no book and one series** is not a value left orphaned: that series
 dictates it to the volumes that will join it, and removing it would take it away
 from the next volume you catalogue. The bin knows, and stays off.
 
-The series column only speaks **on tags**. An author does not belong to a series
-— it is the book that carries them — so on authors that column stays a dash. And
-an author who both writes **and** draws the same book counts as one book, not
-two.
+The series column speaks **on tags and on genres**. An author does not belong to
+a series — it is the book that carries them — so on authors that column stays a
+dash. And an author who both writes **and** draws the same book counts as one
+book, not two.
 
-The four actions appear on the right when you hover the row.
+The actions appear on the right when you hover the row: **four on tags and
+authors, three on genres**, where the bin is not there.
 
 ## Rename
 
@@ -112,17 +117,39 @@ back by itself»*. What you remove is not a field, it is a list entry.
 If nothing is left with **Unused** on, the page says so as the good news it is:
 *«There is nothing to remove»*.
 
+### A genre cannot be deleted, and that is not a missing feature
+
+On genres the bin **is not there**. A tag is a row in a list, and it can stay
+there once the last book carrying it is gone; a genre instead **does not exist
+anywhere except on a book or on a series** — it is written in the book's own
+card, not in a table of its own. So there are no orphaned genres to remove, and
+for the same reason the *Unused* toggle does not show up there.
+
+The only thing a bin could do would be to **empty the genre field on every book
+carrying it**, which is another matter: you would not be removing a list entry,
+you would be changing twenty books. That is done from the books, one by one — or
+by fixing the genre with *Rename*, which is almost always what was needed.
+
 ## See in the catalogue
 
-The library icon opens [The catalogue](The-catalogue.md) filtered on that tag or
-that author, with the chip at the top that comes off like all the others. It is
-how you answer "which are these 29 books, then?" before touching anything.
+The library icon opens [The catalogue](The-catalogue.md) filtered on that tag,
+that author or that genre, with the chip at the top that comes off like all the
+others. It is how you answer "which are these 29 books, then?" before touching
+anything.
 
-## Genres, imprints, shelf spots and languages are not here
+## Imprints, shelf spots and languages are not here
 
-Those are fields of the book: you correct them in the form of the book that
-carries them, and there are few of them. Here are the two lists that grow on
-their own, the ones you decided nothing about.
+Like the genre they are fields of the book, and the road to bring them here is
+the same one — but there are few of them (3 imprints, 5 shelf spots, 2
+languages), and while that holds you fix them in the form of the book that
+carries them. The genre came in because it is the one the sources fill in by
+themselves, each with its own spelling.
+
+Among the genres you find **the ones in your catalogue**, not the fifteen the
+program offers while you type. If you fix a genre that was one of those —
+*Manga* becoming *Japanese comics* — the word *Manga* will keep showing up among
+the form's suggestions: it is the program offering it, not your catalogue
+remembering it.
 
 ## It stays on the record
 

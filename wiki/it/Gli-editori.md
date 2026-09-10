@@ -55,10 +55,15 @@ lo è:
 | *Il totale della serie dice 15* | ne hai catalogati più di quanti la serie dichiara |
 | *Titolo unico* | non è una serie |
 
-Le prime tre sono anche il conto della pastiglia in alto a destra — *«5 opere da
-sistemare»* — che è l'unico posto della fascia dove entra la tinta
-dell'editore. Un totale sbagliato o mancante si corregge da [**Le
-serie**](Le-serie.md).
+In alto a destra le prime due diventano **due conti separati**, perché sono due
+cose diverse: *«1 da correggere»* sono le serie che dichiarano meno volumi di
+quanti ne hai — un totale sbagliato — e *«4 incomplete»* quelle a cui mancano
+dei volumi. **Una serie senza totale non entra in nessuno dei due**: non sapere
+quanti volumi saranno non è un difetto, è una serie che sta uscendo. Le due
+pastiglie **si premono**, e portano alla prima card del loro gruppo, che può
+essere fuori dall'inquadratura; quella dei totali da correggere è l'unico posto
+della fascia dove entra la tinta dell'editore. Un totale sbagliato si corregge
+da [**Le serie**](Le-serie.md).
 
 ![La scheda di un'opera](immagini/editori-opera.png)
 

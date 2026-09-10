@@ -4,15 +4,17 @@
 
 Nel catalogo ci sono valori che non hai mai digitato: li ha messi dentro il
 programma da sé, catalogando un libro, accettando un'edizione dalle fonti o
-scegliendo un'opera su AniList. Sono i **tag** e gli **autori** — due elenchi che
-crescono da soli — e fino a oggi non si potevano correggere da nessuna parte.
+scegliendo un'opera su AniList. Sono i **tag**, gli **autori** e i **generi** —
+elenchi che crescono da soli — e fino a oggi non si potevano correggere da
+nessuna parte.
 
 Questa pagina è quella porta. **L'ingranaggio in alto a destra è un menu**, e la
 prima voce è *Dizionari del catalogo*.
 
 ## Un dizionario per volta
 
-In alto il selettore, **Tag** o **Autori**: si guarda un elenco per volta, come
+In alto il selettore, **Tag**, **Autori** o **Generi**: si guarda un elenco per
+volta, come
 [Gli editori](Gli-editori.md) guarda un editore per volta. Accanto al titolo il
 conto di quante voci ha quello che stai guardando — *«112 tag»* — che diventa
 *«12 di 112»* appena filtri.
@@ -21,7 +23,8 @@ conto di quante voci ha quello che stai guardando — *«112 tag»* — che dive
   `Città` e `SHONEN` trova `shonen`. Basta un pezzo del nome;
 - l'interruttore **Non usati** tiene solo le voci che non stanno su niente, e
   porta il loro conto accanto all'etichetta. È il conto del dizionario scelto —
-  1 sui tag e 3 sugli autori, non 4;
+  1 sui tag e 3 sugli autori, non 4. **Sui generi non c'è**, per la ragione
+  scritta più sotto: un genere sta nell'elenco solo finché qualcuno lo porta;
 - l'elenco si ordina dall'intestazione, **per uso o per nome**. Apre sui tag in
   ordine di uso, dal più usato: un elenco alfabetico ce l'hai già nei
   suggerimenti del modulo;
@@ -53,12 +56,13 @@ Un tag su **zero libri e una serie** non è un valore rimasto orfano: quella ser
 lo detta ai volumi che le entreranno, e togliendolo lo toglieresti al prossimo
 volume che catalogherai. Il cestino lo sa, e resta spento.
 
-La colonna delle serie parla **soltanto sui tag**. Un autore non appartiene a una
-serie — è il libro a portarlo — quindi sugli autori quella colonna resta un
+La colonna delle serie parla **sui tag e sui generi**. Un autore non appartiene a
+una serie — è il libro a portarlo — quindi sugli autori quella colonna resta un
 trattino. E un autore che sullo stesso libro scrive **e** disegna vale un libro,
 non due.
 
-Le quattro azioni compaiono a destra passando il puntatore sulla riga.
+Le azioni compaiono a destra passando il puntatore sulla riga: **quattro sui tag
+e sugli autori, tre sui generi**, dove il cestino non c'è.
 
 ## Rinomina
 
@@ -111,17 +115,39 @@ Quello che togli non è un dato, è una voce d'elenco.
 Se con **Non usati** acceso non resta niente, la pagina lo dice come la buona
 notizia che è: *«Non c'è niente da togliere»*.
 
+### Un genere non si elimina, e non è una funzione che manca
+
+Sui generi il cestino **non c'è**. Un tag è una riga di un elenco, e può restare
+lì quando l'ultimo libro che lo portava se ne va; un genere invece **non esiste
+da nessuna parte se non addosso a un libro o a una serie** — è scritto nella
+scheda del libro, non in una tabella a parte. Quindi non ci sono generi rimasti
+orfani da togliere, e per la stessa ragione l'interruttore *Non usati* lì non
+compare.
+
+L'unica cosa che un cestino potrebbe fare sarebbe **svuotare il campo genere su
+tutti i libri che lo portano**, che è un'altra cosa: non toglieresti una voce
+d'elenco, cambieresti venti libri. Quello si fa dai libri, uno per uno — oppure
+si corregge il genere con *Rinomina*, che è quasi sempre quello che serviva.
+
 ## Vedi in catalogo
 
-L'icona della libreria apre [Il catalogo](Il-catalogo.md) filtrato su quel tag o
-su quell'autore, con il chip in cima che si toglie come tutti gli altri. È il
-modo di rispondere a «ma quali sono, questi 29 libri?» prima di toccare qualcosa.
+L'icona della libreria apre [Il catalogo](Il-catalogo.md) filtrato su quel tag,
+su quell'autore o su quel genere, con il chip in cima che si toglie come tutti
+gli altri. È il modo di rispondere a «ma quali sono, questi 29 libri?» prima di
+toccare qualcosa.
 
-## Generi, collane, posizioni e lingue non stanno qui
+## Collane, posizioni e lingue non stanno qui
 
-Quelli sono campi del libro: si correggono nel modulo del libro che li porta, e
-sono pochi. Qui ci sono i due elenchi che crescono da soli, quelli su cui non hai
-deciso niente.
+Come il genere sono campi del libro, e la strada per portarle qui è la stessa —
+ma sono poche (3 collane, 5 posizioni, 2 lingue), e finché lo sono si correggono
+nel modulo del libro che le porta. Il genere è entrato perché è quello che le
+fonti riempiono da sé, ognuna con la grafia sua.
+
+Fra i generi trovi **quelli del tuo catalogo**, non i quindici che il
+programma propone mentre scrivi. Se correggi un genere che era uno di quelli —
+*Manga* che diventa *Fumetto giapponese* — la parola *Manga* continuerà a
+comparire fra i suggerimenti del modulo: è il programma che la propone, non il
+tuo catalogo che se la ricorda.
 
 ## Resta scritto
 
