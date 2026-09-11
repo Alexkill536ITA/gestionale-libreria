@@ -66,11 +66,13 @@ many series *of that publisher* are incomplete. So a tally of zero means one
 thing only: picking that leaves nothing, and no pill ever promises twelve series
 and then gives you none.
 
-With a filter on, the tally at the head of the page changes shape — **12 of 47
-series** instead of *47 series* — and **Clear** turns up at the end of the bar,
+With a filter on, the tally at the head of the page changes shape — **1 of 2
+series** instead of *2 series* — and **Clear** turns up at the end of the bar,
 taking them all off in one go. If no row is left, the panel you get is not the
 one for an empty list: it says *"No series match these filters"*, recalls how
 many there are in all, and offers **Clear the filters**.
+
+![The series filter bar](images/serie-filtri.png)
 
 **One thing worth knowing before you see it.** Filter by **To fix**, type the
 right total on a row, and a moment later that row goes. It is not a fault: it

@@ -8,7 +8,8 @@ Un pulsante solo, **Cerca i metadati**, e decide da sé da dove partire:
 - altrimenti guarda **titolo e autori** e cerca per titolo.
 
 È spento solo quando non c'è né l'uno né gli altri. `Invio` dentro il campo ISBN
-fa la stessa cosa.
+fa la stessa cosa. Su un libro che stai modificando lo stesso pulsante si chiama
+**Aggiorna dai metadati**.
 
 ## Le cinque fonti
 

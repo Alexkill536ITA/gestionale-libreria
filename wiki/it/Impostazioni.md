@@ -54,6 +54,10 @@ cancella** e **Lascia acceso**. La spunta non si muove finché non confermi —
 spegnere e cancellare sono lo stesso gesto, e una casella già spenta direbbe che
 è cosa fatta. Accendere invece non chiede niente, perché non porta via niente.
 
+Sotto la casella c'è anche la riga che dice **quanto indietro arriva lo storico**:
+tiene un anno, e gli eventi più vecchi vengono cancellati all'avvio. Quel tetto è
+fisso e non si sceglie.
+
 Nessuna di queste scelte entra nel catalogo né nei backup: stanno in un file a
 parte, su questo computer.
 

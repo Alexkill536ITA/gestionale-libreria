@@ -22,14 +22,31 @@ il primo evento dello storico è l'accensione stessa.
 **Spegnerlo cancella quello che ha registrato**, ed è la cosa più importante di
 questa pagina. Sotto la casella compare la domanda — *«Spegnere lo storico
 cancella quello che ha registrato»* — che dice **quanti eventi sta per portare
-via**: *«I 352 eventi registrati finora vengono cancellati, e non si possono
+via**: *«I 20 eventi registrati finora vengono cancellati, e non si possono
 riavere. Riaccendendolo si ricomincia da zero.»* I due pulsanti sono **Spegni e
 cancella** e **Lascia acceso**.
+
+![La conferma che spegne lo storico](immagini/storico-spegni.png)
 
 Qui «spento» vuol dire che di quello che hai fatto non resta niente, non che si
 smette di scrivere sopra una pila che rimane. Se lo spegni per sbaglio, la strada
 indietro è [ripristinare un backup](Backup-e-ripristino.md) preso prima — che
 però riporta indietro *tutto* il catalogo, non solo lo storico.
+
+## Lo storico tiene un anno
+
+Gli eventi più vecchi di un anno vengono cancellati **all'avvio del programma**,
+e sotto la casella c'è la riga che lo dice prima che succeda: *«Lo storico tiene
+un anno: gli eventi più vecchi vengono cancellati all'avvio.»*
+
+Il tetto è **fisso**: non c'è una casella per allungarlo o accorciarlo, ed è una
+scelta e non una mancanza — un numero da scegliere sarebbe una domanda in più
+per una risposta che non cambia. Serve perché lo storico **cresce più in fretta
+del catalogo che descrive**: ogni modifica è un evento più una riga per ogni
+campo cambiato, e una serata passata a catalogare ne lascia qualche centinaio.
+
+È l'unica cosa che porta via eventi da sola. Tutto il resto — svuotarlo
+spegnendo la casella, sostituirlo con un ripristino — è un gesto tuo.
 
 ## Come ci si arriva
 
@@ -42,8 +59,8 @@ storico da aprire.
 
 ## Come si legge la tabella
 
-In alto a sinistra il conto degli eventi — `352 eventi` — e a destra quando è
-arrivato l'ultimo: *«l'ultimo oggi alle 18:20»*.
+In alto a sinistra il conto degli eventi — `20 eventi` — e a destra quando è
+arrivato l'ultimo: *«l'ultimo oggi alle 12:30»*.
 
 | Colonna | Cosa mostra |
 |---|---|
@@ -61,11 +78,13 @@ La copertina si legge **adesso**, quindi c'è per i libri che sono ancora nel
 catalogo. Per tutto il resto — una serie, un editore, una persona, il catalogo
 stesso — al suo posto c'è una tessera colorata con la sigla di cosa si tratta.
 
+![La pagina dello storico](immagini/storico.png)
+
 ## Cosa è cambiato
 
 Una riga di **Modifica** lo dice campo per campo, ed è la ragione per cui questa
 pagina esiste: in un riquadro il nome del campo, il valore di prima barrato, la
-freccia, e il valore nuovo — `Prezzo · 12,90 → 13,90`.
+freccia, e il valore nuovo — `Prezzo pagato · 12,90 → 13,90`.
 
 - in cella ci stanno **due coppie**, e il resto diventa un `+3`. Fermaci sopra il
   puntatore e li leggi tutti;
@@ -75,12 +94,14 @@ freccia, e il valore nuovo — `Prezzo · 12,90 → 13,90`.
   là dove l'hai scritto, e un valore lunghissimo si taglia con un `…`.
 
 **Un evento massivo dice il numero invece di diventare quel numero di righe**:
-`41 libri` accanto alla fusione di due editori, `3 volumi` accanto a una serie
+`2 libri` accanto alla fusione di due editori, `3 volumi` accanto a una serie
 eliminata coi suoi volumi.
 
 Dove non c'è niente da confrontare, il dettaglio porta una nota: l'ISBN del
 libro appena creato, il nome di chi ha preso un libro in prestito, il file di un
 backup.
+
+![Una riga di modifica, coi campi cambiati](immagini/storico-dettaglio.png)
 
 ## Lo storico completo di una cosa
 
@@ -90,8 +111,11 @@ intero**, senza `+N`, e la riga da cui sei partito è segnata, così non la perd
 fra sette eventi.
 
 **Quella storia non passa dai filtri della pagina**, perché «completo» vuol dire
-completo: con **Restituzioni** addosso la tabella mostra due righe di quel
-volume, e il dialogo ne mostra tre.
+completo: con **Restituzioni** addosso la tabella mostra due righe in tutto, e la
+storia di uno di quei due volumi ne mostra tre — la restituzione che hai
+filtrato, il prestito che l'ha preceduta e la modifica di prima.
+
+![Lo storico completo di un volume](immagini/storico-storia.png)
 
 ## Filtrare
 
@@ -112,8 +136,10 @@ filtri che hai adesso, non resta niente*. I sette stati restano in fila anche
 quando valgono zero: una fila che cambia numero di voci mentre filtri è peggio di
 una voce che dice zero.
 
-Con un filtro addosso il conto in testa diventa `12 di 352`, e accanto compare
+Con un filtro addosso il conto in testa diventa `9 di 20`, e accanto compare
 **Azzera i filtri**, che li toglie tutti in un colpo.
+
+![La barra dei filtri dello storico](immagini/storico-filtri.png)
 
 ## Un libro eliminato resta leggibile
 

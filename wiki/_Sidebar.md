@@ -19,6 +19,7 @@
 - [Backup e ripristino](it/Backup-e-ripristino.md)
 - [Aggiornamenti](it/Aggiornamenti.md)
 - [Domande frequenti](it/Domande-frequenti.md)
+- [Licenze dei componenti](it/Licenze-dei-componenti.md)
 
 **English**
 
@@ -39,3 +40,4 @@
 - [Backup and restore](en/Backup-and-restore.md)
 - [Updates](en/Updates.md)
 - [FAQ](en/FAQ.md)
+- [Third-party licenses](en/Third-party-licenses.md)

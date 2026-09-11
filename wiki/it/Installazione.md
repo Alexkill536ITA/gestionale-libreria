@@ -12,7 +12,7 @@ l'installazione.
 
 ## Installare su Windows
 
-1. Scarica il file `Gestionale Libreria_0.6.3_x64-setup.exe`.
+1. Scarica il file `Gestionale Libreria_0.6.5_x64-setup.exe`.
 2. Doppio clic. L'installatore parla italiano e chiede poco.
 3. Finito: trovi il collegamento **sul desktop** e **nel menu Start**.
 
@@ -30,7 +30,7 @@ Per proseguire: **Ulteriori informazioni** → **Esegui comunque**.
 
 ## Su un Mac
 
-Il file è `Gestionale Libreria_0.6.3_universal.dmg`, uno solo per i Mac Intel e
+Il file è `Gestionale Libreria_0.6.5_universal.dmg`, uno solo per i Mac Intel e
 per quelli con Apple Silicon: si apre, si trascina l'applicazione in
 **Applicazioni**, e da lì si avvia.
 
@@ -68,7 +68,11 @@ Incolla quel percorso nella barra di Esplora risorse e ci arrivi. Dentro trovi:
 | `impostazioni.json` | tema, lingua, valuta, chiave API, cartella dei backup |
 
 Il **programma** invece sta altrove, in `%LOCALAPPDATA%\Gestionale Libreria\` —
-non in `Programmi`, dove di solito lo si cerca.
+non in `Programmi`, dove di solito lo si cerca. Accanto all'eseguibile c'è
+`AVVISI-LICENZE.txt`, che raccoglie le licenze dei mille e passa componenti di
+altri che il programma incorpora: si legge con un editor di testo qualunque, e
+lo stesso elenco sta anche in [Licenze dei
+componenti](Licenze-dei-componenti.md).
 
 ## Aggiornare
 

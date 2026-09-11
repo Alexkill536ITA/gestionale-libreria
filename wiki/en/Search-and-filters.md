@@ -41,7 +41,7 @@ The **Filters** button opens a panel on the right.
 
 ![The filters panel](images/filtri-pannello.png)
 
-Ten ways to narrow down:
+Eleven ways to narrow down:
 
 | | |
 |---|---|
@@ -49,6 +49,7 @@ Ten ways to narrow down:
 | **Reading status** | to read · reading · read, counted too |
 | **Author** | |
 | **Publisher** | |
+| **Imprint** | |
 | **Shelf** | where the book is |
 | **Tags** | |
 | **Language** | |
@@ -89,10 +90,11 @@ panel closed.
 `Series:` chip is there to say why you are seeing those books, and it comes off
 like any other.
 
-**See in the catalogue** does the same, on a tag or an author in [**Library
-dictionaries**](Library-dictionaries.md): the catalogue opens with the `Tag:` or
-`Author:` chip already at the top. Wherever it comes from, a chip is a chip — its
-`×` takes it off, and **Clear all** takes them all off.
+**See in the catalogue** does the same in [**Library
+dictionaries**](Library-dictionaries.md): the catalogue opens with the `Tag:`,
+`Author:`, `Genre:`, `Imprint:`, `Shelf:` or `Language:` chip already at the top
+— one for each of the six dictionaries. Wherever it comes from, a chip is a chip
+— its `×` takes it off, and **Clear all** takes them all off.
 
 ## Search and filters together
 

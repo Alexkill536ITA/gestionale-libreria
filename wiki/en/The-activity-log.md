@@ -22,14 +22,32 @@ event in the log is the switch-on itself.
 **Turning it off deletes what it has recorded**, and that is the most important
 thing on this page. A question appears under the checkbox — *«Turning the log off
 deletes what it has recorded»* — and it says **how many events it is about to
-take away**: *«The 352 events recorded so far are deleted, and cannot be
+take away**: *«The 21 events recorded so far are deleted, and cannot be
 recovered. Turning it back on starts from scratch.»* The two buttons are **Turn
 off and delete** and **Keep it on**.
+
+![The confirmation that turns the log off](images/storico-spegni.png)
 
 "Off" here means that nothing is left of what you did, not that it stops writing
 on top of a pile that stays. If you turn it off by mistake, the way back is
 [restoring a backup](Backup-and-restore.md) taken earlier — which brings back
 *the whole* catalogue, though, not just the log.
+
+## The log keeps one year
+
+Events older than one year are deleted **when the program starts**, and the line
+under the checkbox says so before it happens: *"The log keeps one year: events
+older than that are deleted on startup."*
+
+The cap is **fixed**: there is no box to make it longer or shorter, and that is a
+choice rather than something missing — a number to pick would be one more
+question for an answer that never changes. It is needed because the log **grows
+faster than the catalogue it describes**: every edit is one event plus one row
+per changed field, and an evening spent cataloguing leaves a few hundred behind.
+
+It is the only thing that takes events away on its own. Everything else —
+emptying it by turning the checkbox off, replacing it with a restore — is
+something you do.
 
 ## How to get there
 
@@ -42,8 +60,8 @@ to open.
 
 ## How to read the table
 
-Top left, the tally of events — `352 events` — and on the right, when the last
-one landed: *«the last one today at 18:20»*.
+Top left, the tally of events — `21 events` — and on the right, when the last
+one landed: *«the last one today at 12:57 PM»*.
 
 | Column | What it shows |
 |---|---|
@@ -61,11 +79,13 @@ The cover is read **now**, so it is there for books still in the catalogue. For
 everything else — a series, a publisher, a person, the library itself — a
 coloured tile with the initials of what it is takes its place.
 
+![The activity log page](images/storico.png)
+
 ## What changed
 
 A **Changed** row says it field by field, and that is why this page exists: in a
 box you get the field name, the previous value struck through, the arrow, and the
-new value — `Price · 12.90 → 13.90`.
+new value — `Price paid · 12,90 → 13,90`.
 
 - **two pairs** fit in the cell, and the rest becomes a `+3`. Rest the pointer on
   it and you read them all;
@@ -74,12 +94,14 @@ new value — `Price · 12.90 → 13.90`.
 - the field names are **the form's own**, so `Publisher` here is `Publisher`
   where you typed it, and a very long value is cut with an `…`.
 
-**A mass event states the number instead of becoming that many rows**: `41 books`
+**A mass event states the number instead of becoming that many rows**: `2 books`
 next to a merge of two publishers, `3 volumes` next to a series deleted along
 with its volumes.
 
 Where there is nothing to compare, the detail carries a note: the ISBN of the
 book just created, the name of whoever borrowed a book, the file of a backup.
+
+![A changed row, with the fields that changed](images/storico-dettaglio.png)
 
 ## The full history of an item
 
@@ -89,8 +111,11 @@ with no `+N`, and the row you came from is marked, so you do not lose it among
 seven events.
 
 **That history does not go through the page's filters**, because "full" means
-full: with **Returns** on, the table shows two rows for that volume and the
-dialog shows three.
+full: with **Returns** on, the table shows two rows in all, and the history of
+one of those two volumes shows three — the return you filtered for, the loan
+that came before it and the change before that.
+
+![The full history of a volume](images/storico-storia.png)
 
 ## Filtering
 
@@ -111,8 +136,10 @@ the filters you have now, nothing is left*. The seven states stay in line even
 when they read zero: a row that changes its number of entries while you filter is
 worse than an entry that says zero.
 
-With a filter on, the tally at the top becomes `12 of 352`, and **Clear the
+With a filter on, the tally at the top becomes `9 of 21`, and **Clear the
 filters** turns up beside it and removes them all in one go.
+
+![The log's filter bar](images/storico-filtri.png)
 
 ## A deleted book stays readable
 

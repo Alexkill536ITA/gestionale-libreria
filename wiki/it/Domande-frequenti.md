@@ -142,13 +142,15 @@ Per vederli tutti insieme, il filtro **Prestito → fuori casa**, oppure la voce
 ## Ho due generi uguali: `Manga` e `manga`
 
 Non dovrebbe più capitare: l'applicazione riusa la grafia che hai scelto la
-prima volta, anche a maiuscole e accenti diversi. Se hai due voci nate prima,
-riapri i libri della grafia sbagliata e scegli quella giusta **dai suggerimenti**
-invece di riscriverla: quando l'ultimo libro l'abbandona, la voce sparisce dai
-filtri.
+prima volta, anche a maiuscole e accenti diversi. E se due voci sono nate prima,
+non serve passare dai libri: **tag, autori, generi, collane, posizioni e
+lingue** si correggono da [I dizionari del
+catalogo](I-dizionari-del-catalogo.md), dove `Manga` e `manga` diventano uno
+solo con **Unisci in un altro**.
 
-Per i **tag** e gli **autori** non serve passare dai libri: si correggono da
-[I dizionari del catalogo](I-dizionari-del-catalogo.md).
+Gli unici valori che restano fuori da quella pagina sono l'**editore**, che ha
+la sua — [Gli editori](Gli-editori.md), con gli alias — e i valori delle
+**serie**, che si correggono da [Le serie](Le-serie.md).
 
 ## Un autore compare due volte, uno in giapponese e uno in caratteri latini
 

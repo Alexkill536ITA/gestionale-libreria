@@ -185,7 +185,9 @@ next to **Delete**, sits **Duplicate**.
 **It makes a one-to-one copy of the book you have open, and does not save it.**
 The form stays open and changes job: from editing that book it becomes the
 creation of another one that looks like it, and the header says so — *Duplicate
-the volume*, «this is a copy that has not been saved yet».
+the volume*, «This is a copy that has not been saved yet».
+
+![The form in duplicate mode](images/modulo-duplica.png)
 
 The copy has everything, **ISBN and volume number included**: it is the same
 edition, and the second «15» of a series carries the same number as the first.

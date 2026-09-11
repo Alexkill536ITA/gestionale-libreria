@@ -66,11 +66,13 @@ Con un editore già scelto, il numero accanto a «Incomplete» dice quante serie
 sola: scegliendo quello non resta niente, e nessuna pastiglia ti promette dodici
 serie per poi dartene zero.
 
-Con un filtro addosso il conteggio in testa alla pagina cambia forma — **12 di
-47 serie** invece di *47 serie* — e in fondo alla barra compare **Azzera**, che
+Con un filtro addosso il conteggio in testa alla pagina cambia forma — **1 di
+2 serie** invece di *2 serie* — e in fondo alla barra compare **Azzera**, che
 li toglie tutti in un colpo. Se non resta nessuna riga, il riquadro che vedi non
 è quello di un elenco vuoto: dice *«Nessuna serie con questi filtri»*, ricorda
 quante sono in tutto, e offre **Togli i filtri**.
+
+![La barra dei filtri delle serie](immagini/serie-filtri.png)
 
 **Una cosa che vale la pena sapere prima di vederla.** Filtra per **Da
 correggere**, scrivi il totale giusto in una riga, e dopo un attimo quella riga

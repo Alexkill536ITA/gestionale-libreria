@@ -188,6 +188,8 @@ resta aperto e cambia mestiere: da modifica di quel libro diventa la creazione d
 un altro che gli somiglia, e la testata lo dice — *Duplica il volume*, «è una
 copia non ancora salvata».
 
+![Il modulo in modo duplica](immagini/modulo-duplica.png)
+
 Nella copia c'è tutto, **ISBN e numero del volume compresi**: è la stessa
 edizione, e il secondo «15» di una serie porta lo stesso numero del primo. Tu
 correggi quello che cambia — la posizione, il prezzo, lo stato di lettura — e

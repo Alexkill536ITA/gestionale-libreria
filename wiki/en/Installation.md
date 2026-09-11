@@ -11,7 +11,7 @@ On Windows nothing else is needed: the system component that draws the window
 
 ## Installing on Windows
 
-1. Download `Gestionale Libreria_0.6.3_x64-setup.exe`.
+1. Download `Gestionale Libreria_0.6.5_x64-setup.exe`.
 2. Double-click it. The installer speaks Italian and asks very little.
 3. Done: you get a shortcut **on the desktop** and **in the Start menu**.
 
@@ -29,7 +29,7 @@ To go on: **More info** → **Run anyway**.
 
 ## On a Mac
 
-The file is `Gestionale Libreria_0.6.3_universal.dmg`, a single one for Intel Macs
+The file is `Gestionale Libreria_0.6.5_universal.dmg`, a single one for Intel Macs
 and Apple Silicon ones: open it, drag the application into **Applications**, and
 start it from there.
 
@@ -67,7 +67,10 @@ Paste that path into the File Explorer address bar and you are there. Inside:
 | `impostazioni.json` | theme, language, currency, API key, backup folder |
 
 The **program** itself lives elsewhere, in `%LOCALAPPDATA%\Gestionale Libreria\` —
-not in `Program Files`, which is where people usually look for it.
+not in `Program Files`, which is where people usually look for it. Next to the
+executable sits `AVVISI-LICENZE.txt`, holding the licenses of the thousand-odd
+components by other people that the program embeds: any text editor opens it, and
+the same list is in [Third-party licenses](Third-party-licenses.md).
 
 ## Updating
 

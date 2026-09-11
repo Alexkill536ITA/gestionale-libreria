@@ -55,6 +55,10 @@ confirm — turning it off and deleting are the same gesture, and a box already
 unticked would say the thing was done. Turning it on asks nothing, because it
 takes nothing away.
 
+Under the box there is also the line saying **how far back the log goes**: it
+keeps one year, and older events are deleted on startup. That cap is fixed and
+not something you pick.
+
 None of these choices goes into the catalogue or the backups: they live in a
 separate file, on this computer.
 

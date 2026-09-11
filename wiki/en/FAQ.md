@@ -141,13 +141,15 @@ in the bar.
 ## I have two identical genres: `Manga` and `manga`
 
 This should not happen any more: the application reuses the spelling you chose
-the first time, whatever the case or accents. If you have two entries from
-before, reopen the books with the wrong spelling and pick the right one **from
-the suggestions** rather than retyping it: when the last book leaves it, the
-entry disappears from the filters.
+the first time, whatever the case or accents. And if two entries came from
+before, you do not have to go through the books: **tags, authors, genres,
+imprints, shelves and languages** are fixed in [Library
+dictionaries](Library-dictionaries.md), where `Manga` and `manga` become one
+with **Merge into another**.
 
-For **tags** and **authors** you do not have to go through the books: you fix
-them in [Library dictionaries](Library-dictionaries.md).
+The only values left out of that page are the **publisher**, which has its own —
+[Publishers](Publishers.md), with the aliases — and the **series** values, fixed
+from [Series](Series.md).
 
 ## One author shows up twice, once in Japanese and once in Latin letters
 

@@ -42,7 +42,7 @@ Il pulsante **Filtri** apre un pannello a destra.
 
 ![Il pannello dei filtri](immagini/filtri-pannello.png)
 
-Dieci modi di restringere:
+Undici modi di restringere:
 
 | | |
 |---|---|
@@ -50,6 +50,7 @@ Dieci modi di restringere:
 | **Stato di lettura** | da leggere · in lettura · letto, anche questi contati |
 | **Autore** | |
 | **Editore** | |
+| **Collana** | |
 | **Posizione** | dove sta il libro |
 | **Tag** | |
 | **Lingua** | |
@@ -89,10 +90,11 @@ serie**](Le-serie.md), e una card del carosello in [**Gli
 editori**](Gli-editori.md), aprono il catalogo già filtrato: il chip `Serie:` è
 lì che dice perché stai vedendo quei libri, e si toglie come tutti gli altri.
 
-Lo stesso fa **Vedi in catalogo** su un tag o su un autore in [**I dizionari del
-catalogo**](I-dizionari-del-catalogo.md): il catalogo si apre col chip `Tag:` o
-`Autore:` già in cima. Da qualunque parte arrivi, un chip è un chip — la sua `×`
-lo toglie, e **Azzera tutto** li toglie tutti.
+Lo stesso fa **Vedi in catalogo** in [**I dizionari del
+catalogo**](I-dizionari-del-catalogo.md): il catalogo si apre col chip `Tag:`,
+`Autore:`, `Genere:`, `Collana:`, `Posizione:` o `Lingua:` già in cima — uno per
+ognuno dei sei dizionari. Da qualunque parte arrivi, un chip è un chip — la sua
+`×` lo toglie, e **Azzera tutto** li toglie tutti.
 
 ## Ricerca e filtri insieme
 

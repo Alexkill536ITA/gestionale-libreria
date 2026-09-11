@@ -19,17 +19,18 @@ its own, and how to install it is in [Installation](Installation.md).
 | **[Adding a book](Adding-a-book.md)** | The form, the twenty fields, what is required (very little) |
 | **[Looking up metadata](Looking-up-metadata.md)** | One button fills the record from OpenLibrary, Google Books, SBN, NiceBooks and AniList |
 | **[Covers](Covers.md)** | They come down on their own, or you supply one from a file or a web address |
-| **[Search and filters](Search-and-filters.md)** | The top bar, the ten filters, the fallback when you mistype |
+| **[Search and filters](Search-and-filters.md)** | The top bar, the eleven filters, the fallback when you mistype |
 | **[Series](Series.md)** | Which volumes you are missing, and the values a series passes to its volumes |
 | **[Publishers](Publishers.md)** | One publisher at a time: its works in a carousel, and the rule that holds its different names together |
 | **[Loans](Loans.md)** | Who has which book, for how long, and how you get it back |
 | **[Scanning the barcode](Scanning-the-barcode.md)** | The webcam reads the ISBN off the back cover |
 | **[The activity log](The-activity-log.md)** | What you changed and when, if you turn it on — and what happens when you turn it off |
-| **[Library dictionaries](Library-dictionaries.md)** | Tags and authors: rename them, merge two names for the same thing, remove the ones nobody uses |
+| **[Library dictionaries](Library-dictionaries.md)** | Tags, authors, genres, imprints, shelves and languages: rename them, merge two names for the same thing, remove the ones nobody uses |
 | **[Settings](Settings.md)** | Theme, language, currency, the starting sort order, the metadata sources, the backup folder |
 | **[Backup and restore](Backup-and-restore.md)** | A copy a day, the CSV export, the way back |
 | **[Updates](Updates.md)** | It tells you when a new version is out, and installs nothing by itself |
 | **[FAQ](FAQ.md)** | When something does not add up |
+| **[Third-party licenses](Third-party-licenses.md)** | Whose code the program embeds, and under which license |
 
 These pages open **from the program**: the question mark at the top right, next
 to the gear, brings you here in the language you are using.
