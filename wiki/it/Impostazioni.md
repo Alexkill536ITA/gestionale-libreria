@@ -4,20 +4,29 @@
 
 **L'ingranaggio in alto a destra apre un menu**, sempre: «Dizionari del
 catalogo», «Storico delle azioni» quando è acceso, e sotto un separatore
-**Impostazioni**, che apre questa finestra. Le due pagine hanno un capitolo
-loro — [I dizionari del catalogo](I-dizionari-del-catalogo.md) e
-[Lo storico delle azioni](Lo-storico-delle-azioni.md).
+**Impostazioni**, che apre questa finestra, e **Licenza**. Le due pagine hanno un
+capitolo loro — [I dizionari del catalogo](I-dizionari-del-catalogo.md) e
+[Lo storico delle azioni](Lo-storico-delle-azioni.md); sopra il separatore stanno
+le voci che portano altrove, sotto quelle che aprono una finestra.
 
-Quattro sezioni su un binario a sinistra.
+## La finestra
+
+Cinque sezioni su un binario a sinistra: «Preferenze», «Metadati», «Database»,
+«Backup» e «Aggiornamenti».
 
 ![Le preferenze](immagini/impostazioni-preferenze.png)
 
 **Le modifiche si salvano da sole**, senza un pulsante Salva. La conferma non è
 una parola: è la riga sotto ogni voce del binario, che riassume lo stato di
-adesso — `Scuro · Italiano · EUR`, `chiave presente · 1/s`, `oggi, 12:41 · 4
-copie`, `0.1.0 · controllo all'avvio` — e si riscrive appena cambi qualcosa,
+adesso — `Scuro · Italiano · EUR`, `chiave presente · 1/s`, `cartella solita ·
+227 libri`, `oggi, 12:41 · 4 copie`, `0.1.0 · controllo all'avvio` — e si
+riscrive appena cambi qualcosa,
 anche da un'altra sezione. Con lo storico acceso, la riga delle Preferenze
 prende `· storico` in coda.
+
+**La riga sotto «Database» parla sempre di questo computer**: nomina la cartella
+del catalogo di qui e conta i libri che ci sono dentro, anche quando stai
+lavorando sul server.
 
 ## Preferenze
 
@@ -119,6 +128,42 @@ rispondere.
 Manga e fumetto giapponese. Non conosce gli ISBN, quindi non entra nella cascata
 e compare solo nella ricerca per titolo. Nessuna chiave, nessuna impostazione.
 
+## Database
+
+![La sezione Database](immagini/impostazioni-database.png)
+
+«Dove stanno i dati: in una cartella di questo computer, su un tuo database, o
+sul servizio della biblioteca. Il pallino sceglie quale si usa.» Le strade sono
+tre, in due gruppi: **Da solo** tiene **Su questo computer** e **Su un tuo
+database**, **In una biblioteca** tiene **Col servizio della biblioteca**.
+
+**Su questo computer** dice in quale cartella sono il database e le copertine, e
+permette di portarli altrove: spostare il catalogo — che **copia e non
+cancella** —, aprirne uno che c'è già, cominciarne uno nuovo, tornare alla
+cartella predefinita. Il giro per esteso, la schermata che compare quando quella
+cartella non c'è più, e le cartelle di rete che si rifiutano stanno in
+[Dove stanno i dati](Dove-stanno-i-dati.md).
+
+**Su un tuo database** mette il catalogo su un database in rete — PostgreSQL, MySQL,
+SQL Server o MongoDB — con le copertine dentro il database, in una cartella
+condivisa o in un archivio S3. **Scegliere quel pallino apre il catalogo di là,
+senza riavviare**, e da lì in poi le pagine leggono e scrivono sul server; il
+catalogo di questo computer resta com'era, e ci si torna con l'altro pallino.
+Collegamento, prova, copertine e **Porta qui il catalogo di questo computer**
+stanno in [Il catalogo su un server](Il-catalogo-su-un-server.md).
+
+**Col servizio della biblioteca** parla al programma che la biblioteca tiene
+sul suo server, l'unico a vedere il database: qui basta il suo **Indirizzo**,
+che comincia con `https://` ed è quello del computer dove gira il servizio. Al
+primo collegamento la sezione mostra l'impronta del servizio e chiede **Mi
+fido**: prima si confronta con quella che il servizio stampa quando si avvia, e
+finché non ti fidi questo computer non gli manda niente. Nome e password non
+stanno qui: li chiede un dialogo che si apre da solo quando serve, e chi è
+entrato si vede nella barra in alto. Col catalogo sul servizio backup, esportazione, ripristino e **Porta qui il catalogo di
+questo computer** restano spenti finché non arrivano, mentre l'import da un
+foglio funziona; il resto sta in
+[Dove stanno i dati](Dove-stanno-i-dati.md#col-servizio-della-biblioteca).
+
 ## Backup
 
 ![La sezione Backup](immagini/impostazioni-backup.png)
@@ -128,7 +173,14 @@ Tutto quello che c'è qui è raccontato per esteso in
 
 - **la cartella** dove finiscono i file, cambiabile con Sfoglia;
 - **Crea backup adesso**, **Apri cartella**, **Esporta in CSV**;
+- il blocco **Importa da un foglio**: **Scegli un file CSV…** legge un foglio —
+  quello che esce da «Esporta in CSV», o uno scritto a mano — e prima di
+  scrivere dice quanti libri entrerebbero e quali righe restano fuori. Aggiunge
+  e non sostituisce: i libri che ci sono restano dove sono;
 - il blocco **Ripristino**, cerchiato di rosso perché sostituisce tutto.
+
+Backup, esportazione, importazione e ripristino lavorano sul catalogo che stai
+usando, che stia su questo computer o sul server.
 
 ## Aggiornamenti
 
@@ -144,9 +196,42 @@ da sé**: il perché, e cosa fanno i tre pulsanti dell'avviso, stanno in
 
 ## Dove stanno queste impostazioni
 
-In `impostazioni.json`, nella cartella dei dati, **fuori dal database e fuori
-dai backup**.
+In `impostazioni.json`, nella cartella dei dati di questo computer, **fuori dal
+database e fuori dai backup**. Ci sono scritte:
+
+- le preferenze — tema, lingua, valuta, ordinamento, storico acceso o spento;
+- l'indirizzo di contatto e la chiave di Google Books;
+- dove sta il catalogo: la scelta fra «Su questo computer», «Su un tuo
+  database» e «Col servizio della biblioteca», e la cartella del catalogo
+  quando non è quella predefinita;
+- il collegamento al server, **con la password**, e l'archivio delle copertine,
+  **con il suo segreto**;
+- l'indirizzo del servizio della biblioteca e l'impronta di cui ti sei fidato.
+  La sessione del servizio invece no: sta nel portachiavi del sistema;
+- la cartella dei backup, la fotocamera dello scanner, il controllo degli
+  aggiornamenti e la versione che hai scelto di saltare.
 
 Non è un dettaglio: un archivio ripristinato non ti porta il tema, la chiave API
 e la fotocamera di un altro computer. Sono preferenze di *questa* macchina, e
-restano dove sono anche dopo un ripristino.
+restano dove sono anche dopo un ripristino — e anche dopo che il catalogo si è
+spostato in un'altra cartella, perché quel file resta sempre nella cartella di
+partenza.
+
+**Non condividerlo**, e non allegarlo a una segnalazione: dentro ci sono le
+chiavi e le password che hai dato al programma.
+
+## Licenza
+
+Dice **di chi è il programma e di chi è quello che c'è dentro**, che sono due
+cose diverse. Sopra, la licenza di Gestionale Libreria: puoi usarlo, copiarlo,
+modificarlo e distribuirlo, anche per farci qualcosa di tuo, a patto che l'avviso
+resti insieme — e sotto quella riga c'è il testo della licenza **per intero**,
+non un riassunto.
+
+Sotto, i componenti scritti da altre persone che il programma incorpora: sono
+più di mille, ognuno resta dei suoi autori con la licenza che hanno scelto, e
+**Apri gli avvisi** apre il file che li elenca tutti. Quel file viaggia con il
+programma, quindi non serve internet per leggerlo; se hai compilato tu
+l'applicazione e non l'hai ancora costruita per intero, il dialogo ti dice che
+non c'è invece di tacere. L'elenco è anche in
+[Licenze dei componenti](Licenze-dei-componenti.md).

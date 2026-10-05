@@ -184,7 +184,7 @@ you move a shelf, you rename the entry, and forty books follow in one gesture.
 Renaming, merging and deleting end up in the [activity
 log](The-activity-log.md) when it is on, with the name of the entry and what
 happened to it. With the log off that entry is not in the gear's menu, and
-*Library dictionaries* and *Settings* are what is left.
+*Library dictionaries*, *Settings* and *Licence* are what is left.
 
 Series and their values are corrected from [Series](Series.md), the double
 spellings of one publisher from [Publishers](Publishers.md).

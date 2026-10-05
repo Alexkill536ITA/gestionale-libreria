@@ -9,7 +9,8 @@ legge il codice a barre dalla quarta di copertina.
 
 ## Come si usa
 
-1. **Scansiona** apre il mirino dentro il modulo.
+1. **Scansiona** apre il mirino dentro il modulo. Mentre la webcam si accende
+   leggi «Accendo la fotocamera…».
 2. Avvicina il libro fino a **riempire il riquadro azzurro** con il codice a
    barre: è la parte dell'immagine che viene guardata, e un codice piccolo al
    centro dell'inquadratura non basta.
@@ -21,7 +22,11 @@ Con **Salva e aggiungi un altro** il modulo si svuota ma **la fotocamera resta
 accesa**: è il modo di catalogare una pila di libri senza riaprire niente.
 
 **Riscansiona** rimette in ascolto dopo una lettura, se hai inquadrato il libro
-sbagliato. **Chiudi la scansione** spegne la webcam.
+sbagliato, e sotto il mirino compare «Pronto: rimetti il libro davanti
+all'obiettivo.». **Quando stai aggiungendo un libro, svuota anche il modulo**:
+quello che la lettura sbagliata aveva riempito — ISBN, metadati, copertina — se
+ne va, e riparti da capo. Quando stai modificando un libro che c'è già, invece,
+il modulo resta com'è. **Chiudi la scansione** spegne la webcam.
 
 **Lo stesso mirino serve anche a farsi restituire un libro.** In
 [Prestiti → Registra una restituzione](I-prestiti.md) è la via rapida: inquadri
@@ -43,6 +48,22 @@ scrive nel campo e lascia dire al programma se sta in piedi. Il rovescio è che 
 un libro con più codici — il prezzo, l'etichetta del negozio — può prendere
 quello sbagliato: se il numero che compare non somiglia a un ISBN, **Riscansiona**
 e inquadra l'altro.
+
+## Quando la fotocamera non si accende
+
+Al posto del mirino compare una frase, e sotto il pulsante **Riprova**:
+
+| | |
+|---|---|
+| «Nessuna fotocamera collegata a questo computer.» | non c'è nessuna webcam, o il sistema non la vede |
+| «L'accesso alla fotocamera è stato rifiutato…» | il permesso è negato: concedilo e premi **Riprova** |
+| «La fotocamera è già usata da un'altra applicazione…» | chiudi il programma che la tiene — una videochiamata, di solito — e premi **Riprova** |
+| «La fotocamera che hai scelto non risponde più…» | è stata scollegata: ricollegala, oppure chiudi e riapri la scansione per tornare a quella di prima |
+| «Non riesco ad accendere la fotocamera.» | un guasto che non rientra nei quattro qui sopra |
+
+**Su un Mac il permesso lo chiede il sistema**, la prima volta che apri la
+scansione. Se l'hai negato, si riaccende da **Impostazioni di sistema → Privacy e
+sicurezza → Fotocamera**.
 
 ## Il mirino è nero
 
@@ -76,9 +97,11 @@ Nell'ordine, le cause che si vedono davvero:
 
 ## L'ISBN che hai già catalogato
 
-Se lo stesso codice viene letto due volte di seguito, il secondo viene ignorato
-con una nota: è la webcam che vede lo stesso libro per trenta fotogrammi, non tu
-che scansioni due volte.
+**Un codice già letto in questa sessione viene ignorato**, anche se in mezzo ne
+hai letti altri: compare la nota «…: già scansionato, il modulo resta com'è.».
+È la webcam che vede lo stesso libro per trenta fotogrammi, non tu che scansioni
+due volte. Vale anche con **Salva e aggiungi un altro**; per rileggerlo davvero
+premi **Riscansiona**, oppure chiudi e riapri il modulo.
 
 Se invece l'ISBN esiste già nel catalogo, l'applicazione **te lo dice ma non ti
 ferma**: due copie dello stesso libro sono due esemplari legittimi, e magari uno

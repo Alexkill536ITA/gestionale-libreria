@@ -24,7 +24,11 @@ sistema.
 
 No. **La disinstallazione non cancella i dati.** Reinstalla e ritrovi tutto.
 Il catalogo sta in
-`%LOCALAPPDATA%\it.alexkill536ita.gestionale-libreria\` e resta lì.
+`%LOCALAPPDATA%\it.alexkill536ita.gestionale-libreria\` e resta lì — se non
+l'hai spostato in un'altra cartella, nel qual caso è dove l'hai messo, e se non
+sta su un server, dove la disinstallazione non arriva affatto. Dove sta di
+preciso te lo dice Impostazioni → Database; il resto è in [Dove stanno i
+dati](Dove-stanno-i-dati.md).
 
 ## Non trovo il programma in `Programmi`
 
@@ -50,8 +54,8 @@ Cosa provare, nell'ordine:
 
 ## Una fonte risponde con un errore HTTP
 
-`Google ha risposto con un errore (HTTP 503)` e simili vengono **dal catalogo
-remoto**, non dall'applicazione. Sono quasi sempre passeggeri: riprova fra
+`Google ha risposto con un errore (HTTP 503)` e simili vengono **dal servizio
+della fonte**, non dall'applicazione. Sono quasi sempre passeggeri: riprova fra
 qualche minuto. Le altre fonti intanto hanno risposto lo stesso.
 
 Se **Google Books** sbaglia sempre, controlla la chiave in Impostazioni →
@@ -139,6 +143,15 @@ puntatore si legge il nome, la data e da quanto tempo è via.
 Per vederli tutti insieme, il filtro **Prestito → fuori casa**, oppure la voce
 **Prestiti** nella barra.
 
+## Come segno un libro che devo ancora comprare?
+
+Non nel catalogo: c'è **Da acquistare**, la voce a destra della ricerca. Scrivi
+l'ISBN o il titolo, scegli l'edizione, e il volume resta lì con il suo prezzo
+finché non lo compri — poi **Aggiungi a catalogo** lo porta dentro già
+compilato. La lista si riempie **un volume per volta**: non dice quale numero ti
+manca di una serie, perché quel dato le fonti non lo danno. Tutto in
+[Da acquistare](Da-acquistare.md).
+
 ## Ho due generi uguali: `Manga` e `manga`
 
 Non dovrebbe più capitare: l'applicazione riusa la grafia che hai scelto la
@@ -204,30 +217,117 @@ libri che somigliano.
 
 Con un backup. Fanne uno con **Crea backup adesso** — nessuno nasce da sé —
 copia lo `.zip`, installa l'applicazione sul computer nuovo e usa **Ripristina
-da un backup…**. Tornano libri e copertine; tema, lingua e chiave API si
-rimettono a mano.
+da un backup…**. Tornano libri e copertine; tema, lingua, chiave API e il
+collegamento al server, se ne usi uno, si rimettono a mano: stanno nelle
+impostazioni, che nel backup non entrano.
 Il giro completo è in [Backup e ripristino](Backup-e-ripristino.md).
+
+Se il catalogo sta su un server, non c'è niente da spostare: sul computer nuovo
+rifai il collegamento da Impostazioni → Database, e i libri sono quelli di
+sempre. Come si fa è in [Il catalogo su un server](Il-catalogo-su-un-server.md).
 
 ## Posso usarlo su due computer insieme?
 
-No, e non conviene provarci. Non c'è sincronia: diventerebbero due cataloghi
-distinti, e ripristinare l'uno sull'altro cancellerebbe il lavoro del secondo.
+Sì, **mettendo il catalogo su un server**: PostgreSQL, MySQL, SQL Server o
+MongoDB. Le copertine vanno in un posto che tutti i computer raggiungono —
+**dentro il database**, **in un archivio S3** o in una **cartella condivisa** —
+e da lì ogni computer vede gli stessi libri. Il giro è in [Il catalogo su un
+server](Il-catalogo-su-un-server.md).
 
-Peggio ancora è mettere la cartella dei dati dentro OneDrive o Dropbox: la
-sincronia sui file del database può **corromperlo**. Sincronizza i backup, non
-il catalogo.
+Non è un programma per più persone, però: non ci sono account, e se due
+modificano lo stesso libro insieme vince chi salva per ultimo, senza che
+l'altro lo sappia.
+
+Due copie del catalogo di questo computer, invece, restano due cataloghi
+distinti: non si parlano, e ripristinare l'uno sull'altro cancellerebbe il
+lavoro del secondo. E la cartella del catalogo dentro OneDrive o Dropbox si può
+tenere, ma aperta **su un computer per volta**: due scritture insieme sul file
+del database lo **danneggiano**. Il perché sta in [Dove stanno i
+dati](Dove-stanno-i-dati.md).
+
+## Come porto i miei libri sul server?
+
+Da Impostazioni → Database, con il collegamento compilato, **Porta qui il
+catalogo di questo computer** e poi **Porta il catalogo**. Sul server ne arriva
+una **copia**, copertine comprese; il catalogo di questo computer resta com'era.
+Per lavorare di là, poi, scegli **Su un tuo database**.
+
+Si fa solo verso un catalogo del server ancora vuoto: se di là ci sono già dei
+libri, il gesto si rifiuta invece di mescolarne due. Tutto in [Il catalogo su
+un server](Il-catalogo-su-un-server.md).
+
+## Il server non risponde, cosa faccio?
+
+Se il server smette di rispondere — spento, la rete che non ci arriva, le
+credenziali cambiate — al posto delle pagine compare «Il catalogo sul server non
+si apre». **Non si è perso niente**, né di là né di qua. Quando il server torna,
+**Riprova**; se devi lavorare subito, **Usa il catalogo di questo computer**,
+sapendo che è un altro catalogo (vedi sotto). Il resto è in [Il catalogo su un
+server](Il-catalogo-su-un-server.md).
+
+## MongoDB non va bene: dice che è un server solo
+
+Il catalogo su MongoDB vuole un **replica set**, perché senza non esistono le
+operazioni che si annullano tutte insieme — e un ripristino interrotto lascerebbe
+il catalogo vuoto. Va bene anche un nodo soltanto, purché avviato come replica
+set. Come si fa sta in [Il catalogo su un
+server](Il-catalogo-su-un-server.md).
+
+## Posso tornare al catalogo di questo computer?
+
+Sì: Impostazioni → Database, pallino **Su questo computer**. Ma sono **due
+cataloghi, non due copie**: quello che hai fatto sul server resta sul server, e
+qui ritrovi il catalogo com'era quando l'hai lasciato.
+
+Per portarti qui il lavoro fatto di là: con il server ancora scelto fai un
+backup con **Crea backup adesso**, poi passa a **Su questo computer** e
+[ripristina](Backup-e-ripristino.md) quell'archivio. Il catalogo di questo
+computer viene sostituito per intero.
+
+## Posso fare il backup del catalogo sul server?
+
+Sì, con lo stesso pulsante: **Crea backup adesso** archivia il catalogo che
+stai usando, e con il server scelto è quello di là, con le copertine da
+qualunque posto stiano. Lo zip finisce comunque **su questo computer**, nella
+cartella dei backup. Dettagli in [Backup e ripristino](Backup-e-ripristino.md).
+
+## Ho ripristinato sul server e non si è riavviato
+
+È giusto così, e la conferma lo dice. Sul server non c'è
+nessun file da sostituire al riavvio: il catalogo viene svuotato e ricaricato in
+un colpo solo, le pagine si rileggono subito, e l'esito è «Il catalogo sul
+server è stato sostituito con quello dell'archivio.» Il riavvio serve solo al
+catalogo di questo computer.
+
+## Ho cambiato dove stanno le copertine: si spostano da sole?
+
+No, e la scelta non si salva nemmeno da sola: con il catalogo su un server è una
+bozza, e il posto cambia solo con **Sposta le copertine qui**, che le copia e a
+copia finita lo scrive nel catalogo, per tutti i computer. Quelle di prima
+restano dove sono.
+
+## Perché una copertina appare come un dorso?
+
+Un dorso disegnato è quello che l'applicazione mostra al posto di un'immagine
+che non ha: o quel libro una copertina non ce l'ha, o **il posto delle copertine
+non ha risposto** — una cartella condivisa non raggiungibile, un archivio S3
+spento. Nel secondo caso le copertine tornano da sole quando il posto risponde
+di nuovo, **cambiando pagina o riaprendo la vista**: finché la vista resta
+quella, il dorso resta. Vedi [Le copertine](Le-copertine.md).
 
 ## Ho cancellato un libro per sbaglio
 
 Non si annulla. L'unica strada è [ripristinare un backup](Backup-e-ripristino.md)
 — se ne hai fatto uno, perché il programma non ne fa da sé — e comunque riporta
-indietro **tutto** il catalogo allo stato di quel giorno, quindi perdi anche
-quello che hai fatto dopo.
+indietro **tutto** il catalogo allo stato di quel giorno, storico delle azioni
+compreso, quindi perdi anche quello che hai fatto dopo. Col catalogo su un
+server il ripristino riscrive il catalogo **di tutti** i computer collegati.
 
 ## L'applicazione parte in inglese
 
-La lingua sta nelle Impostazioni e vale dall'avvio dopo. Se è cambiata da sola,
-qualcuno l'ha cambiata lì: Impostazioni → Preferenze → Lingua.
+La lingua sta nelle Impostazioni e **cambia subito**, senza riavviare. Se è
+cambiata da sola, qualcuno l'ha cambiata lì: Impostazioni → Preferenze →
+Lingua.
 
 ## Ho cambiato il totale di una serie ma nel modulo del libro non cambia
 

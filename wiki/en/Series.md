@@ -14,25 +14,59 @@ nothing to set up first.
 
 ![A series row](images/serie-riga.png)
 
+Every series is a **row that opens**: click it, and the grid of its volumes
+appears underneath. You can keep as many open as you like — two series open side
+by side are the only way to compare them — and coming back to the page they are
+all closed again.
+
 From the left:
 
 - **the name** of the series;
 - **how many you have out of how many** — `2 / 12`. The total sits in an editable
-  box: correct it right there, it saves itself;
+  box: correct it right there, it saves itself, and the bar beside it draws the
+  same fraction;
 - **which ones are missing**, with the gaps merged: `missing 3–12` instead of
   ten numbers in a row;
-- on the right, the pill with the tally: `10 volumes missing`;
-- underneath, **the row of spines**: real cover for the volumes you have, dashed
-  box with the number for the ones you do not.
+- the pill with the status: `10 volumes missing`, `series in progress`,
+  `complete`;
+- on the right, three actions that appear on hover — **see in catalogue**,
+  **edit** and **delete**.
+
+## The grid of volumes
+
+![The grid of a series' volumes](images/serie-griglia.png)
+
+Once the row is open, the volumes sit in a **grid twenty columns wide**: the
+first one top left, the twenty-first on the next line. To the left of each line
+is the band it covers — `1–20`, `21–37` — and along the top the numbers 1 to 20.
+
+Position is the information: **volume 23 is always the third slot of the second
+line**, so a gap is found by eye before it is found by counting, and two
+different series compare because the step is the same.
+
+- a volume you **have** carries its cover, or a drawn spine if it has none or
+  it does not load — [Covers](Covers.md) explains it;
+- one that is **missing** is a dashed box with its number;
+- past the last expected volume there is **nothing**: volume 24 of a 23-volume
+  series does not exist, and dashing it would say “you're missing this”.
 
 Rest the pointer on a slot and it tells you **which volume it is** —
 `vol. 9 · My dress up darling. Bisque doll Vol.9`, with the subtitle where there
 is one — and on a dashed box, which volume is missing. It earns its keep on long
 series, where twenty small covers all look alike.
 
+**A half volume has no position**, and takes none: a `4.5` stays out of the grid,
+and the line beside the tally says so — which is where the volume no number names
+already lives.
+
 The list is not alphabetical: **wrong totals come first** — the series where you
 hold more volumes than the total claims, which is the sign of a wrong total —
 then the ones missing the least, and the complete ones last.
+
+This page tells you **which volumes are missing**; getting hold of them is [To
+buy](To-buy.md), which does not fill itself from a series: there you add a volume
+at a time, looking it up by title or ISBN or writing it by hand, volume number
+included.
 
 ## Narrowing the list
 
@@ -151,9 +185,13 @@ checkbox: there are no volumes to touch yet.
 
 ## Editing and deleting
 
-Hover a row: the pencil and the bin appear on the right.
+Hover a row: three buttons appear on the right — the first opens the **catalogue
+filtered** on that series, then the pencil and the bin.
 
 ![A series' actions](images/serie-riga-azioni.png)
+
+The name of the series is not a link: clicking it opens the grid of volumes,
+which is the page's main gesture, and the catalogue lives in that first button.
 
 The pencil opens the dialog above. The bin asks first:
 

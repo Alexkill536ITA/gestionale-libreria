@@ -71,6 +71,13 @@ Ogni riga porta editore, anno, ISBN e **il nome della fonte**. Scegli quella che
 corrisponde al libro che hai in mano, oppure **Nessuno di questi** e compili a
 mano.
 
+La lista mette **in cima l'edizione più recente**, perché quella che hai in mano
+è più spesso una ristampa che la prima uscita; le righe senza anno vanno in
+fondo. Ne mostra **dieci per pagina**: quando sono di più, sotto compaiono il
+conteggio (`1–10 di 23`) e due frecce, «Edizioni precedenti» e «Edizioni
+successive». **Nessuno di questi** resta su ogni pagina, così non serve arrivare
+all'ultima per rinunciare.
+
 Sopra la lista, in chiaro, c'è anche il resoconto di com'è andata con ciascuna
 fonte: `OpenLibrary non conosce questo ISBN`, `Google ha risposto con un errore
 (HTTP 503)`. Non sono guasti dell'applicazione: sono le risposte dei cataloghi.
@@ -84,9 +91,13 @@ per ISBN torna a mani vuote e nel modulo c'è già un titolo o un autore.
 ![La ricerca per titolo](immagini/ricerca-per-titolo.png)
 
 Le righe **SBN** e **NiceBooks** portano editore, anno e l'ISBN dell'edizione
-italiana, con il numero del volume a sinistra. Scorrendo in fondo alla lista si
-trovano quelle di **AniList**, con la miniatura della copertina e l'anno
-dell'opera. Ogni riga dice da quale fonte viene.
+italiana, con l'anno a sinistra. Nella stessa lista, ordinate per anno come le
+altre, ci sono quelle di **AniList**, con la miniatura della copertina e l'anno
+in cui l'opera è cominciata — che di solito le porta verso il fondo. Ogni riga
+dice da quale fonte viene.
+
+Ciascuna delle tre fonti propone **fino a 25 righe**, e la lista si sfoglia
+dieci per volta come quella delle edizioni, dalla più recente.
 
 ![Le righe di AniList in fondo alla lista](immagini/ricerca-titolo-anilist.png)
 

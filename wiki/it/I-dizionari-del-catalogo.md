@@ -184,7 +184,7 @@ gesto.
 Rinominare, unire ed eliminare finiscono nello [storico delle
 azioni](Lo-storico-delle-azioni.md) quando è acceso, col nome della voce e cosa
 le è successo. Con lo storico spento quella voce nel menu dell'ingranaggio non
-c'è, e restano *Dizionari del catalogo* e *Impostazioni*.
+c'è, e restano *Dizionari del catalogo*, *Impostazioni* e *Licenza*.
 
 Le serie e i loro valori si correggono da [Le serie](Le-serie.md), i nomi doppi
 di uno stesso editore da [Gli editori](Gli-editori.md).

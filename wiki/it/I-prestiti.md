@@ -5,7 +5,8 @@
 La voce **Prestiti** nella barra risponde a una domanda sola: **dov'è finito
 quel libro?**
 
-È l'unica pagina che parla di quello che *non* c'è sullo scaffale. In cima dice
+Il suo titolo è **Fuori casa**, sotto l'occhiello **Prestiti**: è l'unica
+pagina che parla di quello che *non* c'è sullo scaffale. In cima dice
 quanti libri sono via e da quanto — *«3 libri su 11 non sono sulla mensola · il
 più vecchio da 2 mesi»* — e sotto mostra chi li ha.
 
@@ -19,7 +20,8 @@ registri uno, la pagina è vuota e spiega come si comincia.
 Sotto il titolo c'è la striscia dei libri che sono fuori: una copertina per
 volume, **in fila per da quanto sono via** — il più vecchio per primo. Al piede
 di ogni copertina un filo dice quanto tempo è passato, e sotto c'è il nome di chi
-lo tiene.
+lo tiene. Una copertina che non si carica diventa un dorso disegnato, come in
+[Le copertine](Le-copertine.md).
 
 **Clicca una copertina e la tabella dei prestiti si stringe su chi ha quel
 libro.** Le altre copertine restano accese: un filtro attivo non è una ragione

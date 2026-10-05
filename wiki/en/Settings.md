@@ -3,21 +3,30 @@
 # Settings
 
 **The gear top right always opens a menu**: “Library dictionaries”, “Activity
-log” when it is on, and under a separator **Settings**, which opens this window.
-Both of those pages have a chapter of their own —
+log” when it is on, and under a separator **Settings**, which opens this window,
+and **Licence**. Both of those pages have a chapter of their own —
 [Library dictionaries](Library-dictionaries.md) and
-[The activity log](The-activity-log.md).
+[The activity log](The-activity-log.md); above the separator are the entries that
+take you elsewhere, below it the ones that open a window.
 
-Four sections on a rail down the left.
+## The window
+
+Five sections on a rail down the left: “Preferences”, “Metadata”, “Database”,
+“Backup” and “Updates”.
 
 ![Preferences](images/impostazioni-preferenze.png)
 
 **Changes save themselves**, with no Save button. The confirmation is not a word:
 it is the line under each rail entry, summing up the state right now —
-`Dark · English · EUR`, `key set · 1/s`, `today, 12:41 · 4 copies`,
-`0.1.0 · checked at startup` — and it rewrites itself the moment you change
+`Dark · English · EUR`, `key set · 1/s`, `usual folder · 227 books`,
+`today, 12:41 · 4 copies`, `0.1.0 · checked at startup` — and it rewrites
+itself the moment you change
 something, even from another section. With the log on, the Preferences line
 takes `· log` at the end.
+
+**The line under “Database” always speaks about this computer**: it names the
+folder of the catalogue here and counts the books in it, even while you are
+working on the server.
 
 ## Preferences
 
@@ -119,6 +128,43 @@ it comes last, so it only works where the other three had no answer.
 Manga and Japanese comics. It does not know ISBNs, so it stays out of the cascade
 and only shows up in the search by title. No key, no settings.
 
+## Database
+
+![The Database section](images/impostazioni-database.png)
+
+“Where the data lives: in a folder on this computer, on a database of yours, or
+on the library's service. The radio button picks which one is used.” There are
+three roads in two groups: **On your own** holds **On this computer** and **On a
+database of yours**, **In a library** holds **With the library's service**.
+
+**On this computer** says which folder the database and the covers are in, and
+lets you take them elsewhere: move the catalogue — which **copies and deletes
+nothing** —, open one that already exists, start a new one, go back to the
+default folder. The whole round, the screen that shows up when that folder is
+gone, and the network folders that are refused are in
+[Where the data lives](Where-the-data-lives.md).
+
+**On a database of yours** puts the catalogue on a database on the network — PostgreSQL,
+MySQL, SQL Server or MongoDB — with the covers inside the database, in a shared
+folder or in an S3 archive. **Choosing that radio opens the catalogue over
+there, without restarting**, and from then on the pages read and write on the
+server; the catalogue on this computer stays as it was, and the other radio
+takes you back to it. Connection, test, covers and **Bring this computer's
+catalogue here** are in [The catalogue on a server](The-catalogue-on-a-server.md).
+
+**With the library's service** talks to the program the library keeps on its
+server, the only one that sees the database: all it needs here is its
+**Address**, which starts with `https://` and is the one of the computer the
+service runs on. On the first connection the section shows the service's
+fingerprint and asks **I trust it**: first you compare it with the one the
+service prints when it starts, and until you trust it this computer sends it
+nothing. Name and password are not here: a dialog that opens by itself when
+needed asks for them, and who is signed in shows in the top bar. With the
+catalogue on the service, backup, export, restore and **Bring
+this computer's catalogue here** stay off until they arrive, while importing
+from a spreadsheet works; the rest is in
+[Where the data lives](Where-the-data-lives.md#with-the-librarys-service).
+
 ## Backup
 
 ![The Backup section](images/impostazioni-backup.png)
@@ -128,7 +174,15 @@ short:
 
 - **the folder** the files end up in, changeable with Browse;
 - **Back up now**, **Open folder**, **Export to CSV**;
+- the **Import from a spreadsheet** block: **Pick a CSV file…** reads a
+  spreadsheet — the one “Export to CSV” writes, or one written by hand — and
+  before writing anything says how many books would come in and which rows stay
+  out. It adds and replaces nothing: the books already there stay where they
+  are;
 - the **Restore** block, ringed in red because it replaces everything.
+
+Backup, export, import and restore work on the catalogue you are using, whether
+it is on this computer or on the server.
 
 ## Updates
 
@@ -144,9 +198,41 @@ nothing installs itself**: why, and what the notice's three buttons do, is in
 
 ## Where these settings live
 
-In `impostazioni.json`, in the data folder, **outside the database and outside
-the backups**.
+In `impostazioni.json`, in this computer's data folder, **outside the database
+and outside the backups**. It holds:
+
+- the preferences — theme, language, currency, catalogue order, log on or off;
+- the contact address and the Google Books key;
+- where the catalogue lives: the choice between “On this computer”, “On a
+  database of yours” and “With the library's service”, and the catalogue folder
+  when it is not the default one;
+- the server connection, **with its password**, and the covers archive, **with
+  its secret**;
+- the address of the library's service and the fingerprint you trusted. The
+  service's session is not there: it lives in the system keychain;
+- the backup folder, the scanner's camera, the update check and the version you
+  chose to skip.
 
 That is not a detail: a restored archive does not bring you another computer's
 theme, API key and camera. These are *this* machine's preferences, and they stay
-put even after a restore.
+put even after a restore — and even after the catalogue has moved to another
+folder, because that file always stays in the starting folder.
+
+**Do not share it**, and do not attach it to a report: the keys and passwords
+you gave the program are inside.
+
+## Licence
+
+It says **who the program belongs to and who owns what is inside it**, which are
+two different things. At the top, the licence of Gestionale Libreria: you can use
+it, copy it, modify it and distribute it, even to make something of your own, as
+long as the notice stays with it — and under that line the licence text sits
+**in full**, not as a summary.
+
+Below it, the components written by other people that the program includes: there
+are more than a thousand, each one stays with its authors under the licence they
+chose, and **Open the notices** opens the file that lists them all. That file
+travels with the program, so no internet is needed to read it; if you built the
+application yourself and have not made a full build yet, the dialogue says so
+rather than staying quiet. The same list is in
+[Third-party licenses](Third-party-licenses.md).

@@ -15,19 +15,27 @@ Al centro della barra, sempre presente. Cerca mentre scrivi, senza premere
 Guarda dentro **titolo, sottotitolo, autori, tag, editore, collana e note**. Non
 serve la parola intera: bastano le prime due o tre lettere.
 
+Se scrivi più parole, **ognuna vale come inizio di una parola**, e un libro esce
+solo se **le trova tutte**, in qualunque ordine: `eco rosa` trova *Il nome della
+rosa* di Umberto Eco. Apostrofi, trattini e gli altri segni spezzano le parole
+come le spezza il catalogo: *L'isola* si trova con `isola`, e `komi-communicate`
+sono due parole, `komi` e `communicate`.
+
 Restano fuori la descrizione e il nome della serie: per le serie c'è
 [la pagina apposta](Le-serie.md).
 
 ### Quando sbagli a scrivere
 
 Se la ricerca esatta non trova niente e hai scritto almeno tre caratteri, parte
-un secondo giro che **perdona un errore di battitura** e mostra i libri che
-somigliano, dicendolo sopra la tabella.
+un secondo giro che **perdona un errore di battitura** — due nelle parole più
+lunghe — e mostra i libri che somigliano, dicendolo sopra la tabella.
 
 ![Il ripiego sulla somiglianza](immagini/ricerca-refuso.png)
 
 `camileri` non esiste in nessun libro, ma *«Nessun libro contiene «camileri».
-Questi ci somigliano»* e sotto compare Camilleri.
+Questi ci somigliano»* e sotto compare Camilleri. Con dei filtri attivi la frase
+lo dice: *«Con questi filtri nessun libro contiene «camileri». Questi ci
+somigliano.»*
 
 ### Quando davvero non c'è niente
 
@@ -48,13 +56,13 @@ Undici modi di restringere:
 |---|---|
 | **Genere** | con il conteggio dei libri accanto a ciascuno |
 | **Stato di lettura** | da leggere · in lettura · letto, anche questi contati |
-| **Autore** | |
+| **Autore** | in OR: basta uno degli autori scelti |
 | **Editore** | |
 | **Collana** | |
-| **Posizione** | dove sta il libro |
-| **Tag** | |
+| **Posizione** | dove sta il libro, in OR: basta una delle posizioni scelte |
+| **Tag** | in AND: il libro deve averli tutti |
 | **Lingua** | |
-| **Copertina** | con o senza |
+| **Copertina** | `ce l'ha` · `manca` |
 | **Prestito** | fuori casa · in casa |
 | **Anno** | un intervallo, `da` e `a` |
 
@@ -68,7 +76,8 @@ ventinove e scorrerli è più lento che scriverne tre lettere.
 
 Le sezioni oltre le prime due sono chiuse: un clic sulla riga le apre. Il numero
 accanto al titolo (`AUTORE 10 disponibili`) dice quanti valori ci sono da
-scegliere.
+scegliere. In una sezione lunga se ne vedono otto, e **Mostra altri N** apre il
+resto; **Mostra meno** la richiude.
 
 **Applica** chiude il pannello e filtra; **Azzera** toglie tutto.
 

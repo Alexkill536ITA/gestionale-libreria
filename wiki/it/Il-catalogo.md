@@ -10,11 +10,14 @@ In alto a sinistra il conteggio dice quanti libri stai guardando — `11 volumi`
 quando non c'è niente di attivo, `3 risultati` quando una ricerca o un filtro
 hanno ristretto il campo.
 
+Qui ci sono i libri che **hai**: quelli che vuoi comprare stanno in
+[Da acquistare](Da-acquistare.md), e da lì entrano qui con un clic.
+
 ## Le colonne
 
 | Colonna | Cosa mostra |
 |---|---|
-| Copertina | la miniatura, oppure un dorso disegnato col colore dell'editore |
+| Copertina | la miniatura, oppure un dorso disegnato col colore dell'editore — anche quando l'immagine non si carica (vedi [Le copertine](Le-copertine.md)) |
 | Titolo | in grassetto, e sotto il **sottotitolo** in piccolo, dove c'è |
 | Autore | tutti gli autori del libro, separati da virgola |
 | Anno | l'anno di **questa** edizione, non della prima |
@@ -25,7 +28,7 @@ hanno ristretto il campo.
 **Un libro che è fuori casa lo dice la cella «Letto».** Accanto allo stato di
 lettura compare un segno, e fermandoci sopra il puntatore si legge tutto quello
 che c'è da sapere: *«Luca Ferraro · prestato il 4 set 2026 (oggi)»*. Non è una
-nona colonna perché non ci sta — le larghezze sono tarate al pixel — ed è il
+colonna in più perché non ci sta — le larghezze sono tarate al pixel — ed è il
 segno che ti spiega perché quel volume non è sullo scaffale dove dovrebbe. Tutto
 il resto sta in [I prestiti](I-prestiti.md).
 
@@ -41,8 +44,10 @@ Fa eccezione **Letto**, che la sua parola ce l'ha già a schermo.
 
 ## Ridimensionare le colonne
 
-Il bordo destro di **Titolo**, **Autore** e **Genere** si trascina: passandoci
-sopra il puntatore diventa una doppia freccia e compare un filo verticale.
+Il bordo destro di **Titolo**, **Autore** e **Genere** porta una **presa**, i
+sei puntini grigi sempre visibili accanto all'intestazione. Si trascina:
+passandoci sopra la presa si colora, il puntatore diventa una doppia freccia e
+compare il suggerimento *«Trascina per ridimensionare, o usa ← →»*.
 
 ![La maniglia fra due colonne](immagini/colonne-ridimensiona.png)
 
@@ -67,8 +72,13 @@ preferenza di questa finestra, non un dato del catalogo.
 Clic sull'intestazione di una colonna per ordinare. **Sei colonne su sette sono
 ordinabili** — tutte tranne la copertina.
 
+Accanto al nome di ogni colonna ordinabile c'è sempre un'icona: una doppia
+freccia finché la colonna non ordina niente, e la freccia del verso quando
+ordina.
+
 Ogni intestazione gira su **tre stati**: primo clic crescente, secondo
-decrescente, terzo torna all'ordine di inserimento.
+decrescente, terzo torna all'ordine di inserimento. **Anno fa l'inverso**: il
+primo clic mette in cima le edizioni più recenti, il secondo le più vecchie.
 
 ![Ordinato per anno](immagini/ordinamento-anno.png)
 
@@ -94,7 +104,9 @@ Passa il puntatore su una riga: a destra compaiono due icone.
 ![Le azioni di riga](immagini/riga-azioni.png)
 
 - **la matita** riapre il libro nel modulo, con tutti i campi già pieni;
-- **il cestino** lo elimina, dopo una conferma. La copertina se ne va con lui.
+- **il cestino** lo elimina, dopo una conferma. La copertina se ne va con lui,
+  a meno che la stessa immagine non la usi anche un altro libro o un volume da
+  acquistare.
 
 L'eliminazione **non si annulla**. Se sbagli, la strada indietro è
 [ripristinare un backup](Backup-e-ripristino.md) — che però riporta indietro
@@ -106,8 +118,13 @@ l'ha: prima te lo fai restituire, poi lo togli. Vale anche per la spunta di
 
 ## Sfogliare
 
-Quando i libri sono più di una pagina, in fondo alla finestra compaiono
-**Precedente** e **Successiva**, con il conteggio a sinistra (`1–11 di 11`).
+In fondo alla finestra stanno **Precedente** e **Successiva**, con il conteggio
+a sinistra (`1–11 di 11`); con una pagina sola sono spenti.
+
+Una pagina tiene **100 righe**. Quando i libri sono di più, accanto al conteggio
+compare **Righe per pagina**, che sceglie fra `100 righe`, `250 righe` e
+`500 righe`. La scelta **resta al riavvio**, e cambiarla ti riporta alla prima
+pagina.
 
 Il piede resta **incollato al fondo della finestra**, che tu abbia dieci libri o
 duecento: a scorrere è solo la tabella, e l'intestazione delle colonne resta

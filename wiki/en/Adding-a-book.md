@@ -9,6 +9,13 @@ from the pencil on a row, for editing.
 
 **The title is the only required field.** Everything else can stay empty.
 
+A book you **do not have yet** goes on [To buy](To-buy.md), and from there it
+joins the catalogue already filled in the day it arrives. The form, though, is
+**this one**: “Add by hand”, over there, opens the same dialogue in a context
+that switches off the fields of a book you are holding — shelf location, reading
+status, purchase date, price — and with them scanning, *Delete*, *Duplicate* and
+*Save and add another*. Everything else on this page holds there too.
+
 ## How it is laid out
 
 The form has two columns, and the split is not decoration:
@@ -29,14 +36,18 @@ you: **Scan** (turns on the webcam) and **Look up metadata**.
 | Shelf | free text: `SAL-1`, `Bedside`, `Lent to Marco` |
 | Reading status | To read · Reading · Read |
 | Title | **required** |
-| Authors | one or more, each with a role (Author, Artist, Translator…) |
+| Authors | one or more, each with a role: Author, Illustrator, Translator, Editor |
 | Publisher | |
 | Year | of this edition |
 | Genre | just one |
 | Series | the name, plus the volume number |
 | Total volumes | how many volumes the series has altogether |
 
-**+ Add author** adds a second author; the `×` on the right removes a row.
+**+ Add author** adds a second author; the `×` on the right removes a row. With
+two authors or more, two arrows show up next to the role — «Move … up» and
+«Move … down», with the author's name in between — and change the order: the
+first in the row is the one the catalogue names first. On the first one the up
+arrow is off, and on the last one the down arrow.
 
 ## More details
 
@@ -110,6 +121,12 @@ If you have written something, `Esc` and **Cancel** do not close straight away:
 they ask.
 
 ![The exit confirmation](images/modulo-conferma-uscita.png)
+
+**Leaving without saving also throws away the covers you just picked.** An image
+taken from a file, from an address or from the sources does not stay on disk if
+the book is not saved. Correcting the cover of a book already saved, on the
+other hand, throws the old one away when you press **Save** — if no other book
+uses it. The details are in [Covers](Covers.md).
 
 ## A code that is not an ISBN
 
@@ -210,7 +227,9 @@ With the copy in hand three things disappear, and it is not an oversight:
 The **cover becomes a file of its own**, copied straight away and not on save.
 The two rows do not share the image, so deleting one of the two books does not
 leave the other one without it; and changing the copy's cover does not touch the
-cover of the book you started from.
+cover of the book you started from. If you abandon the copy without saving it,
+that file goes with it and the cover of the book you started from stays where it
+is.
 
 Under the ISBN you will see *«you already have one with this ISBN»*: **that is
 right, and it does not stop you.** The book with that code really does exist, and

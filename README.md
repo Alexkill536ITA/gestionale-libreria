@@ -24,9 +24,12 @@ Inquadri il codice a barre, e il libro si cataloga da solo.
 
 ## Che cos'è
 
-Un catalogo personale di libri **di carta**, per Windows e macOS. Sta su un
-computer solo, non chiede un account e funziona **senza rete** — tranne quando
-vai a cercare i dati di un libro, che arrivano da cinque cataloghi pubblici.
+Un catalogo personale di libri **di carta**, per Windows e macOS. Non chiede un
+account, e di partenza sta su questo computer e funziona **senza rete** — tranne
+quando vai a cercare i dati di un libro, che arrivano da cinque cataloghi
+pubblici. Se vuoi, il catalogo può stare invece **su un server**: PostgreSQL,
+MySQL, SQL Server o MongoDB, con le copertine dentro il database, in una
+cartella o in un archivio S3.
 
 Non è una libreria digitale, non sincronizza niente, non ti manda notifiche:
 tiene il conto di quello che hai sugli scaffali, di dove sta, di cosa manca a una
@@ -66,7 +69,7 @@ per poi passarli al prossimo che aggiungi.
 
 ### ⚡ Cerca e perdona i refusi
 Ricerca full-text mentre digiti. Se scrivi `camileri`, ti mostra Camilleri —
-e dieci filtri per genere, autore, editore, posizione, tag.
+e undici filtri per genere, autore, editore, posizione, tag, anno.
 
 </td>
 </tr>
@@ -126,8 +129,9 @@ vecchio → nuovo` di ogni modifica e la storia completa di ogni libro.
 <td width="50%" valign="top">
 
 ### 🔒 Nessun account, nessuna telemetria
-Il catalogo sta su questo computer e non esce. Le uniche richieste in rete sono
-quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
+Il catalogo sta su questo computer, o sul server che scegli tu, e da nessun'altra
+parte. Le altre richieste in rete sono quelle che chiedi tu: i dati di un libro,
+e l'elenco delle release.
 
 </td>
 </tr>
@@ -141,7 +145,7 @@ quelle che chiedi tu: i dati di un libro, e l'elenco delle release.
 <td width="50%"><img src="wiki/it/immagini/serie.png" alt="La vista delle serie"><br><sub><b>Le serie</b> — quanti volumi hai su quanti, quali mancano, e la fila dei dorsi.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="wiki/it/immagini/filtri-pannello.png" alt="Il pannello dei filtri"><br><sub><b>I filtri</b> — dieci faccette con i conteggi, così sai in anticipo quanti libri resteranno.</sub></td>
+<td width="50%"><img src="wiki/it/immagini/filtri-pannello.png" alt="Il pannello dei filtri"><br><sub><b>I filtri</b> — undici, e dieci con i conteggi, così sai in anticipo quanti libri resteranno.</sub></td>
 <td width="50%"><img src="wiki/it/immagini/anilist-riempito.png" alt="Un manga da AniList"><br><sub><b>Il manga da AniList</b> — autore e disegnatore distinti, il totale dei volumi, i tag proposti.</sub></td>
 </tr>
 <tr>
@@ -173,7 +177,7 @@ nella ricerca per titolo, dove scegli tu.
 
 ### Windows
 
-Serve `Gestionale Libreria_0.6.5_x64-setup.exe`, dalla [pagina dell'ultima
+Serve `Gestionale Libreria_0.7.0_x64-setup.exe`, dalla [pagina dell'ultima
 versione](https://github.com/alexkill536ita/gestionale-libreria/releases/latest).
 
 Installa **per il solo utente corrente**, quindi non chiede l'amministratore, e
@@ -184,13 +188,14 @@ il componente WebView2 è già dentro: nessun download durante l'installazione.
 > certificato costa un canone annuo senza nemmeno spegnere l'avviso da solo.
 > **Ulteriori informazioni → Esegui comunque**.
 
-I tuoi dati vivono in `%LOCALAPPDATA%\it.alexkill536ita.gestionale-libreria\` —
-catalogo, copertine, backup, impostazioni — e **la disinstallazione non li
-cancella**.
+Di partenza i tuoi dati vivono in
+`%LOCALAPPDATA%\it.alexkill536ita.gestionale-libreria\` — catalogo, copertine,
+backup, impostazioni — e **la disinstallazione non li cancella**. Il catalogo si
+può spostare in un'altra cartella o su un server; le impostazioni restano lì.
 
 ### macOS
 
-`Gestionale Libreria_0.6.5_universal.dmg`, dalla [stessa
+`Gestionale Libreria_0.7.0_universal.dmg`, dalla [stessa
 pagina](https://github.com/alexkill536ita/gestionale-libreria/releases/latest):
 un file solo per Intel e Apple Silicon. È **firmato ad-hoc** — nessun
 certificato Apple, nessuna notarizzazione — perché senza una firma Apple
@@ -207,8 +212,8 @@ Qui i dati stanno in
 
 | | |
 |---|---|
-| 📘 [**Guida d'uso**](wiki/it/Home.md) | diciassette pagine con le schermate: catalogo, metadati, copertine, serie, editori, prestiti, scanner, storico, dizionari, backup, aggiornamenti |
-| 📗 [**User guide**](wiki/en/Home.md) | the same seventeen pages, in English |
+| 📘 [**Guida d'uso**](wiki/it/Home.md) | ventuno pagine con le schermate: catalogo, metadati, copertine, serie, editori, prestiti, da acquistare, scanner, storico, dizionari, il catalogo su un server, backup, aggiornamenti |
+| 📗 [**User guide**](wiki/en/Home.md) | the same twenty-one pages, in English |
 
 ## Partecipare
 

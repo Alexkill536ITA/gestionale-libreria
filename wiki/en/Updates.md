@@ -21,7 +21,7 @@ Three ways out, and none of them installs anything:
 
 | | |
 |---|---|
-| **Update now** | opens the release page in your browser, where the `.exe` is waiting to be downloaded |
+| **Update now** | opens the release page in your browser, where the file is waiting to be downloaded — `.exe` for Windows, `.dmg` for the Mac |
 | **Later** | closes and does nothing: it will remind you at the next startup |
 | **Skip this version** | sets it aside. It will not come up again, until another one is out |
 
@@ -35,7 +35,7 @@ data stays where it is.
 
 ## Checking right now
 
-**Settings → Updates**, the fourth compartment of the rail. There you find:
+**Settings → Updates**, the fifth and last compartment of the rail. There you find:
 
 - the **installed version**, the one currently running;
 - **Check for updates**, which asks straight away instead of waiting for the next
@@ -45,7 +45,8 @@ data stays where it is.
 
 The line under the **Updates** entry in the rail sums up the situation without
 opening the compartment: `0.1.0 · checked at startup` when all is quiet,
-`0.1.0 · 0.2.0 available` when there is something to download.
+`0.1.0 · 0.2.0 available` when there is something to download, and
+`0.1.0 · check off` if you untick the box below.
 
 ## Turning the check off
 
@@ -54,7 +55,8 @@ never appears and the application contacts nobody at startup: the **Check for
 updates** button stays, for whenever you want it.
 
 With it on, the check costs **one request** when the program opens, and the notice
-appears **once per version** — not at every startup.
+**comes back at every startup** until you install that version or press **Skip
+this version**: “Later” only closes it for this time.
 
 ## What travels over the network
 
@@ -76,6 +78,10 @@ there is.
 
 **“GitHub cannot be reached…”** — either the connection is missing, or GitHub is
 unreachable from here. Your catalogue is untouched: try again later.
+
+**“GitHub answered something unreadable…”** — an answer arrived but not in the
+expected shape. Here too the problem is on the other end, and your catalogue is
+untouched: try again later.
 
 **“GitHub answered with an error (HTTP …)”** — the problem is on the other end and
 goes away on its own. Try again in a few minutes.

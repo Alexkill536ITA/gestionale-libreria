@@ -69,6 +69,13 @@ which is yours. Rather than guess, it lines them up.
 Each row carries publisher, year, ISBN and **the name of the source**. Pick the
 one matching the book in your hands, or **None of these** and fill in by hand.
 
+The list puts **the most recent edition on top**, because the one in your hands
+is more often a reprint than the first printing; rows with no year go last. It
+shows **ten per page**: when there are more, the count (`1–10 of 23`) and two
+arrows, «Previous editions» and «Next editions», appear underneath. **None of
+these** stays on every page, so you do not need to reach the last one to give
+up.
+
 Above the list, in plain words, is also the report of how each source did:
 `OpenLibrary does not know this ISBN`, `Google answered with an error (HTTP
 503)`. These are not faults in the application: they are the catalogues'
@@ -83,9 +90,13 @@ back empty and the form already holds a title or an author.
 ![The search by title](images/ricerca-per-titolo.png)
 
 The **SBN** and **NiceBooks** rows carry publisher, year and the Italian
-edition's ISBN, with the volume number on the left. Scroll to the bottom of the
-list and you find the **AniList** ones, with the cover thumbnail and the year of
-the work. Every row says which source it comes from.
+edition's ISBN, with the year on the left. In the same list, sorted by year like
+the others, are the **AniList** ones, with the cover thumbnail and the year the
+work began — which usually takes them towards the bottom. Every row says which
+source it comes from.
+
+Each of the three sources offers **up to 25 rows**, and the list pages ten at a
+time like the editions one, most recent first.
 
 ![The AniList rows at the bottom of the list](images/ricerca-titolo-anilist.png)
 

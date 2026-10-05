@@ -9,7 +9,8 @@ reads the barcode off the back cover.
 
 ## How to use it
 
-1. **Scan** opens the viewfinder inside the form.
+1. **Scan** opens the viewfinder inside the form. While the webcam comes on you
+   read “Turning the camera on…”.
 2. Bring the book closer until the barcode **fills the blue frame**: that is the
    part of the image being looked at, and a small code in the middle of the shot
    will not do.
@@ -21,7 +22,11 @@ With **Save and add another** the form empties but **the camera stays on**: this
 is how you catalogue a stack of books without reopening anything.
 
 **Scan again** puts it back into listening after a read, if you framed the wrong
-book. **Close the scanner** turns the webcam off.
+book, and under the viewfinder you read “Ready: put the book back in front of the
+lens.”. **When you are adding a book, it empties the form too**: whatever the
+wrong read had filled in — ISBN, metadata, cover — goes away, and you start over.
+When you are editing a book that already exists, the form stays as it is.
+**Close the scanner** turns the webcam off.
 
 **The same viewfinder is also how you take a book back.** In
 [Loans → Record a return](Loans.md) it is the quick way: you frame the code of
@@ -43,6 +48,22 @@ it writes it into the field and lets the program say whether it stands up. The
 flip side is that on a book with several barcodes — the price, the shop label —
 it can pick the wrong one: if the number that shows up looks nothing like an
 ISBN, press **Scan again** and frame the other one.
+
+## When the camera will not come on
+
+Instead of the viewfinder a sentence appears, with a **Try again** button below:
+
+| | |
+|---|---|
+| “No camera is connected to this computer.” | there is no webcam, or the system does not see it |
+| “Access to the camera was refused…” | permission is denied: grant it and press **Try again** |
+| “The camera is already in use by another application…” | close the program holding it — usually a video call — and press **Try again** |
+| “The camera you chose does not answer any more…” | it was unplugged: plug it back in, or close and reopen the scanner to go back to the previous one |
+| “The camera cannot be turned on.” | a fault that fits none of the four above |
+
+**On a Mac the permission is asked by the system**, the first time you open the
+scanner. If you refused, it can be turned back on from **System Settings →
+Privacy & Security → Camera**.
 
 ## The viewfinder is black
 
@@ -76,8 +97,11 @@ In order, the causes you actually run into:
 
 ## An ISBN you have already catalogued
 
-If the same code is read twice in a row, the second is ignored with a note: that
-is the webcam seeing the same book for thirty frames, not you scanning twice.
+**A code already read in this session is ignored**, even if you read others in
+between: the note “…: already scanned, the form stays as it is.” appears. That is
+the webcam seeing the same book for thirty frames, not you scanning twice. It
+holds with **Save and add another** too; to really read it again press **Scan
+again**, or close and reopen the form.
 
 If instead the ISBN is already in the catalogue, the application **tells you but
 does not stop you**: two copies of the same book are two legitimate items, and

@@ -9,6 +9,14 @@ modulo si riapre con la matita su una riga, per modificare.
 
 **Il titolo è l'unico campo obbligatorio.** Tutto il resto può restare vuoto.
 
+Un libro che **non hai ancora** si mette in
+[Da acquistare](Da-acquistare.md), e da lì entra in catalogo già compilato il
+giorno che arriva. Ma il modulo è **questo**: «Aggiungi a mano», là dentro, apre
+lo stesso dialogo in un contesto che spegne i campi di un libro che tieni in mano
+— posizione, stato di lettura, data di acquisto, prezzo — e con loro la
+scansione, *Elimina*, *Duplica* e *Salva e aggiungi un altro*. Tutto il resto di
+questa pagina vale anche là.
+
 ## Come è diviso
 
 Il modulo ha due colonne, e la divisione non è estetica:
@@ -29,7 +37,7 @@ posto tuo: **Scansiona** (accende la webcam) e **Cerca i metadati**.
 | Posizione | testo libero: `SAL-1`, `Comodino`, `Prestato a Marco` |
 | Stato di lettura | Da leggere · In lettura · Letto |
 | Titolo | **obbligatorio** |
-| Autori | uno o più, ognuno con un ruolo (Autore, Disegnatore, Traduttore…) |
+| Autori | uno o più, ognuno con un ruolo: Autore, Disegnatore, Traduttore, Curatore |
 | Editore | |
 | Anno | di questa edizione |
 | Genere | uno solo |
@@ -37,7 +45,10 @@ posto tuo: **Scansiona** (accende la webcam) e **Cerca i metadati**.
 | Volumi totali | quanti volumi ha la serie in tutto |
 
 Per aggiungere un secondo autore c'è **+ Aggiungi autore**; la `×` a destra
-toglie la riga.
+toglie la riga. Con due autori o più, accanto al ruolo compaiono due frecce —
+«Sposta più in alto» e «Sposta più in basso» — che cambiano l'ordine: il primo
+della fila è quello che il catalogo nomina per primo. Sul primo la freccia in su
+è spenta, e sull'ultimo quella in giù.
 
 ## Altri dettagli
 
@@ -112,6 +123,12 @@ Se hai scritto qualcosa, `Esc` e **Annulla** non chiudono subito: chiedono
 conferma.
 
 ![La conferma di uscita](immagini/modulo-conferma-uscita.png)
+
+**Uscire senza salvare butta anche le copertine appena scelte.** Un'immagine
+presa da un file, da un indirizzo o dalle fonti non resta sul disco se il libro
+non viene salvato. Correggere la copertina di un libro già salvato, invece, butta
+la vecchia quando premi **Salva** — se nessun altro libro la usa. I dettagli
+stanno in [Le copertine](Le-copertine.md).
 
 ## Un codice che non è un ISBN
 
@@ -210,7 +227,8 @@ Con la copia in mano tre cose spariscono, e non è una dimenticanza:
 La **copertina diventa un file suo**, copiato subito e non al salvataggio. Le due
 righe non condividono l'immagine, quindi eliminando uno dei due libri l'altro non
 resta senza; e cambiare la copertina della copia non tocca quella del libro di
-partenza.
+partenza. Se abbandoni la copia senza salvarla, quel file se ne va con lei e la
+copertina del libro di partenza resta dov'è.
 
 Sotto l'ISBN comparirà *«ne hai già uno con questo ISBN»*: **è giusto così, e non
 ti ferma.** Il libro con quel codice esiste davvero, ed è quello da cui sei

@@ -48,13 +48,18 @@ campo cambiato, e una serata passata a catalogare ne lascia qualche centinaio.
 È l'unica cosa che porta via eventi da sola. Tutto il resto — svuotarlo
 spegnendo la casella, sostituirlo con un ripristino — è un gesto tuo.
 
+**Il taglio vale anche di là.** Con il
+[catalogo su un server](Il-catalogo-su-un-server.md) lo storico del server si
+accorcia ogni volta che il catalogo si apre, con lo stesso anno contato
+sull'orologio di questo computer.
+
 ## Come ci si arriva
 
-L'**ingranaggio** in alto a destra è un menu, e porta tre voci:
+L'**ingranaggio** in alto a destra è un menu, e porta quattro voci:
 [Dizionari del catalogo](I-dizionari-del-catalogo.md), **Storico delle azioni**
-e, sotto, **Impostazioni**.
+e, sotto il separatore, **Impostazioni** e **Licenza**.
 
-Con lo storico spento **quella voce non c'è**, e ne restano due: non c'è nessuno
+Con lo storico spento **quella voce non c'è**, e ne restano tre: non c'è nessuno
 storico da aprire.
 
 ## Come si legge la tabella
@@ -65,7 +70,7 @@ arrivato l'ultimo: *«l'ultimo oggi alle 12:30»*.
 | Colonna | Cosa mostra |
 |---|---|
 | Quando | l'ora sopra, il giorno sotto |
-| Evento | la pastiglia dell'azione: `Creazione`, `Modifica`, `Eliminazione`, `Prestito`, `Restituzione`, `Backup`, `Ripristino`… |
+| Evento | la pastiglia dell'azione: `Creazione`, `Modifica`, `Eliminazione`, `Prestito`, `Restituzione`, `Backup`… — l'elenco intero è qui sotto |
 | Oggetto | la copertina col titolo, e sotto la riga che lo distingue dagli altri |
 | Dettaglio | cosa è cambiato |
 | Storia | il tasto che apre lo storico completo di quella cosa |
@@ -73,6 +78,21 @@ arrivato l'ultimo: *«l'ultimo oggi alle 12:30»*.
 Le righe sono **cinquanta per pagina**, con **Precedente** e **Successiva** in
 fondo alla scheda come nel [catalogo](Il-catalogo.md). Cambiando pagina la lista
 torna in cima da sé.
+
+Ogni pastiglia appartiene a uno dei sei verbi con cui si
+[filtra](#filtrare), e ne porta il colore:
+
+| Verbo del filtro | Pastiglie |
+|---|---|
+| Creazioni | `Creazione` — di un libro, di una serie, di una persona |
+| Modifiche | `Modifica`, `Totale volumi`, `Fusione` (di due editori o di due voci dei dizionari), `Rinominato` |
+| Eliminazioni | `Eliminazione`, `Alias tolto` |
+| Prestiti | `Prestito` |
+| Restituzioni | `Restituzione` |
+| Sistema | `Backup`, `Ripristino`, `Esportazione`, `Importazione`, `Impostazioni`, `Catalogo spostato`, `Database configurato`, `Catalogo portato sul server` |
+
+Una pastiglia troppo lunga per la colonna — `Catalogo portato sul server` — si
+taglia con i puntini: **fermaci sopra il puntatore** e la leggi per intero.
 
 La copertina si legge **adesso**, quindi c'è per i libri che sono ancora nel
 catalogo. Per tutto il resto — una serie, un editore, una persona, il catalogo
@@ -102,6 +122,35 @@ libro appena creato, il nome di chi ha preso un libro in prestito, il file di un
 backup.
 
 ![Una riga di modifica, coi campi cambiati](immagini/storico-dettaglio.png)
+
+## Gli eventi della sezione Database
+
+**`Database configurato` nasce a ogni salvataggio della sezione Database** delle
+[Impostazioni](Impostazioni.md), e lì le modifiche si salvano da sole mentre
+scrivi: compilare l'indirizzo di un server lascia quindi più di un evento, uno
+per ogni pausa nella digitazione. Ognuno dice campo per campo cosa è cambiato —
+host, porta, utente, motore, dove stanno le copertine — e **una password non
+compare mai**: la riga dice `presente` o `assente`, come per la chiave di Google
+Books. Lo stesso evento registra il passaggio fra **Su questo computer** e **Su
+un tuo database**.
+
+**`Catalogo portato sul server`** è il travaso del catalogo di questo computer
+dentro il database del server: sotto il nome dell'oggetto porta l'indirizzo di
+arrivo, nella forma `utente@host:porta/database`, e accanto quanti libri sono
+partiti.
+
+## Con il catalogo su un server
+
+Con il [catalogo su un server](Il-catalogo-su-un-server.md) la pagina mostra
+**lo storico del server**: quello che fai sui libri, sulle serie, sui prestiti,
+e i backup e le esportazioni di quel catalogo, si scrive di là, accanto ai dati
+che descrive.
+
+**Quello che nasce dalle Impostazioni resta invece nello storico di questo
+computer** — `Impostazioni`, `Database configurato`, `Catalogo spostato` e
+`Catalogo portato sul server` — perché parla di questo computer e non del
+catalogo. Mentre guardi il server quegli eventi non li vedi: tornano a comparire
+quando torni al catalogo di questo computer.
 
 ## Lo storico completo di una cosa
 

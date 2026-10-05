@@ -39,7 +39,8 @@ A **series** stands for all of its volumes: it shows the cover of the **first**
 one, the title of the work, and top right the pill with **how many you own**. A
 **standalone title** stands for itself and has no such pill: that is how the two
 tell each other apart, without a word more. The thread at the foot of the cover
-says how many volumes you have read.
+says how many volumes you have read. A cover that does not load gives way to a
+drawn spine, as everywhere else: [Covers](Covers.md) tells the story.
 
 The order is that of the **latest volume catalogued**: at the front is whatever
 you have just put in, and a series card climbs back to the front every time you
@@ -77,7 +78,14 @@ where the volumes disagree the record says so next to the value: *«Italian 15 o
 16»* means fifteen volumes out of sixteen are in Italian, not that the series
 is. Where no tally appears, it holds for all of them.
 
-The filtered catalogue has not gone: it is **See in catalogue** at the foot of
+If you own more than one copy of some volume, *«5 copies in all»* appears under
+the volume count. And at the end of what the catalogue knows, the record says
+what it left out of the figures: *«2 volumes have no price and stay out of these
+figures.»*, or *«3 volumes of this series are catalogued under another
+publisher.»* — the record's numbers are this publisher's, and those volumes are
+not counted.
+
+The filtered catalogue has not gone: it is **See in the catalogue** at the foot of
 the record, one click further on, where you get to it after seeing the numbers.
 
 The arrows top right show up **only if there is really something to scroll**:
@@ -155,7 +163,7 @@ leaves it out: adding euros to yen would give a number that means nothing.
 
 | | |
 |---|---|
-| **Volumes per year** | year of **edition**, not of purchase; it says how many have one |
+| **Volumes per year** | year of **edition**, not of purchase; if some volumes have none, it says so under the title |
 | **Cost per volume** | how many volumes in each **price band** |
 | **Genres** | how its books are catalogued |
 | **Tags** | the most used on its volumes |
@@ -163,6 +171,10 @@ leaves it out: adding euros to yen would give a number that means nothing.
 Cost is a **distribution across bands, not an average**, and the difference
 shows: an average price of €6.34 does not tell apart someone who prints
 everything at that price from someone who alternates paperbacks and boxed sets.
+
+**Genres** and **Tags** show at most **six entries**, the most frequent; when
+there are more, the chart closes with a line saying how many were left out —
+*«and 4 rarer values.»*
 
 There is no legend, and the colour is one: in a sorted chart the length of the
 bar already says everything. Under each chart the same information sits as a

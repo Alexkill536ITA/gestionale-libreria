@@ -10,11 +10,14 @@ Top left, the count tells you how many books you are looking at — `11 volumes`
 when nothing is active, `3 results` once a search or a filter has narrowed
 things down.
 
+Here are the books you **have**: the ones you want to buy sit in [To
+buy](To-buy.md), and they come in here from there with one click.
+
 ## The columns
 
 | Column | What it shows |
 |---|---|
-| Cover | the thumbnail, or a spine drawn in the publisher's colour |
+| Cover | the thumbnail, or a spine drawn in the publisher's colour — also when the image does not load (see [Covers](Covers.md)) |
 | Title | in bold, with the **subtitle** below it in small, where there is one |
 | Author | every author of the book, comma separated |
 | Year | the year of **this** edition, not of the first one |
@@ -24,8 +27,8 @@ things down.
 
 **A book that is away from home is announced by the «Read» cell.** A mark shows
 up next to the reading state, and resting the pointer on it reads out everything
-there is to know: *“Luca Ferraro · lent on Sep 4, 2026 (today)”*. It is not a
-ninth column because there is no room for one — the widths are tuned to the pixel
+there is to know: *“Luca Ferraro · lent on Sep 4, 2026 (today)”*. It is not an
+extra column because there is no room for one — the widths are tuned to the pixel
 — and it is the mark that explains why that volume is not on the shelf where it
 should be. The rest is in [Loans](Loans.md).
 
@@ -41,8 +44,10 @@ which already has its word on screen.
 
 ## Resizing the columns
 
-The right edge of **Title**, **Author** and **Genre** can be dragged: hover it
-and the pointer turns into a double arrow, with a thin vertical line showing up.
+The right edge of **Title**, **Author** and **Genre** carries a **grip**, the six
+grey dots always visible next to the header. It can be dragged: hover it and the
+grip takes on colour, the pointer turns into a double arrow and the hint
+*«Drag to resize, or use ← →»* shows up.
 
 ![The handle between two columns](images/colonne-ridimensiona.png)
 
@@ -67,8 +72,14 @@ preference of this window, not a piece of the catalogue.
 Click a column header to sort. **Six columns out of seven are sortable** — all
 but the cover.
 
+Next to the name of every sortable column there is always an icon: a double
+arrow while the column sorts nothing, and the arrow of the direction when it
+does.
+
 Each header cycles through **three states**: first click ascending, second
-descending, third back to the order books were added in.
+descending, third back to the order books were added in. **Year does the
+opposite**: the first click puts the most recent editions on top, the second the
+oldest.
 
 ![Sorted by year](images/ordinamento-anno.png)
 
@@ -96,7 +107,8 @@ Hover a row: two icons appear on the right.
 ![The row actions](images/riga-azioni.png)
 
 - **the pencil** reopens the book in the form, with every field already filled;
-- **the bin** deletes it, after a confirmation. The cover goes with it.
+- **the bin** deletes it, after a confirmation. The cover goes with it, unless
+  the same image is also used by another book or by a volume to buy.
 
 Deleting **cannot be undone**. If you get it wrong, the way back is
 [restoring a backup](Backup-and-restore.md) — which brings back the *whole*
@@ -108,8 +120,13 @@ has it: get it back first, then remove it. The same goes for the tick in
 
 ## Paging
 
-When the books run past one page, **Previous** and **Next** appear at the bottom
-of the window, with the count on the left (`1–11 of 11`).
+**Previous** and **Next** sit at the bottom of the window, with the count on the
+left (`1–11 of 11`); with a single page they are switched off.
+
+A page holds **100 rows**. When there are more books, **Rows per page** shows up
+next to the count, and chooses between `100 rows`, `250 rows` and `500 rows`.
+The choice **survives a restart**, and changing it takes you back to the first
+page.
 
 The footer stays **pinned to the bottom of the window** whether you have ten
 books or two hundred: only the table scrolls, and the column headers stay in

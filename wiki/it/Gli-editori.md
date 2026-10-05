@@ -38,7 +38,8 @@ Una **serie** sta per tutti i suoi volumi: mostra la copertina del **primo**, il
 titolo dell'opera, e in alto a destra la pastiglia con **quanti ne hai**. Un
 **titolo slegato** sta per sé e quella pastiglia non ce l'ha: è così che si
 distinguono, senza una parola in più. Il filo al piede della copertina dice
-quanti volumi hai letto.
+quanti volumi hai letto. Una copertina che non si carica lascia il posto a un
+dorso disegnato, come dappertutto: lo racconta [Le copertine](Le-copertine.md).
 
 L'ordine è quello dell'**ultimo volume catalogato**: in testa c'è quello che hai
 appena messo dentro, e la card di una serie ci risale ogni volta che le aggiungi
@@ -76,6 +77,13 @@ Su una serie i valori sono **la somma dei suoi volumi di questo editore**, e
 dove i volumi non dicono la stessa cosa la scheda lo scrive accanto: *«Italiano
 15 su 16»* vuol dire che quindici volumi su sedici sono in italiano, non che la
 serie lo sia. Dove il conto non compare, vuol dire che valgono tutti.
+
+Se di qualche volume hai più di una copia, sotto il conto dei volumi compare
+*«5 esemplari in tutto»*. E in fondo alle informazioni la scheda dice quello che
+ha lasciato fuori dai conti: *«2 volumi non hanno prezzo e restano fuori da
+questi conti.»*, oppure *«3 volumi di questa serie sono catalogati sotto un altro
+editore.»* — i numeri della scheda sono quelli di questo editore, e quei volumi
+non li contano.
 
 Il catalogo filtrato non è sparito: è il **Vedi in catalogo** in fondo alla
 scheda, un clic più in là, dove ci arrivi dopo aver visto i numeri.
@@ -155,7 +163,7 @@ e lo lascia fuori: sommare euro e yen darebbe un numero che non significa niente
 
 | | |
 |---|---|
-| **Volumi per anno** | anno di **edizione**, non di acquisto; dice quanti volumi ce l'hanno |
+| **Volumi per anno** | anno di **edizione**, non di acquisto; se qualche volume non ce l'ha, lo dice sotto il titolo |
 | **Costo per volume** | quanti volumi per **fascia di prezzo** |
 | **Generi** | come sono catalogati i suoi libri |
 | **Tag** | i più usati sui suoi volumi |
@@ -163,6 +171,10 @@ e lo lascia fuori: sommare euro e yen darebbe un numero che non significa niente
 Il costo è una **distribuzione a fasce, non una media**, e la differenza si vede:
 un prezzo medio di 6,34 € non distingue chi stampa tutto a quel prezzo da chi
 alterna tascabili e cofanetti.
+
+**Generi** e **Tag** mostrano al più **sei voci**, le più frequenti; quando ce ne
+sono di più il grafico chiude con una riga che dice quante ne restano fuori —
+*«e altri 4 valori più rari.»*
 
 Non c'è nessuna legenda, e il colore è uno solo: in un grafico ordinato la
 lunghezza della barra dice già tutto. Sotto ogni grafico c'è la stessa

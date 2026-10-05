@@ -21,7 +21,7 @@ Tre uscite, e nessuna installa niente:
 
 | | |
 |---|---|
-| **Aggiorna ora** | apre la pagina della versione nel browser, dove trovi il file `.exe` da scaricare |
+| **Aggiorna ora** | apre la pagina della versione nel browser, dove trovi il file da scaricare — `.exe` per Windows, `.dmg` per il Mac |
 | **Più tardi** | chiude e non fa niente: al prossimo avvio te lo ricorda |
 | **Salta questa versione** | la mette da parte. Non se ne riparla più, finché non ne esce un'altra |
 
@@ -35,7 +35,7 @@ sono.
 
 ## Cercare adesso
 
-**Impostazioni → Aggiornamenti**, il quarto scomparto del binario. Qui trovi:
+**Impostazioni → Aggiornamenti**, il quinto e ultimo scomparto del binario. Qui trovi:
 
 - la **versione installata**, che è quella che sta girando in questo momento;
 - **Cerca aggiornamenti**, che chiede subito senza aspettare il prossimo avvio;
@@ -44,7 +44,8 @@ sono.
 
 La riga sotto la voce **Aggiornamenti** nel binario riassume la situazione senza
 aprire lo scomparto: `0.1.0 · controllo all'avvio` quando è tutto tranquillo,
-`0.1.0 · 0.2.0 disponibile` quando c'è qualcosa da scaricare.
+`0.1.0 · 0.2.0 disponibile` quando c'è qualcosa da scaricare, e
+`0.1.0 · controllo spento` se hai tolto la spunta qui sotto.
 
 ## Spegnere il controllo
 
@@ -53,7 +54,8 @@ compare più e l'applicazione non contatta nessuno all'avvio: resta il pulsante
 **Cerca aggiornamenti**, da premere quando ti va.
 
 Acceso, il controllo costa **una richiesta** all'apertura del programma, e
-l'avviso compare **una volta per versione** — non a ogni avvio.
+l'avviso **torna a ogni avvio** finché quella versione non la installi o non
+premi **Salta questa versione**: «Più tardi» lo chiude solo per questa volta.
 
 ## Cosa viaggia in rete
 
@@ -76,6 +78,10 @@ che hai è l'unica che esiste.
 **«Non riesco a raggiungere GitHub…»** — manca la connessione, oppure GitHub è
 irraggiungibile da qui. Il catalogo non ne è toccato in alcun modo: riprova più
 tardi.
+
+**«GitHub ha risposto qualcosa che non si legge…»** — la risposta è arrivata ma
+non ha la forma attesa. Anche qui il problema è dall'altra parte, e il catalogo
+non ne è toccato: riprova più tardi.
 
 **«GitHub ha risposto con un errore (HTTP …)»** — il problema è dall'altra parte
 e passa da sé. Riprova fra qualche minuto.

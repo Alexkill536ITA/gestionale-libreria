@@ -5,7 +5,8 @@
 The **Loans** entry in the bar answers one question: **where did that book end
 up?**
 
-It is the only page that talks about what is *not* on the shelf. At the top it
+Its title is **Away from home**, under the **Loans** eyebrow: it is the only
+page that talks about what is *not* on the shelf. At the top it
 says how many books are away and for how long — *“3 books out of 11 are not on
 the shelf · the oldest for 2 months”* — and below it shows who has them.
 
@@ -19,7 +20,8 @@ is empty and explains how to start.
 Under the title there is the strip of books that are out: one cover per volume,
 **lined up by how long they have been away** — the oldest first. At the foot of
 each cover a thread shows how much time has passed, and below it the name of
-whoever is holding it.
+whoever is holding it. A cover that does not load becomes a drawn spine, as in
+[Covers](Covers.md).
 
 **Click a cover and the loans table narrows down to whoever has that book.** The
 other covers stay lit: an active filter is no reason to make the inventory

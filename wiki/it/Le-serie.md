@@ -14,25 +14,58 @@ niente da preparare prima.
 
 ![Una riga di serie](immagini/serie-riga.png)
 
+Ogni serie è una **riga che si apre**: cliccala, e sotto compare la griglia dei
+suoi volumi. Se ne tengono aperte quante se ne vuole — due serie aperte insieme
+sono l'unico modo di confrontarle — e tornando sulla pagina sono di nuovo tutte
+chiuse.
+
 Da sinistra:
 
 - **il nome** della serie;
 - **quanti ne hai su quanti** — `2 / 12`. Il totale sta in una casella
-  modificabile: correggilo lì e basta, si salva da solo;
+  modificabile: correggilo lì e basta, si salva da solo, e la barra accanto
+  disegna la stessa frazione;
 - **quali mancano**, con i buchi accorpati: `mancano 3–12` invece di
   dieci numeri in fila;
-- a destra, la pastiglia con il conto: `mancano 10 volumi`;
-- sotto, **la fila dei dorsi**: copertina vera per i volumi che hai, riquadro
-  tratteggiato col numero per quelli che mancano.
+- la pastiglia con lo stato: `mancano 10 volumi`, `serie in corso`, `completa`;
+- a destra, tre azioni che compaiono passandoci sopra — **vedi in catalogo**,
+  **modifica** ed **elimina**.
+
+## La griglia dei volumi
+
+![La griglia dei volumi di una serie](immagini/serie-griglia.png)
+
+Aperta la riga, i volumi stanno in una **griglia a venti colonne**: il primo in
+alto a sinistra, il ventunesimo a capo. A sinistra di ogni riga c'è la fascia che
+copre — `1–20`, `21–37` — e in cima i numeri da 1 a 20.
+
+La posizione è l'informazione: **il volume 23 è sempre la terza casella della
+seconda riga**, quindi un buco si trova con l'occhio prima che coi numeri, e due
+serie diverse si confrontano perché il passo è lo stesso.
+
+- un volume che **hai** porta la sua copertina, o un dorso disegnato se non ne
+  ha una o non si carica — lo spiega [Le copertine](Le-copertine.md);
+- uno che **manca** è un riquadro tratteggiato col suo numero;
+- oltre l'ultimo volume atteso **non c'è niente**: il 24 di una serie da 23 non
+  esiste, e tratteggiarlo direbbe «ti manca».
 
 Fermando il puntatore su una casella si legge **di che volume si tratta** —
 `vol. 9 · My dress up darling. Bisque doll Vol.9`, col sottotitolo dove c'è —
 e su un riquadro tratteggiato, quale volume manca. Serve soprattutto sulle serie
 lunghe, dove venti copertine piccole si somigliano tutte.
 
+**Un mezzo volume non ha una posizione**, e non ne prende una: un `4.5` resta
+fuori dalla griglia, e lo dice la frase accanto al conteggio — dov'è già il
+volume che nessun numero nomina.
+
 L'ordine dell'elenco non è alfabetico: **in cima i totali da correggere** — le
 serie dove hai più volumi di quanti il totale dichiari, che è il segno di un
 totale sbagliato — poi quelle a cui manca meno, e in fondo le complete.
+
+Questa pagina dice **quali volumi mancano**; procurarseli è
+[Da acquistare](Da-acquistare.md), che però non si riempie da una serie: là il
+volume si aggiunge uno per volta, cercandolo col titolo o con l'ISBN oppure
+scrivendolo a mano, numero di volume compreso.
 
 ## Restringere l'elenco
 
@@ -151,9 +184,13 @@ spunta non c'è: non ci sono ancora volumi da toccare.
 
 ## Modificare ed eliminare
 
-Passa il puntatore su una riga: a destra compaiono la matita e il cestino.
+Passa il puntatore su una riga: a destra compaiono tre pulsanti — il primo apre
+il **catalogo filtrato** su quella serie, poi la matita e il cestino.
 
 ![Le azioni di una serie](immagini/serie-riga-azioni.png)
+
+Il nome della serie non è un collegamento: cliccarlo apre la griglia dei volumi,
+che è il gesto principale della pagina, e il catalogo sta in quel primo pulsante.
 
 La matita apre il dialogo qui sopra. Il cestino chiede conferma:
 

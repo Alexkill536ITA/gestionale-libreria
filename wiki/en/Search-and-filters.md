@@ -15,25 +15,33 @@ needed. `Ctrl K` puts the cursor in it from anywhere.
 It looks inside **title, subtitle, authors, tags, publisher, imprint and notes**.
 You do not need the whole word: two or three letters will do.
 
+If you type several words, **each one counts as the start of a word**, and a
+book comes out only if **it finds them all**, in any order: `eco rose` finds
+*The Name of the Rose* by Umberto Eco. Apostrophes, hyphens and the other marks
+split words the way the catalogue splits them: *L'isola* is found with `isola`,
+and `komi-communicate` is two words, `komi` and `communicate`.
+
 Left out are the description and the series name: for series there is
 [a page of its own](Series.md).
 
 ### When you mistype
 
 If the exact search finds nothing and you typed at least three characters, a
-second pass runs that **forgives one typo** and shows the books that come close,
-saying so above the table.
+second pass runs that **forgives one typo** — two in the longer words — and
+shows the books that come close, saying so above the table.
 
 ![The close-match fallback](images/ricerca-refuso.png)
 
-`camileri` is in no book, but *«No book contains "camileri". These come close»*
-and Camilleri shows up underneath.
+`camileri` is in no book, but *«No book contains “camileri”. These come close»*
+and Camilleri shows up underneath. With filters active the sentence says so:
+*«With these filters no book contains “camileri”. These come close.»*
 
 ### When there really is nothing
 
 ![No results](images/catalogo-vuoto-ricerca.png)
 
-The message always tells you **what to remove** to see something again.
+The message always tells you **what to remove** to see something again: here
+*«Dropping “kzqwx” brings back 11»*.
 
 ## The filters panel
 
@@ -47,13 +55,13 @@ Eleven ways to narrow down:
 |---|---|
 | **Genre** | with the book count next to each |
 | **Reading status** | to read · reading · read, counted too |
-| **Author** | |
+| **Author** | any of: one of the chosen authors is enough |
 | **Publisher** | |
 | **Imprint** | |
-| **Shelf** | where the book is |
-| **Tags** | |
+| **Shelf** | where the book is, any of: one of the chosen shelves is enough |
+| **Tags** | all of: the book must carry every one |
 | **Language** | |
-| **Cover** | with or without |
+| **Cover** | `has one` · `missing` |
 | **Loan** | on loan · at home |
 | **Year** | a range, `from` and `to` |
 
@@ -67,7 +75,8 @@ tags number twenty-nine and scrolling them is slower than typing three letters.
 
 The sections past the first two start collapsed: one click on the row opens them.
 The number next to the heading (`AUTHOR 10 available`) says how many values there
-are to choose from.
+are to choose from. A long section shows eight, and **Show N more** opens the
+rest; **Show fewer** closes it again.
 
 **Apply** closes the panel and filters; **Reset** clears everything.
 

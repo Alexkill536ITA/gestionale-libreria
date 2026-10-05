@@ -49,13 +49,18 @@ It is the only thing that takes events away on its own. Everything else —
 emptying it by turning the checkbox off, replacing it with a restore — is
 something you do.
 
+**The trimming applies over there too.** With the
+[catalogue on a server](The-catalogue-on-a-server.md), the server's log is
+trimmed every time the catalogue opens, by the same year counted on this
+computer's clock.
+
 ## How to get there
 
-The **gear** at the top right is a menu, and it holds three entries:
-[Library dictionaries](Library-dictionaries.md), **Activity log** and,
-underneath, **Settings**.
+The **gear** at the top right is a menu, and it holds four entries:
+[Library dictionaries](Library-dictionaries.md), **Activity log** and, under the
+separator, **Settings** and **Licence**.
 
-With the log off **that entry is not there**, and two are left: there is no log
+With the log off **that entry is not there**, and three are left: there is no log
 to open.
 
 ## How to read the table
@@ -66,7 +71,7 @@ one landed: *«the last one today at 12:57 PM»*.
 | Column | What it shows |
 |---|---|
 | When | the time above, the day below |
-| Event | the action pill: `Created`, `Changed`, `Deleted`, `Loan`, `Return`, `Backup`, `Restore`… |
+| Event | the action pill: `Created`, `Changed`, `Deleted`, `Loan`, `Return`, `Backup`… — the full list is below |
 | Item | the cover with the title, and underneath the line that tells it apart |
 | Detail | what changed |
 | History | the button that opens the full history of that item |
@@ -74,6 +79,21 @@ one landed: *«the last one today at 12:57 PM»*.
 Rows come **fifty to a page**, with **Previous** and **Next** at the foot of the
 card as in [the catalogue](The-catalogue.md). Change page and the list goes back
 to the top by itself.
+
+Every pill belongs to one of the six verbs you [filter](#filtering) by, and
+carries its colour:
+
+| Filter verb | Pills |
+|---|---|
+| Created | `Created` — a book, a series, a person |
+| Changed | `Changed`, `Total volumes`, `Merge` (of two publishers or two dictionary entries), `Renamed` |
+| Deleted | `Deleted`, `Alias removed` |
+| Loans | `Loan` |
+| Returns | `Return` |
+| System | `Backup`, `Restore`, `Export`, `Import`, `Settings`, `Catalogue moved`, `Database configured`, `Catalogue brought to the server` |
+
+A pill too long for the column — `Catalogue brought to the server` — is cut
+with an ellipsis: **rest the pointer on it** and you read it in full.
 
 The cover is read **now**, so it is there for books still in the catalogue. For
 everything else — a series, a publisher, a person, the library itself — a
@@ -102,6 +122,34 @@ Where there is nothing to compare, the detail carries a note: the ISBN of the
 book just created, the name of whoever borrowed a book, the file of a backup.
 
 ![A changed row, with the fields that changed](images/storico-dettaglio.png)
+
+## The events of the Database section
+
+**`Database configured` is born at every save of the Database section** of
+[Settings](Settings.md), and there changes save themselves while you type: filling
+in a server's address therefore leaves more than one event, one for every pause
+in your typing. Each one says field by field what changed — host, port, user,
+engine, where the covers live — and **a password never shows up**: the row says
+`set` or `not set`, as for the Google Books key. The same event records the
+switch between **On this computer** and **On a database of yours**.
+
+**`Catalogue brought to the server`** is the transfer of this computer's
+catalogue into the server's database: under the item's name it carries the
+destination address, in the form `user@host:port/database`, and beside it how
+many books went across.
+
+## With the catalogue on a server
+
+With the [catalogue on a server](The-catalogue-on-a-server.md) the page shows
+**the server's log**: what you do to books, series and loans, and the backups
+and exports of that catalogue, are written over there, next to the data they
+describe.
+
+**What comes out of Settings stays in this computer's log instead** —
+`Settings`, `Database configured`, `Catalogue moved` and `Catalogue brought to
+the server` — because it is about this computer and not about the catalogue.
+While you are looking at the server you do not see those events: they show up
+again when you go back to this computer's catalogue.
 
 ## The full history of an item
 

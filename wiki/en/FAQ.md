@@ -24,7 +24,11 @@ system.
 
 No. **Uninstalling does not delete your data.** Reinstall and you find everything
 again. The catalogue lives in
-`%LOCALAPPDATA%\it.alexkill536ita.gestionale-libreria\` and stays there.
+`%LOCALAPPDATA%\it.alexkill536ita.gestionale-libreria\` and stays there —
+unless you moved it to another folder, in which case it is where you put it,
+or it lives on a server, which uninstalling does not reach at all. Settings →
+Database tells you exactly where it is; the rest is in [Where the data
+lives](Where-the-data-lives.md).
 
 ## I cannot find the program in `Program Files`
 
@@ -50,8 +54,8 @@ What to try, in order:
 
 ## A source answers with an HTTP error
 
-`Google answered with an error (HTTP 503)` and the like come **from the remote
-catalogue**, not from the application. They are nearly always passing: try again
+`Google answered with an error (HTTP 503)` and the like come **from the source's
+service**, not from the application. They are nearly always passing: try again
 in a few minutes. The other sources have answered in the meantime anyway.
 
 If **Google Books** is always wrong, check the key in Settings → Metadata with
@@ -138,6 +142,15 @@ reads out the name, the date and how long it has been away.
 To see them all together, the **Loan → on loan** filter, or the **Loans** entry
 in the bar.
 
+## How do I note down a book I still have to buy?
+
+Not in the catalogue: there is **To buy**, the entry to the right of the search
+box. Type the ISBN or the title, pick the edition, and the volume stays there
+with its price until you buy it — then **Add to the catalogue** brings it in
+already filled. The list fills up **one volume at a time**: it does not tell you
+which number of a series you are missing, because the sources do not give that.
+It is all in [To buy](To-buy.md).
+
 ## I have two identical genres: `Manga` and `manga`
 
 This should not happen any more: the application reuses the spelling you chose
@@ -203,29 +216,119 @@ close.
 
 With a backup. Make one with **Back up now** — none is ever made on its own —
 copy the `.zip`, install the application on the new computer and use **Restore
-from a backup…**. Books and covers come back; theme,
-language and API key you set again by hand.
+from a backup…**. Books and covers come back; theme, language, API key and the
+server connection, if you use one, you set again by hand: they live in the
+settings, which never go into a backup.
 The whole round is in [Backup and restore](Backup-and-restore.md).
+
+If the catalogue lives on a server, there is nothing to move: on the new
+computer set up the connection again from Settings → Database, and the books are
+the usual ones. How is in [The catalogue on a
+server](The-catalogue-on-a-server.md).
 
 ## Can I use it on two computers at once?
 
-No, and it is not worth trying. There is no sync: they would become two separate
-catalogues, and restoring one over the other would wipe the second one's work.
+Yes, **by putting the catalogue on a server**: PostgreSQL, MySQL, SQL Server or
+MongoDB. The covers go somewhere every computer can reach — **inside the
+database**, **in an S3 archive** or in a **shared folder** — and from then on
+every computer sees the same books. The round is in [The catalogue on a
+server](The-catalogue-on-a-server.md).
 
-Worse still is putting the data folder inside OneDrive or Dropbox: syncing
-database files can **corrupt** them. Sync the backups, not the catalogue.
+It is not a program for several people, though: there are no accounts, and if
+two people edit the same book at once whoever saves last wins, without the other
+knowing.
+
+Two copies of this computer's catalogue, on the other hand, stay two separate
+catalogues: they do not talk to each other, and restoring one over the other
+would wipe the second one's work. And the catalogue folder can sit inside
+OneDrive or Dropbox, but open **on one computer at a time**: two writes at once
+on the database file **damage** it. The reason is in [Where the data
+lives](Where-the-data-lives.md).
+
+## How do I take my books to the server?
+
+From Settings → Database, with the connection filled in, **Bring this
+computer's catalogue here** and then **Bring the catalogue**. A **copy** arrives
+on the server, covers included; this computer's catalogue stays as it was. To
+work over there, then, pick **On a database of yours**.
+
+It only goes into a server catalogue that is still empty: if there are books
+over there already, the move refuses rather than mix two together. All of it in
+[The catalogue on a server](The-catalogue-on-a-server.md).
+
+## The server does not answer — what do I do?
+
+If the server stops answering — switched off, the network not reaching it,
+credentials changed — the pages give way to «The catalogue on the server will
+not open». **Nothing has been lost**, neither there nor here. When the server is
+back, **Try again**; if you need to work right away, **Use the catalogue on this
+computer**, knowing that it is a different catalogue (see below). The rest is in
+[The catalogue on a server](The-catalogue-on-a-server.md).
+
+## MongoDB will not do: it says it is a standalone server
+
+The catalogue on MongoDB needs a **replica set**, because without one there are
+no operations that roll back all together — and an interrupted restore would
+leave the catalogue empty. A single node is fine, as long as it is started as a
+replica set. How to do it is in [The catalogue on a
+server](The-catalogue-on-a-server.md).
+
+## Can I go back to this computer's catalogue?
+
+Yes: Settings → Database, the **On this computer** radio. But they are **two
+catalogues, not two copies**: what you did on the server stays on the server,
+and here you find the catalogue as it was when you left it.
+
+To bring the work done over there back here: with the server still chosen, make
+a backup with **Back up now**, then switch to **On this computer** and
+[restore](Backup-and-restore.md) that archive. This computer's catalogue is
+replaced whole.
+
+## Can I back up the catalogue on the server?
+
+Yes, with the same button: **Back up now** archives the catalogue you are using,
+and with the server chosen that is the one over there, with its covers wherever
+they live. The zip still ends up **on this computer**, in the backup folder.
+Details in [Backup and restore](Backup-and-restore.md).
+
+## I restored onto the server and it did not restart
+
+That is how it should be, and the confirmation says so. On the
+server there is no file to swap at restart: the catalogue is emptied and
+reloaded in one go, the pages reload straight away, and the outcome is «The
+catalogue on the server has been replaced with the one from the archive.» The
+restart is only for this computer's catalogue.
+
+## I changed where the covers live: do they move on their own?
+
+No, and the choice doesn't even save itself: with the catalogue on a server it
+is a draft, and the place only changes with **Move the covers here**, which
+copies them and, once the copy is done, writes it into the catalogue for every
+computer. The old ones stay where they are.
+
+## Why does a cover show up as a spine?
+
+A drawn spine is what the application shows in place of an image it does not
+have: either that book has no cover, or **the place the covers live did not
+answer** — a shared folder out of reach, an S3 archive switched off. In the
+second case the covers come back by themselves once that place answers again,
+**when you change page or reopen the view**: as long as the view stays the same,
+so does the spine. See [Covers](Covers.md).
 
 ## I deleted a book by mistake
 
 It cannot be undone. The only way is
 [restoring a backup](Backup-and-restore.md) — if you made one, because the
 program makes none by itself — and it brings the **whole** catalogue back to
-that day's state anyway, so you also lose whatever you did afterwards.
+that day's state anyway, activity log included, so you also lose whatever you
+did afterwards. With the catalogue on a server, the restore rewrites the
+catalogue of **every** computer connected to it.
 
 ## The application starts in Italian
 
-The language lives in Settings and applies from the next start. If it changed on
-its own, somebody changed it there: Settings → Preferences → Language.
+The language lives in Settings and **changes right away**, no restart. If it
+changed on its own, somebody changed it there: Settings → Preferences →
+Language.
 
 ## I changed a series' total but the book's form does not follow
 
