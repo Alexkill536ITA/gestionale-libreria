@@ -3,13 +3,13 @@
 # Licenze dei componenti
 
 Gestionale Libreria è distribuito sotto licenza MIT, ma dentro al programma
-non c'è solo il suo codice: ci sono 1190 componenti scritti da altri —
-706 del mondo Rust e 484 del mondo JavaScript — e ognuno resta dei
+non c'è solo il suo codice: ci sono 1207 componenti scritti da altri —
+723 del mondo Rust e 484 del mondo JavaScript — e ognuno resta dei
 suoi autori, con la licenza che loro hanno scelto.
 
 **Gli avvisi per intero stanno in un file solo:** [AVVISI-LICENZE.txt](https://raw.githubusercontent.com/alexkill536ita/gestionale-libreria/HEAD/AVVISI-LICENZE.txt).
 Dentro ci sono tutti i componenti — nome, versione e licenza dichiarata — e
-i 608 avvisi distinti così come i loro autori li scrivono, uno per ogni
+i 612 avvisi distinti così come i loro autori li scrivono, uno per ogni
 testo diverso: quello che cento componenti ripetono identico compare una
 volta sola.
 
@@ -19,7 +19,7 @@ in alto a destra, voce **Licenza**. Sul disco sta accanto all'eseguibile,
 su Windows in `%LOCALAPPDATA%\Gestionale Libreria\` e su macOS dentro
 `Gestionale Libreria.app/Contents/Resources/`.
 
-Di 63 componenti non c'è un file di licenza dentro al pacchetto: restano
+Di 66 componenti non c'è un file di licenza dentro al pacchetto: restano
 elencati con la licenza che dichiarano, e niente è stato scritto al posto
 loro.
 
@@ -31,23 +31,23 @@ fotografia scritta a mano.
 
 | Licenza | Componenti |
 | --- | --- |
-| MIT | 570 |
-| MIT OR Apache-2.0 | 336 |
+| MIT | 574 |
+| MIT OR Apache-2.0 | 344 |
 | Apache-2.0 OR MIT | 63 |
-| MIT/Apache-2.0 | 37 |
-| ISC | 30 |
-| Apache-2.0 | 18 |
+| MIT/Apache-2.0 | 38 |
+| ISC | 31 |
+| Apache-2.0 | 19 |
 | Unicode-3.0 | 18 |
 | Zlib OR Apache-2.0 OR MIT | 17 |
-| BSD-3-Clause | 11 |
+| BSD-3-Clause | 12 |
 | MPL-2.0 | 10 |
 | Unlicense OR MIT | 10 |
 | BSD-2-Clause | 8 |
 | Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT | 5 |
 | MIT OR Apache-2.0 OR Zlib | 5 |
+| Apache-2.0/MIT | 4 |
 | Unlicense/MIT | 4 |
 | Apache-2.0 OR ISC OR MIT | 3 |
-| Apache-2.0/MIT | 3 |
 | BlueOak-1.0.0 | 3 |
 | BSD-2-Clause OR Apache-2.0 OR MIT | 2 |
 | BSD-3-Clause OR Apache-2.0 | 2 |

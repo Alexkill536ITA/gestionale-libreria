@@ -35,7 +35,7 @@ next to the app's.
 
 ## On Windows
 
-The file is `Gestionale Libreria Servizio_0.7.0_x64-setup.exe`. It asks for
+The file is `Gestionale Libreria Servizio_0.7.5_x64-setup.exe`. It asks for
 administrator rights, because it installs a Windows service; and as with the
 app, **SmartScreen** warns that the program is not signed: **More info** →
 **Run anyway**.
@@ -76,7 +76,7 @@ If the service does not start, the last page says so and shows the log, with
 
 ## On a Mac
 
-The file is `Gestionale Libreria Servizio_0.7.0_universal.pkg`, a single one for
+The file is `Gestionale Libreria Servizio_0.7.5_universal.pkg`, a single one for
 Intel Macs and Apple Silicon ones. Like the app, **it is not signed**: macOS
 says it cannot be verified, and you go through **System Settings → Privacy &
 Security → Open Anyway**.
@@ -127,12 +127,12 @@ sudo launchctl kickstart -k system/it.alexkill536ita.gestionale-libreria.servizi
 ## On Linux
 
 On **Debian and Ubuntu** there is a `.deb` package:
-`gestionale-libreria-servizio_0.7.0_amd64.deb` for PCs and
-`gestionale-libreria-servizio_0.7.0_arm64.deb` for ARM servers (a 64-bit
+`gestionale-libreria-servizio_0.7.5_amd64.deb` for PCs and
+`gestionale-libreria-servizio_0.7.5_arm64.deb` for ARM servers (a 64-bit
 Raspberry Pi, for instance).
 
 ```
-sudo apt install ./gestionale-libreria-servizio_0.7.0_amd64.deb
+sudo apt install ./gestionale-libreria-servizio_0.7.5_amd64.deb
 ```
 
 The package creates the system user `gestionale-libreria`, the data folder
@@ -143,8 +143,8 @@ not touch the firewall**: if there is one, port `7878/tcp` has to be opened by
 hand.
 
 For **other distributions with systemd** there is an archive,
-`gestionale-libreria-servizio_0.7.0_linux-x86_64.tar.gz` or
-`gestionale-libreria-servizio_0.7.0_linux-aarch64.tar.gz`. Inside are the
+`gestionale-libreria-servizio_0.7.5_linux-x86_64.tar.gz` or
+`gestionale-libreria-servizio_0.7.5_linux-aarch64.tar.gz`. Inside are the
 program, the systemd unit and `README.txt` (in Italian `LEGGIMI.txt`), with the
 steps to do by hand: they are the same ones the `.deb` does by itself. The
 program needs OpenSSL 3 and a glibc at least as recent as Ubuntu 22.04's.
@@ -170,11 +170,11 @@ version's Linux archive from the release. Copy it into an empty folder.
 ```dockerfile
 FROM debian:bookworm-slim
 
-ARG VERSIONE=0.7.0
+ARG VERSIONE=0.7.5
 ARG ARCH=x86_64
 
 RUN apt-get update \
- && apt-get install -y --no-install-recommends ca-certificates curl libssl3 \
+ && apt-get install -y --no-install-recommends ca-certificates curl libssl3 libgssapi-krb5-2 \
  && rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL "https://github.com/alexkill536ita/gestionale-libreria/releases/download/v${VERSIONE}/gestionale-libreria-servizio_${VERSIONE}_linux-${ARCH}.tar.gz" \

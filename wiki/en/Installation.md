@@ -16,7 +16,7 @@ On Windows nothing else is needed: the system component that draws the window
 
 ## Installing on Windows
 
-1. Download `Gestionale Libreria_0.7.0_x64-setup.exe`.
+1. Download `Gestionale Libreria_0.7.5_x64-setup.exe`.
 2. Double-click it. The installer first asks for the language, Italian or
    English, proposing the one Windows uses; after that it asks very little.
 3. Done: you get a shortcut **on the desktop** and **in the Start menu**.
@@ -35,7 +35,7 @@ To go on: **More info** → **Run anyway**.
 
 ## On a Mac
 
-The file is `Gestionale Libreria_0.7.0_universal.dmg`, a single one for Intel Macs
+The file is `Gestionale Libreria_0.7.5_universal.dmg`, a single one for Intel Macs
 and Apple Silicon ones: open it, drag the application into **Applications**, and
 start it from there. It has been tried on a Mac, and it works.
 

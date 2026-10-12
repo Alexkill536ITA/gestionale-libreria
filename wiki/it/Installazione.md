@@ -16,7 +16,7 @@ l'installazione.
 
 ## Installare su Windows
 
-1. Scarica il file `Gestionale Libreria_0.7.0_x64-setup.exe`.
+1. Scarica il file `Gestionale Libreria_0.7.5_x64-setup.exe`.
 2. Doppio clic. L'installatore chiede per prima cosa la lingua, italiano o
    inglese, e propone quella di Windows; poi chiede poco.
 3. Finito: trovi il collegamento **sul desktop** e **nel menu Start**.
@@ -35,7 +35,7 @@ Per proseguire: **Ulteriori informazioni** → **Esegui comunque**.
 
 ## Su un Mac
 
-Il file è `Gestionale Libreria_0.7.0_universal.dmg`, uno solo per i Mac Intel e
+Il file è `Gestionale Libreria_0.7.5_universal.dmg`, uno solo per i Mac Intel e
 per quelli con Apple Silicon: si apre, si trascina l'applicazione in
 **Applicazioni**, e da lì si avvia. È stato provato su un Mac, e funziona.
 
