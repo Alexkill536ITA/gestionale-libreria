@@ -22,8 +22,9 @@ fa la stessa cosa. Su un libro che stai modificando lo stesso pulsante si chiama
 | — | **AniList** | manga e fumetto giapponese, **fuori** dalla cascata |
 
 Le prime quattro si interrogano **tutte e quattro insieme**, non una dopo
-l'altra. Comanda la prima che risponde: le altre riempiono soltanto i campi che
-ha lasciato vuoti.
+l'altra. Ma non vince la più veloce: comanda la prima **nell'ordine della
+tabella**, e le altre riempiono soltanto i campi che ha lasciato vuoti. Quindi è
+chi sta più in alto a dettare i dati del libro.
 
 **NiceBooks sta in fondo perché riempie i buchi degli altri tre**, ed è spesso
 l'unica che sa qualcosa dei manga italiani e dei piccoli editori. Non chiede
@@ -123,6 +124,12 @@ prezzo e anno dell'edizione italiana. Quelli li riempiono le altre fonti, o tu.
 qualcosa.** Se c'è, i valori trovati **non ci scrivono sopra** — compaiono come
 pastiglie accanto ai tuoi, e decidi campo per campo. Un modulo vuoto invece si
 riempie dritto, perché non c'è niente da far confermare.
+
+**La protezione dura finché il campo ha un valore.** Se svuoti un campo che avevi
+scritto tu, quel campo torna a riempirsi dalle fonti alla ricerca successiva. È
+il giro di tutti i giorni: scrivi il titolo, cerchi, nessuna fonte lo conosce,
+lo cancelli, metti l'ISBN — e il titolo arriva dalla cascata invece di restare
+vuoto.
 
 Vale anche per gli **autori**: la proposta di una fonte arriva come una pastiglia
 sola, con i nomi uniti da `·` e non da una virgola — che dentro «Miura, Kentaro»

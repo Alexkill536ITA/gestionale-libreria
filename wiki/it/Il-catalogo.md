@@ -23,7 +23,7 @@ Qui ci sono i libri che **hai**: quelli che vuoi comprare stanno in
 | Anno | l'anno di **questa** edizione, non della prima |
 | Genere | uno solo, quello che hai scritto nel modulo |
 | Posizione | dove sta fisicamente: `SAL-1`, `STUDIO-2`, `Comodino` |
-| Letto | `Da leggere`, `In lettura`, `Letto`, con un pallino colorato |
+| Letto | `Da leggere`, `In lettura`, `Letto` o `Lasciato`, con un segno davanti: un anello vuoto, un pallino con l'alone, un pallino pieno, un anello barrato |
 
 **Un libro che è fuori casa lo dice la cella «Letto».** Accanto allo stato di
 lettura compare un segno, e fermandoci sopra il puntatore si legge tutto quello
@@ -41,6 +41,23 @@ compare il valore intero — il titolo con il suo sottotitolo, l'autore, l'anno,
 il genere, la posizione — senza bisogno di allargare la colonna. Sulla
 copertina compare il titolo del libro, che lì non è scritto da nessuna parte.
 Fa eccezione **Letto**, che la sua parola ce l'ha già a schermo.
+
+## Cambiare lo stato di lettura
+
+**Lo stato si cambia dalla cella «Letto», senza aprire il libro.** Un clic sulla
+cella apre un menu con i quattro stati — **Da leggere**, **In lettura**,
+**Letto** e **Lasciato**, cioè un libro cominciato e messo da parte — e quello
+attuale porta la spunta. Scegline un altro e il catalogo lo salva subito, senza
+chiedere conferma: è lo stesso salvataggio che faresti riaprendo il libro nel
+modulo e premendo **Salva**.
+
+![Il menu dello stato di lettura, su un libro in prestito](immagini/catalogo-lettura-menu.png)
+
+Il segno del prestito, se il libro è fuori casa, **resta accanto** allo stato:
+la cella è una sola, e porta tutte e due le cose.
+
+Se il catalogo sta su un servizio, ognuno ha le sue letture e il menu ne porta
+qualcuna in più: lo racconta [Lavorare in biblioteca](Lavorare-in-biblioteca.md).
 
 ## Ridimensionare le colonne
 

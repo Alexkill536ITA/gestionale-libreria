@@ -234,9 +234,13 @@ database**, **in an S3 archive** or in a **shared folder** — and from then on
 every computer sees the same books. The round is in [The catalogue on a
 server](The-catalogue-on-a-server.md).
 
-It is not a program for several people, though: there are no accounts, and if
-two people edit the same book at once whoever saves last wins, without the other
-knowing.
+That way, though, it is not a program for several people: on a database of
+yours there are no accounts, and if two people edit the same book at once
+whoever saves last wins, without the other knowing. **For several people there
+is the library's service**: everyone signs in with their own name, with their
+own permissions, and a book opened by one shows as “being edited” to the
+others. [Installing the service](Installing-the-service.md) and [Working in a
+library](Working-in-a-library.md) tell how.
 
 Two copies of this computer's catalogue, on the other hand, stay two separate
 catalogues: they do not talk to each other, and restoring one over the other
@@ -244,6 +248,35 @@ would wipe the second one's work. And the catalogue folder can sit inside
 OneDrive or Dropbox, but open **on one computer at a time**: two writes at once
 on the database file **damage** it. The reason is in [Where the data
 lives](Where-the-data-lives.md).
+
+## The service says it is at another version
+
+“The service is at version … and this program at another: update whichever of
+the two is behind.” The app and the service only talk when the version is
+**identical**, down to the last digit. Update the one left behind — usually the
+app, as [Updates](Updates.md) says — and it is best to always update them
+together. How to update the service is in [Installing the
+service](Installing-the-service.md#updating).
+
+## I forgot my password for the service
+
+A service password is reset by an administrator, or by whoever manages the
+users, from **Users and groups**: this is told in [Users, groups and
+permissions](Users-groups-and-permissions.md). If it is the administrator who
+lost it, a new setup code is made on the service's machine, as [Installing the
+service](Installing-the-service.md#a-lost-code-or-the-administrators-password)
+says. A domain password, instead, is changed in the domain.
+
+## An earlier version will not save a “Dropped” book
+
+From this version the reading status has a fourth value, **Dropped**: a book
+started and put aside. An earlier version of the program still opens a
+catalogue that contains some, but **refuses to save** those books — it says
+“Unknown reading status” — and when importing from a spreadsheet it leaves out
+the rows that carry it. It happens above all with a catalogue on a database of
+yours opened from computers with different versions. The remedy is to update
+the program on every computer. With the service the problem does not arise: an
+app of another version does not connect at all.
 
 ## How do I take my books to the server?
 

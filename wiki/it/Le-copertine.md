@@ -136,6 +136,10 @@ raggiunge, o in un **Archivio S3**. Come si sceglie, e come si portano da un
 posto all'altro con «Sposta le copertine qui», sta in
 [Il catalogo su un server](Il-catalogo-su-un-server.md).
 
+Con il **servizio della biblioteca** le copertine le tiene e le serve il
+servizio, nel posto che ha scelto chi l'ha installato: questo computer non deve
+sapere dove stanno — vedi [Installare il servizio](Installare-il-servizio.md).
+
 Da qualunque di questi posti, **le copertine entrano nei backup**, quindi un
 archivio ripristinato se le riporta dietro — vedi
 [Backup e ripristino](Backup-e-ripristino.md).

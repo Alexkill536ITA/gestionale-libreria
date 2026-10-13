@@ -111,8 +111,8 @@ these comes in already reconciled"*.
 come in tomorrow.** The books you had have already moved to the good name; the
 rule is there so the next metadata lookup does not bring the wrong spelling back.
 
-**Tags and authors have the same business in a page of their own**: renaming a
-spelling, merging two entries that are the same thing, removing the ones nobody
+**Tags, authors, genres, imprints, shelves and languages have the same business
+in a page of their own**: renaming a spelling, merging two entries that are the same thing, removing the ones nobody
 uses any more is done from [Library dictionaries](Library-dictionaries.md).
 
 ## Adding a spelling

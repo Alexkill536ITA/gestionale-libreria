@@ -39,18 +39,28 @@ The other two do not move, and that is not an oversight:
 
 | | |
 |---|---|
-| `impostazioni.json` | the preferences, the API key, where the catalogue lives and the server connection |
+| `impostazioni.json` | the preferences, where the catalogue lives, the server connection and the one to the service |
 | `backups\` | the backups, which have a folder of their own |
 
-Preferences belong to **this** computer — the API key is in there too — and the
-backups go wherever you want from their own section, told in
+Preferences belong to **this** computer, and the backups go wherever you want
+from their own section, told in
 [Backup and restore](Backup-and-restore.md).
 
 **`impostazioni.json` always stays in the starting folder**, even when the
 catalogue moves: it is the note that says where the catalogue went, and a note
-is not put inside the thing it has to find. It does not go into the backups, and
-**it is not to be shared**: besides the API key, it holds the server password
-and the secret of the covers archive, if you gave them.
+is not put inside the thing it has to find. It does not go into the backups.
+
+**The secrets are not in there, but in the system keychain** — Credential
+Manager on Windows, Keychain on a Mac —, under the entry “Gestionale Libreria -
+impostazioni”. There are three: the Google Books key, the database password and
+the secret of the covers' S3 archive, if you gave them. The rest of the
+connection stays in the file, including the archive's access key, which is a
+name and not a secret. A secret left in the file by an earlier version moves to
+the keychain by itself the first time it is read.
+
+Only if the keychain is missing or refuses them do the secrets stay in
+`impostazioni.json`, and the program notes it in its log. That is why the file
+**is not to be shared** all the same, nor attached to a report.
 
 The starting folder also holds two more folders, which are not data:
 
@@ -263,27 +273,38 @@ again.
 
 ### Signing in to the service
 
-You sign in to the service with a name and a password, given by whoever runs the
-service. They are not written in the settings: when the catalogue is on the
-service and this computer has not signed in yet, the **Sign in to the service**
-dialog opens by itself, with the address and the confirmed fingerprint at the
-top, **Name** and **Password**.
+You sign in to the service with your own name, and whoever runs it decides how:
+with the service's password, with the domain account (Active Directory),
+through a sign-in provider like Keycloak, or with Kerberos. None of this is
+written in the settings: when the catalogue is on the service and this computer
+has not signed in yet, the **Sign in to the service** dialog opens by itself,
+with the address and the confirmed fingerprint at the top and the fields of the
+way that is on — with the password, **Name** and **Password**. Each way is told
+in [Ways to sign in](Ways-to-sign-in.md).
 
 If you close it, “The service asks you to sign in” stays underneath, with **Sign
 in** to open it again. Who is signed in shows in the top bar, with their name:
-their menu holds the role, the service's address and **Sign out**, which ends the
-session and opens the dialog again.
+their menu holds the role, the service's address, **My loans…**, **Change
+password…** for those who sign in with the service's password, and **Sign
+out**, which ends the session and opens the dialog again.
 
 - **The session stays on this computer**, in the system keychain and not in
-  `impostazioni.json`: reopening the program does not sign you in again.
-- **It ends after thirty days without use**, or when whoever runs the service
-  closes it. Then the dialog opens again by itself.
-- **After five wrong attempts** on the same name you have to wait a minute
-  before trying again.
-- **The catalogue on this computer stays without sign-in**: the name and
-  password only hold on the service.
+  `impostazioni.json`: reopening the program you do not need to sign in again,
+  as long as the session is alive.
+- **With the service's password it ends after thirty days without use**;
+  through the domain, a sign-in provider or Kerberos **twelve hours after
+  signing in**, even while you are using it. It ends sooner if whoever runs the
+  service closes it. Then the dialog opens again by itself.
+- **After five wrong attempts** on the same name you have to wait: a minute
+  with the service's password, a quarter of an hour with a domain name.
+- **The catalogue on this computer stays without sign-in**: the names only hold
+  on the service.
 
-Managing the other users will come later.
+Users are managed from **Users and groups…**, in the same menu, by
+administrators and by whoever has the permission to manage them: this is told
+in [Users, groups and permissions](Users-groups-and-permissions.md). What
+changes for whoever works on the catalogue without being an administrator is in
+[Working in a library](Working-in-a-library.md).
 
 ### The first administrator
 
@@ -301,12 +322,23 @@ serve.
 
 ### With the catalogue on the service
 
-- **where the covers live is up to the service**, and this computer only opens
-  them. If they are in an online archive, you can put a key of your own here; if
-  the service keeps them inside the database, for now they show as spines;
-- **backup, CSV export, restore and Bring this computer's catalogue here** are
-  visible but switched off, with a sentence saying they come later. Importing
-  from a CSV spreadsheet does work;
+- **the covers are served by the service.** Where they live is up to it — in a
+  folder, in the database or in an S3 archive —, and it sends them to every
+  computer that connects: this computer needs no key. The archive's key, if
+  there is one, is kept by the service in its `servizio.json`. Choosing the
+  service removes from this computer the database password and the archive key
+  of “On a database of yours”: going back there, the password is typed again;
+- **actions on the whole catalogue go through the service**, each with its own
+  permission. **Back up now** makes the backup on the service's disk, which
+  keeps the last seven copies and counts for every connected computer;
+  **Download** brings a copy to this computer. **Export to CSV** is put together
+  by the service, and the file is created here. The **restore** is chosen from
+  here, and before replacing, the service saves a backup of the current state
+  among its copies. **Bring this computer's catalogue here** takes the catalogue
+  from here to a service that is still empty. Importing from a CSV spreadsheet
+  adds the books to the service's catalogue. How it all works is in
+  [Backup and restore](Backup-and-restore.md), the permissions in
+  [Users, groups and permissions](Users-groups-and-permissions.md);
 - **if the service stops answering**, “The catalogue on the service will not
   open” appears, with **Try again** and **Use the catalogue on this computer**.
   Nothing is deleted.

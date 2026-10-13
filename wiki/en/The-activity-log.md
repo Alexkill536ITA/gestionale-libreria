@@ -22,7 +22,7 @@ event in the log is the switch-on itself.
 **Turning it off deletes what it has recorded**, and that is the most important
 thing on this page. A question appears under the checkbox — *«Turning the log off
 deletes what it has recorded»* — and it says **how many events it is about to
-take away**: *«The 21 events recorded so far are deleted, and cannot be
+take away**: *«The 14 events recorded so far are deleted, and cannot be
 recovered. Turning it back on starts from scratch.»* The two buttons are **Turn
 off and delete** and **Keep it on**.
 
@@ -65,8 +65,8 @@ to open.
 
 ## How to read the table
 
-Top left, the tally of events — `21 events` — and on the right, when the last
-one landed: *«the last one today at 12:57 PM»*.
+Top left, the tally of events — `14 events` — and on the right, when the last
+one landed: *«the last one today at 09:45 PM»*.
 
 | Column | What it shows |
 |---|---|
@@ -151,6 +151,15 @@ the server` — because it is about this computer and not about the catalogue.
 While you are looking at the server you do not see those events: they show up
 again when you go back to this computer's catalogue.
 
+## With the service
+
+When several people work on the same catalogue through the service, every row is
+**signed with the name of whoever was signed in**, and the table carries one more
+column, **Who**, right after **When**; a row with no signature shows `—`. Who can
+open the page, and who can turn the log on and off, is decided by the
+permissions **See the history** and **Turn the history on and off**: the rest is
+in [Working in a library](Working-in-a-library.md).
+
 ## The full history of an item
 
 The button at the end of every row opens the whole history of that book — or of
@@ -159,9 +168,9 @@ with no `+N`, and the row you came from is marked, so you do not lose it among
 seven events.
 
 **That history does not go through the page's filters**, because "full" means
-full: with **Returns** on, the table shows two rows in all, and the history of
-one of those two volumes shows three — the return you filtered for, the loan
-that came before it and the change before that.
+full: with **Changed** on, the table shows four rows, and the history of
+*Il Gattopardo*, no longer in the library, shows three — the change you
+filtered for, the creation that came before it and the deletion after.
 
 ![The full history of a volume](images/storico-storia.png)
 
@@ -184,7 +193,7 @@ the filters you have now, nothing is left*. The seven states stay in line even
 when they read zero: a row that changes its number of entries while you filter is
 worse than an entry that says zero.
 
-With a filter on, the tally at the top becomes `9 of 21`, and **Clear the
+With a filter on, the tally at the top becomes `4 of 14`, and **Clear the
 filters** turns up beside it and removes them all in one go.
 
 ![The log's filter bar](images/storico-filtri.png)
@@ -209,6 +218,14 @@ after a deletion, which is precisely the day you go and read it.
 - **importing a cover is not an action.** It writes a file and does not touch the
   catalogue, and you might never save that book. A changed cover reads as the
   `Cover` field inside the book's change, which is when it really happens.
+
+## A forgotten person
+
+When you remove a person from the [loans](Loans.md) register, **the log forgets
+them along with it**: the events stay, with what happened and when, but in place
+of their name — in the title and in the notes — it says *persona dimenticata*
+(forgotten person). Whoever had the same book at another time stays named.
+Backups made earlier, on the other hand, still contain that name.
 
 ## A restore replaces the log too
 

@@ -33,6 +33,14 @@ wins, and the other person's changes disappear without warning. For a family
 sharing its shelves that is fine; for an office where ten people catalogue
 together, it is not.
 
+**For several people there is the library's service**, the third road: a
+program that keeps the catalogue on one computer, where everyone signs in with
+their own name and does only what their permissions allow, and where a book
+opened by one person shows as “being edited” to the others instead of being
+overwritten. How to install it is in
+[Installing the service](Installing-the-service.md), how to work with it in
+[Working in a library](Working-in-a-library.md).
+
 ## Which databases can hold the catalogue
 
 You choose the family first — **SQL** or **MongoDB** — and then the **Engine**.
@@ -335,9 +343,11 @@ leaves its «Restore» event over there.
 
 ## Where the configuration lives
 
-The connection — **password and S3 archive secret included** — lives in
-`impostazioni.json`, in the data folder of this computer (see
-[Where the data lives](Where-the-data-lives.md)). **It does not go into
+The connection lives in `impostazioni.json`, in the data folder of this
+computer; **the database password and the S3 archive secret do not**: they live
+in the system keychain, under the entry “Gestionale Libreria - impostazioni”,
+and stay in the file only if the keychain is missing or refuses them (see
+[Where the data lives](Where-the-data-lives.md)). **None of this goes into
 backups**: on another computer the connection has to be typed in again, and
 the same after a reinstall.
 

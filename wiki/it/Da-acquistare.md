@@ -86,15 +86,17 @@ che avevi scritto né riporta la riga su *Da acquistare*.
 ## Come si legge una riga
 
 Da sinistra la spunta, poi la **copertina** — quella vera dove la fonte ne aveva
-una, altrimenti la tessera col titolo — il titolo del volume, e sotto **editore e
-anno**. A destra del titolo sta la fonte che l'ha proposto: `NiceBooks`,
-`Google Books`, `AniList`.
+una, altrimenti la tessera col titolo — il titolo del volume, e sotto **serie,
+editore, anno e collana**, quelli che ci sono: `The Rising of the Shield Hero ·
+Edizioni BD · 2026 · J-pop`. A destra sta la fonte che l'ha proposto:
+`NiceBooks`, `Google Books`, `AniList`.
 
-Dove la fonte ha detto anche **la serie**, e quel nome è una serie del tuo
-catalogo, compare una terza riga che dice **a che punto sei con quell'opera**:
-`serie completa`, `in corso, 20 in casa`, `3 in casa su 12`. È il conto dei
-volumi che hai **in catalogo**, non di quelli in lista. La frase manca dove la
-fonte la serie non la porta, e la porta quasi solo AniList.
+Dove la riga porta **una serie** — perché l'ha detta la fonte o perché l'hai
+scritta tu — e quel nome è una serie del tuo catalogo, compare una terza riga che
+dice **a che punto sei con quell'opera**: `serie completa`, `in corso, 2 in
+casa`, `28 in casa su 30`. È il conto dei volumi che hai **in catalogo**, non di
+quelli in lista. La frase manca dove la riga una serie non ce l'ha, o dove quella
+serie nel catalogo non c'è ancora.
 
 Poi lo **stato**, il **prezzo**, e passando il puntatore sulla riga le tre icone
 in fondo: correggi, togli dalla lista, aggiungi a catalogo.
@@ -110,8 +112,10 @@ guardando.
 **Un volume senza prezzo non vale zero: resta fuori dal conto.** È la sola cosa
 onesta da fare — un prezzo che non conosci non è gratis — ed è la ragione per cui
 il resoconto non si limita a una somma e dichiara sempre su quanti volumi l'ha
-fatta: `Volumi nel conto  6 di 8`, e sotto *«2 volumi non hanno un prezzo e
-restano fuori dal conto»*.
+fatta. Nello scatto qui sopra hanno tutti un prezzo, e infatti dice `Volumi nel
+conto  10 di 10`; con tre volumi scelti, uno dei quali senza prezzo, dice `2 di
+3`, e sotto *«1 volume non ha un prezzo e resta fuori dal conto.»* — lo si vede
+[più sotto](#il-resoconto-segue-quello-che-guardi).
 
 Quel numero non resta lì: quando il volume entra nel catalogo diventa il
 **Prezzo pagato** del libro.

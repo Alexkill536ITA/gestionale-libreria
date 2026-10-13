@@ -158,10 +158,13 @@ che comincia con `https://` ed è quello del computer dove gira il servizio. Al
 primo collegamento la sezione mostra l'impronta del servizio e chiede **Mi
 fido**: prima si confronta con quella che il servizio stampa quando si avvia, e
 finché non ti fidi questo computer non gli manda niente. Nome e password non
-stanno qui: li chiede un dialogo che si apre da solo quando serve, e chi è
-entrato si vede nella barra in alto. Col catalogo sul servizio backup, esportazione, ripristino e **Porta qui il catalogo di
-questo computer** restano spenti finché non arrivano, mentre l'import da un
-foglio funziona; il resto sta in
+stanno qui: li chiede un dialogo che si apre da solo quando serve — i modi di
+entrare stanno in [I modi di entrare](I-modi-di-entrare.md) — e chi è entrato si
+vede nella barra in alto. Col catalogo sul servizio le copertine le serve lui, e
+backup, esportazione, ripristino, import da un foglio e **Porta qui il catalogo
+di questo computer** passano da lui, ciascuno col suo permesso: chi non ce l'ha
+vede il pulsante spento, con una frase che nomina il permesso che manca. Il
+resto sta in
 [Dove stanno i dati](Dove-stanno-i-dati.md#col-servizio-della-biblioteca).
 
 ## Backup
@@ -200,16 +203,22 @@ In `impostazioni.json`, nella cartella dei dati di questo computer, **fuori dal
 database e fuori dai backup**. Ci sono scritte:
 
 - le preferenze — tema, lingua, valuta, ordinamento, storico acceso o spento;
-- l'indirizzo di contatto e la chiave di Google Books;
+- l'indirizzo di contatto;
 - dove sta il catalogo: la scelta fra «Su questo computer», «Su un tuo
   database» e «Col servizio della biblioteca», e la cartella del catalogo
   quando non è quella predefinita;
-- il collegamento al server, **con la password**, e l'archivio delle copertine,
-  **con il suo segreto**;
+- il collegamento al server e l'archivio delle copertine, senza i loro
+  segreti;
 - l'indirizzo del servizio della biblioteca e l'impronta di cui ti sei fidato.
   La sessione del servizio invece no: sta nel portachiavi del sistema;
 - la cartella dei backup, la fotocamera dello scanner, il controllo degli
   aggiornamenti e la versione che hai scelto di saltare.
+
+**I segreti stanno nel portachiavi del sistema**, non nel file: la chiave di
+Google Books, la password del database e il segreto dell'archivio S3, sotto la
+voce «Gestionale Libreria - impostazioni» di Gestione credenziali su Windows o
+del Portachiavi su un Mac. Solo se il portachiavi manca o li rifiuta restano nel
+file, e il programma lo annota nel suo registro.
 
 Non è un dettaglio: un archivio ripristinato non ti porta il tema, la chiave API
 e la fotocamera di un altro computer. Sono preferenze di *questa* macchina, e
@@ -217,8 +226,9 @@ restano dove sono anche dopo un ripristino — e anche dopo che il catalogo si �
 spostato in un'altra cartella, perché quel file resta sempre nella cartella di
 partenza.
 
-**Non condividerlo**, e non allegarlo a una segnalazione: dentro ci sono le
-chiavi e le password che hai dato al programma.
+**Non condividerlo** lo stesso, e non allegarlo a una segnalazione: dice dove
+stanno i tuoi dati e a quale server ti colleghi, e se il portachiavi non c'era
+porta anche le chiavi e le password che hai dato al programma.
 
 ## Licenza
 

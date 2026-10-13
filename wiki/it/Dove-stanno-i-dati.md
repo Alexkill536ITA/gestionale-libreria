@@ -39,18 +39,28 @@ Non si spostano invece le altre due, e non è una dimenticanza:
 
 | | |
 |---|---|
-| `impostazioni.json` | le preferenze, la chiave API, dove sta il catalogo e il collegamento al server |
+| `impostazioni.json` | le preferenze, dove sta il catalogo, il collegamento al server e quello al servizio |
 | `backups\` | i backup, che hanno una cartella loro |
 
-Le preferenze sono di **questo** computer — dentro c'è anche la chiave API — e i
-backup si mandano dove vuoi dalla loro sezione, raccontata in
+Le preferenze sono di **questo** computer, e i backup si mandano dove vuoi dalla
+loro sezione, raccontata in
 [Backup e ripristino](Backup-e-ripristino.md).
 
 **`impostazioni.json` resta sempre nella cartella di partenza**, anche quando il
 catalogo si sposta: è il foglietto che dice dov'è andato, e un foglietto non si
-mette dentro la cosa che deve ritrovare. Non entra nei backup, e **non va
-condiviso**: oltre alla chiave API ci sono scritte la password del server e il
-segreto dell'archivio delle copertine, se li hai dati.
+mette dentro la cosa che deve ritrovare. Non entra nei backup.
+
+**I segreti non stanno lì dentro, ma nel portachiavi del sistema** — Gestione
+credenziali su Windows, Portachiavi su un Mac —, sotto la voce «Gestionale
+Libreria - impostazioni». Sono tre: la chiave di Google Books, la password del
+database e il segreto dell'archivio S3 delle copertine, se li hai dati. Nel file
+resta il resto del collegamento, compresa la chiave d'accesso dell'archivio, che
+è un nome e non un segreto. Un segreto rimasto nel file da una versione
+precedente passa da solo nel portachiavi la prima volta che si legge.
+
+Solo se il portachiavi manca o li rifiuta i segreti restano in
+`impostazioni.json`, e il programma lo annota nel suo registro. Per questo il
+file **non va condiviso** lo stesso, né allegato a una segnalazione.
 
 Nella cartella di partenza stanno anche altre due cartelle, che non sono dati:
 
@@ -262,29 +272,40 @@ scansione HTTPS di quel programma, e poi provare di nuovo il collegamento.
 
 ### Entrare nel servizio
 
-Sul servizio si entra con un nome e una password, che dà chi gestisce il
-servizio. Non si scrivono nelle impostazioni: quando il catalogo sta sul servizio
-e questo computer non è ancora entrato, si apre da solo il dialogo **Entra nel
-servizio**, con l'indirizzo e l'impronta confermata in testa, **Nome** e
-**Password**.
+Sul servizio si entra col proprio nome, e chi lo gestisce decide come: con la
+password del servizio, con l'account del dominio (Active Directory), da un
+fornitore di accesso come Keycloak, o con Kerberos. Niente di questo si scrive
+nelle impostazioni: quando il catalogo sta sul servizio e questo computer non è
+ancora entrato, si apre da solo il dialogo **Entra nel servizio**, con
+l'indirizzo e l'impronta confermata in testa e i campi del modo acceso — con la
+password, **Nome** e **Password**. Ogni modo è raccontato in
+[I modi di entrare](I-modi-di-entrare.md).
 
 ![Il dialogo per entrare nel servizio](immagini/servizio-accesso.png)
 
 Se lo chiudi, sotto resta «Il servizio chiede di entrare», con **Entra** per
 riaprirlo. Chi è entrato si vede nella barra in alto, col suo nome: nel suo menu
-ci sono il ruolo, l'indirizzo del servizio ed **Esci**, che chiude la sessione e
-riapre il dialogo.
+ci sono il ruolo, l'indirizzo del servizio, **I miei prestiti…**, **Cambia la
+password…** per chi entra con la password del servizio, ed **Esci**, che chiude
+la sessione e riapre il dialogo.
 
 - **La sessione resta su questo computer**, nel portachiavi del sistema e non in
-  `impostazioni.json`: riaprendo il programma non si rientra.
-- **Finisce dopo trenta giorni senza usarla**, oppure quando chi gestisce il
-  servizio la chiude. Allora il dialogo si riapre da solo.
-- **Dopo cinque tentativi sbagliati** sullo stesso nome bisogna aspettare un
-  minuto prima di riprovare.
-- **Il catalogo di questo computer resta senza accesso**: nome e password
-  valgono solo sul servizio.
+  `impostazioni.json`: riaprendo il programma non serve rientrare, finché la
+  sessione è viva.
+- **Con la password del servizio finisce dopo trenta giorni senza usarla**; dal
+  dominio, da un fornitore di accesso o con Kerberos **dodici ore dopo
+  l'accesso**, anche se la stai usando. Finisce prima se chi gestisce il servizio
+  la chiude. Allora il dialogo si riapre da solo.
+- **Dopo cinque tentativi sbagliati** sullo stesso nome bisogna aspettare: un
+  minuto con la password del servizio, un quarto d'ora con un nome del dominio.
+- **Il catalogo di questo computer resta senza accesso**: i nomi valgono solo
+  sul servizio.
 
-La gestione degli altri utenti arriverà più avanti.
+Gli utenti si gestiscono da **Utenti e gruppi…**, nello stesso menu, per chi è
+amministratore o ha il permesso di gestirli: lo racconta
+[Utenti, gruppi e permessi](Utenti-gruppi-e-permessi.md). Cosa cambia per chi
+lavora sul catalogo senza essere amministratore sta in
+[Lavorare in biblioteca](Lavorare-in-biblioteca.md).
 
 ### Il primo amministratore
 
@@ -302,12 +323,22 @@ mettersi a servire.
 
 ### Col catalogo sul servizio
 
-- **dove stanno le copertine lo decide il servizio**, e questo computer le apre
-  soltanto. Se stanno in un archivio in rete, qui puoi mettere una chiave tua; se
-  il servizio le tiene dentro il database, per ora si vedono come dorsi;
-- **backup, esportazione in CSV, ripristino e Porta qui il catalogo di questo
-  computer** si vedono ma sono spenti, con una frase che dice che arrivano più
-  avanti. L'import da un foglio CSV invece funziona;
+- **le copertine le serve il servizio.** Dove stanno lo decide lui — in una
+  cartella, nel database o in un archivio S3 —, e le manda a ogni computer che
+  si collega: su questo computer non serve nessuna chiave. La chiave
+  dell'archivio, se c'è, la tiene il servizio nel suo `servizio.json`. Scegliere
+  il servizio toglie da questo computer la password del database e la chiave
+  dell'archivio di «Su un tuo database»: tornando lì, la password si riscrive;
+- **i gesti sul catalogo intero passano dal servizio**, ciascuno col suo
+  permesso. **Crea backup adesso** fa il backup sul disco del servizio, che tiene
+  le ultime sette copie e vale per tutti i computer collegati; **Scarica** ne
+  porta una copia su questo computer. **Esporta in CSV** lo compone il servizio,
+  e il file nasce qui. Il **ripristino** si sceglie da qui, e prima di sostituire
+  il servizio salva un backup dello stato di adesso fra le sue copie. **Porta qui
+  il catalogo di questo computer** porta il catalogo di qua su un servizio
+  ancora vuoto. L'import da un foglio CSV aggiunge i libri al catalogo del
+  servizio. Il giro è in [Backup e ripristino](Backup-e-ripristino.md), i
+  permessi in [Utenti, gruppi e permessi](Utenti-gruppi-e-permessi.md);
 - **se il servizio smette di rispondere** compare «Il catalogo sul servizio non
   si apre», con **Riprova** e **Usa il catalogo di questo computer**. Non si
   cancella niente.

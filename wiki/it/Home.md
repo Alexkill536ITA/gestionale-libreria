@@ -2,12 +2,17 @@
 
 # Gestionale Libreria
 
-Catalogo personale di libri di carta per Windows e macOS. Non chiede un
-account, e di partenza sta su questo computer e funziona senza rete — tranne
+Catalogo di libri di carta per Windows e macOS. Da solo non chiede un
+account: di partenza sta su questo computer e funziona senza rete — tranne
 quando vai a cercare i dati di un libro, che arrivano da cinque cataloghi
 pubblici. Se vuoi, il catalogo può stare invece **su un database in rete**, e
 allora la rete serve per tutto: lo racconta
 [Il catalogo su un server](Il-catalogo-su-un-server.md).
+
+In una biblioteca, il catalogo lo tiene il **servizio della biblioteca**, su un
+computer solo, e ognuno ci entra col suo nome e i suoi permessi: lo raccontano
+[Installare il servizio](Installare-il-servizio.md) e
+[Lavorare in biblioteca](Lavorare-in-biblioteca.md).
 
 Da settembre 2026 gira anche su **macOS**: ogni versione porta un file suo, e
 come si installa sta in [Installazione](Installazione.md).
@@ -33,7 +38,10 @@ come si installa sta in [Installazione](Installazione.md).
 | **[Impostazioni](Impostazioni.md)** | Le cinque voci del binario: Preferenze, Metadati, Database, Backup e Aggiornamenti |
 | **[Dove stanno i dati](Dove-stanno-i-dati.md)** | La cartella del catalogo, come si sposta senza perdere niente, e il collegamento a un server |
 | **[Il catalogo su un server](Il-catalogo-su-un-server.md)** | Quando il server diventa il catalogo in uso: i motori che lo sanno fare, dove vanno le copertine, come ci porti quello che hai già |
-| **[Installare il servizio](Installare-il-servizio.md)** | Il catalogo della biblioteca su un computer solo, e gli altri che ci entrano con nome e password: Windows, Mac, Linux e Docker |
+| **[Installare il servizio](Installare-il-servizio.md)** | Il catalogo della biblioteca su un computer solo, e gli altri che ci entrano col loro nome: Windows, Mac, Linux e Docker |
+| **[I modi di entrare](I-modi-di-entrare.md)** | La password del servizio, Active Directory, un fornitore di accesso come Keycloak, Kerberos: come si entra, quanto dura la sessione, come si accendono |
+| **[Utenti, gruppi e permessi](Utenti-gruppi-e-permessi.md)** | Chi entra nel servizio e cosa può fare: il dialogo «Utenti e gruppi», i tre gruppi di partenza, tutti i permessi |
+| **[Lavorare in biblioteca](Lavorare-in-biblioteca.md)** | Per chi lavora sul catalogo del servizio: cosa vedi secondo i permessi, un libro «in modifica» da un altro, i tuoi prestiti, le tue letture |
 | **[Backup e ripristino](Backup-e-ripristino.md)** | Una copia quando la chiedi, l'esportazione in CSV, l'import da un foglio, la strada per tornare indietro |
 | **[Aggiornamenti](Aggiornamenti.md)** | Ti avvisa se esce una versione nuova, e non installa niente da sé |
 | **[Domande frequenti](Domande-frequenti.md)** | Quando qualcosa non torna |
@@ -44,7 +52,9 @@ destra, accanto all'ingranaggio, porta qui nella lingua che stai usando.
 
 ## Il giro completo, in quattro mosse
 
-1. **[Installa](Installazione.md)** e apri: il catalogo parte vuoto.
+1. **[Installa](Installazione.md)** e apri. La [guida al primo
+   avvio](Installazione.md#il-primo-avvio) chiede come userai il programma: da
+   solo, su questo computer, il catalogo parte vuoto.
 2. Premi **Aggiungi libro**. Se hai il libro in mano, premi **Scansiona** e
    inquadra il codice a barre; altrimenti scrivi l'ISBN, o anche solo il titolo.
 3. Premi **Cerca i metadati**: titolo, autori, editore, anno, pagine e copertina
@@ -60,7 +70,8 @@ e riempire dopo.
 
 **I dati sono tuoi e stanno dove dici tu.** Di partenza — **Su questo
 computer** — sul tuo disco: niente account, niente sincronia, niente cloud. Se
-scegli **Su un tuo database**, sul database che hai indicato, e da nessun'altra parte.
+scegli **Su un tuo database**, sul database che hai indicato; **Col servizio
+della biblioteca**, dove il servizio li tiene; e da nessun'altra parte.
 Il rovescio è che se quel disco si guasta il catalogo se ne va con lui, e nessun
 backup nasce da sé: ogni tanto fanne uno e copialo su una chiavetta — lo spiega
 [Backup e ripristino](Backup-e-ripristino.md).

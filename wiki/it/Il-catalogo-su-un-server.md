@@ -33,6 +33,13 @@ modifiche dell'altro spariscono senza avviso. Per una famiglia che si divide
 gli scaffali va benissimo; per un ufficio dove dieci persone catalogano
 insieme, no.
 
+**Per più persone c'è il servizio della biblioteca**, la terza strada: un
+programma che tiene il catalogo su un computer solo, dove ognuno entra col suo
+nome e fa solo quello che i suoi permessi gli consentono, e dove un libro aperto
+da uno si vede «in modifica» dagli altri invece di essere sovrascritto. Come si
+installa lo dice [Installare il servizio](Installare-il-servizio.md), come ci si
+lavora [Lavorare in biblioteca](Lavorare-in-biblioteca.md).
+
 ## Quali database fanno da catalogo
 
 Si sceglie prima la famiglia — **SQL** o **MongoDB** — e poi il **Motore**.
@@ -337,10 +344,13 @@ volta che il catalogo si apre, e un ripristino lascia di là il suo evento
 
 ## Dove sta la configurazione
 
-Il collegamento — **password e segreto dell'archivio S3 compresi** — sta in
-`impostazioni.json`, nella cartella dei dati di questo computer (vedi
-[Dove stanno i dati](Dove-stanno-i-dati.md)). **Non entra nei backup**: su un
-altro computer il collegamento va riscritto a mano, e lo stesso se reinstalli.
+Il collegamento sta in `impostazioni.json`, nella cartella dei dati di questo
+computer; **la password del database e il segreto dell'archivio S3 no**: stanno
+nel portachiavi del sistema, sotto la voce «Gestionale Libreria - impostazioni»,
+e restano nel file solo se il portachiavi manca o li rifiuta (vedi
+[Dove stanno i dati](Dove-stanno-i-dati.md)). **Niente di tutto questo entra nei
+backup**: su un altro computer il collegamento va riscritto a mano, e lo stesso
+se reinstalli.
 
 Un'ultima cosa che confonde: nell'elenco delle sezioni delle
 [Impostazioni](Impostazioni.md), la riga sotto **Database** conta i libri **di

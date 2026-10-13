@@ -54,7 +54,7 @@ Eleven ways to narrow down:
 | | |
 |---|---|
 | **Genre** | with the book count next to each |
-| **Reading status** | to read · reading · read, counted too |
+| **Reading status** | to read · reading · read · dropped, counted too |
 | **Author** | any of: one of the chosen authors is enough |
 | **Publisher** | |
 | **Imprint** | |
@@ -94,10 +94,11 @@ Filters button carries a counter, so you know how many are still on even with th
 panel closed.
 
 **A chip can also arrive from elsewhere.** A series name in
-[**Series**](Series.md), and a carousel card in
-[**Publishers**](Publishers.md), open the catalogue already filtered: the
-`Series:` chip is there to say why you are seeing those books, and it comes off
-like any other.
+[**Series**](Series.md) opens the catalogue already filtered, and so does **See
+in the catalogue** in a work's card in [**Publishers**](Publishers.md), when the
+work is a series: the `Series:` chip is there to say why you are seeing those
+books, and it comes off like any other. For a work that is not a series, the same
+button opens the catalogue searching for its title.
 
 **See in the catalogue** does the same in [**Library
 dictionaries**](Library-dictionaries.md): the catalogue opens with the `Tag:`,

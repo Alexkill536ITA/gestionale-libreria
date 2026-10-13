@@ -27,7 +27,9 @@ Da sinistra:
   disegna la stessa frazione;
 - **quali mancano**, con i buchi accorpati: `mancano 3–12` invece di
   dieci numeri in fila;
-- la pastiglia con lo stato: `mancano 10 volumi`, `serie in corso`, `completa`;
+- la pastiglia con lo stato: `mancano 10 volumi`, `serie in corso`, `completa`,
+  oppure `totale da correggere` quando hai un volume con un numero più alto del
+  totale dichiarato — il volume 14 di una serie che dice di averne 12;
 - a destra, tre azioni che compaiono passandoci sopra — **vedi in catalogo**,
   **modifica** ed **elimina**.
 

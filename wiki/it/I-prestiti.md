@@ -161,7 +161,14 @@ qualcuno.
 La conferma dice per intero cosa succede:
 
 - **se ne va la sua storia** — i prestiti che ha chiuso, contati riga per riga;
-- **i libri restano nel catalogo**, dove sono adesso: erano già tornati.
+- **i libri restano nel catalogo**, dove sono adesso: erano già tornati;
+- **anche lo storico la dimentica**: gli eventi che la riguardavano restano, con
+  che cosa è successo e quando, ma al posto del suo nome c'è scritto *persona
+  dimenticata*. Chi ha avuto lo stesso libro in un altro momento resta
+  nominato.
+
+**I backup già fatti la contengono ancora**, e la conferma lo dice: chi deve
+sparire davvero sparisce anche da lì solo quando quei backup se ne vanno.
 
 Non si annulla.
 

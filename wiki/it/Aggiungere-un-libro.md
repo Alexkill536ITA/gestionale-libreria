@@ -35,7 +35,7 @@ posto tuo: **Scansiona** (accende la webcam) e **Cerca i metadati**.
 |---|---|
 | ISBN | 10 o 13 cifre; è la chiave con cui si cercano i metadati |
 | Posizione | testo libero: `SAL-1`, `Comodino`, `Prestato a Marco` |
-| Stato di lettura | Da leggere · In lettura · Letto |
+| Stato di lettura | Da leggere · In lettura · Letto · Lasciato |
 | Titolo | **obbligatorio** |
 | Autori | uno o più, ognuno con un ruolo: Autore, Disegnatore, Traduttore, Curatore |
 | Editore | |
@@ -43,6 +43,9 @@ posto tuo: **Scansiona** (accende la webcam) e **Cerca i metadati**.
 | Genere | uno solo |
 | Serie | il nome, più il numero del volume |
 | Volumi totali | quanti volumi ha la serie in tutto |
+
+Lo stato di lettura non vuole per forza il modulo: si cambia anche dalla cella
+«Letto» del catalogo, con un clic — sta in [Il catalogo](Il-catalogo.md#cambiare-lo-stato-di-lettura).
 
 Per aggiungere un secondo autore c'è **+ Aggiungi autore**; la `×` a destra
 toglie la riga. Con due autori o più, accanto al ruolo compaiono due frecce —
@@ -52,10 +55,15 @@ della fila è quello che il catalogo nomina per primo. Sul primo la freccia in s
 
 ## Altri dettagli
 
-Dieci campi in più stanno sotto **Altri dettagli**, chiuso all'inizio. Si apre
-da sé quando una ricerca dei metadati ha riempito qualcosa là sotto — e
-l'etichetta dice quanti campi sono stati compilati (`· 4 compilati`), così sai
-che vale la pena guardare.
+Dieci campi in più stanno sotto **Altri dettagli**, chiuso ogni volta che il
+modulo si apre. Si apre da sé quando una ricerca dei metadati ha riempito
+qualcosa là sotto — e l'etichetta dice quanti campi sono stati compilati
+(`· 4 compilati`), così sai che vale la pena guardare.
+
+**Aperto una volta, resta aperto mentre scorri il catalogo** con le frecce del
+modulo (vedi [più sotto](#passare-da-un-libro-allaltro-senza-chiudere)): se stai
+confrontando il prezzo di venti volumi, non lo riapri venti volte. Si richiude
+solo chiudendo il modulo.
 
 ![Altri dettagli](immagini/modulo-altri-dettagli.png)
 

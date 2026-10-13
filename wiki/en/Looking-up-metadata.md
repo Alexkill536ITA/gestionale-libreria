@@ -124,6 +124,12 @@ the form already holds something.** If it does, the values found **do not write
 over them** — they appear as pills next to yours, and you decide field by field.
 An empty form is filled straight in, because there is nothing to confirm.
 
+**The protection lasts as long as the field holds a value.** If you empty a
+field you had typed yourself, that field fills up again from the sources on the
+next lookup. It is the everyday round: you type the title, look it up, no source
+knows it, you delete it, you enter the ISBN — and the title arrives from the
+cascade instead of staying empty.
+
 It holds for **authors** too: a source's proposal arrives as a single pill, with
 the names joined by `·` and not by a comma — which inside «Miura, Kentaro» would
 split one surname into two people. Pick it and the names go back to separate

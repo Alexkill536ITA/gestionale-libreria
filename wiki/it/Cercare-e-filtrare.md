@@ -55,7 +55,7 @@ Undici modi di restringere:
 | | |
 |---|---|
 | **Genere** | con il conteggio dei libri accanto a ciascuno |
-| **Stato di lettura** | da leggere · in lettura · letto, anche questi contati |
+| **Stato di lettura** | da leggere · in lettura · letto · lasciato, anche questi contati |
 | **Autore** | in OR: basta uno degli autori scelti |
 | **Editore** | |
 | **Collana** | |
@@ -95,9 +95,11 @@ pulsante Filtri porta un contatore, così sai quanti ne hai lasciati attivi anch
 a pannello chiuso.
 
 **Un chip arriva anche da fuori.** Il nome di una serie in [**Le
-serie**](Le-serie.md), e una card del carosello in [**Gli
-editori**](Gli-editori.md), aprono il catalogo già filtrato: il chip `Serie:` è
-lì che dice perché stai vedendo quei libri, e si toglie come tutti gli altri.
+serie**](Le-serie.md) apre il catalogo già filtrato, e così **Vedi in catalogo**
+nella scheda di un'opera in [**Gli editori**](Gli-editori.md), quando l'opera è
+una serie: il chip `Serie:` è lì che dice perché stai vedendo quei libri, e si
+toglie come tutti gli altri. Per un'opera che non è una serie, lo stesso
+pulsante apre il catalogo cercandone il titolo.
 
 Lo stesso fa **Vedi in catalogo** in [**I dizionari del
 catalogo**](I-dizionari-del-catalogo.md): il catalogo si apre col chip `Tag:`,

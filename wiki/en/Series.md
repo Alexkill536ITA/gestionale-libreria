@@ -28,7 +28,8 @@ From the left:
 - **which ones are missing**, with the gaps merged: `missing 3–12` instead of
   ten numbers in a row;
 - the pill with the status: `10 volumes missing`, `series in progress`,
-  `complete`;
+  `complete`, or `total to fix` when you have a volume numbered higher than the
+  declared total — volume 14 of a series that claims to have 12;
 - on the right, three actions that appear on hover — **see in catalogue**,
   **edit** and **delete**.
 

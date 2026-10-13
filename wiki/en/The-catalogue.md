@@ -23,7 +23,7 @@ buy](To-buy.md), and they come in here from there with one click.
 | Year | the year of **this** edition, not of the first one |
 | Genre | just one, the one you typed in the form |
 | Shelf | where the book physically is: `SAL-1`, `STUDIO-2`, `Comodino` |
-| Read | `To read`, `Reading`, `Read`, with a coloured dot |
+| Read | `To read`, `Reading`, `Read` or `Dropped`, with a mark in front: an empty ring, a dot with a halo, a solid dot, a struck-through ring |
 
 **A book that is away from home is announced by the «Read» cell.** A mark shows
 up next to the reading state, and resting the pointer on it reads out everything
@@ -41,6 +41,24 @@ whole value appears — the title with its subtitle, the author, the year, the
 genre, the shelf — with no need to widen the column. On the cover you get the
 title of the book, which is written nowhere there. The exception is **Read**,
 which already has its word on screen.
+
+## Changing the reading status
+
+**The status changes from the «Read» cell, without opening the book.** A click
+on the cell opens a menu with the four states — **To read**, **Reading**,
+**Read** and **Dropped**, that is a book you started and put aside — and the
+current one carries the tick. Pick another and the catalogue saves it at once,
+with no confirmation: it is the same save you would make by reopening the book
+in the form and pressing **Save**.
+
+![The reading status menu, on a book that is out on loan](images/catalogo-lettura-menu.png)
+
+The loan mark, if the book is away from home, **stays next to** the status: the
+cell is just one, and carries both things.
+
+If the catalogue lives on a service, everyone has their own readings and the
+menu carries a few more entries: [Working in a library](Working-in-a-library.md)
+tells the story.
 
 ## Resizing the columns
 

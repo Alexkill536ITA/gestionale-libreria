@@ -91,15 +91,16 @@ you had written, nor send the row back to *To buy*.
 
 From the left the tick box, then the **cover** — the real one where the source
 had it, otherwise the card with the title — the title of the volume, and under it
-the **publisher and the year**. To the right of the title sits the source that
+**series, publisher, year and imprint**, whichever are there: `The Rising of the
+Shield Hero · Edizioni BD · 2026 · J-pop`. On the right sits the source that
 offered it: `NiceBooks`, `Google Books`, `AniList`.
 
-Where the source also said **which series** the volume belongs to, and that name
-is a series in your catalogue, a third line shows **where you stand with that
-work**: `series complete`, `ongoing, 20 at home`, `3 of 12 at home`. It is the
-count of the volumes you have **in the catalogue**, not of the ones on the list.
-The line is missing where the source does not carry the series, and hardly
-anybody but AniList does.
+Where the row carries **a series** — because the source said so or because you
+typed it — and that name is a series in your catalogue, a third line shows
+**where you stand with that work**: `series complete`, `ongoing, 2 at home`,
+`28 of 30 at home`. It is the count of the volumes you have **in the
+catalogue**, not of the ones on the list. The line is missing where the row has
+no series, or where that series is not in the catalogue yet.
 
 Then the **status**, the **price**, and — as the pointer crosses the row — the
 three icons at the end: correct, remove from the list, add to the catalogue.
@@ -115,8 +116,10 @@ at.
 **A volume with no price is not worth zero: it stays out of the count.** It is
 the only honest thing to do — a price you do not know is not free — and it is why
 the summary is not just a sum and always declares how many volumes it was made
-of: `Volumes counted  6 of 8`, and below it *“2 volumes have no price and stay
-out of the total”*.
+of. In the shot above they all have a price, and indeed it says `Volumes counted
+10 of 10`; with three volumes picked, one of them without a price, it says `2 of
+3`, and below it *“1 volume has no price and stays out of the total.”* — you can
+see it [further down](#the-summary-follows-what-you-are-looking-at).
 
 That number does not stay here: when the volume joins the catalogue it becomes
 the book's **Price paid**.

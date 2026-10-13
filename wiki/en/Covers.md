@@ -133,5 +133,9 @@ in an **S3 archive**. How you choose, and how you carry them from one place to
 another with «Move the covers here», is in
 [The catalogue on a server](The-catalogue-on-a-server.md).
 
+With the **library's service** the covers are kept and served by the service, in
+the place chosen by whoever installed it: this computer does not need to know
+where they are — see [Installing the service](Installing-the-service.md).
+
 From any of these places, **the covers go into the backups**, so a restored
 archive brings them back with it — see [Backup and restore](Backup-and-restore.md).

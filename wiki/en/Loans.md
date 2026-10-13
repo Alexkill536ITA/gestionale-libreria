@@ -163,7 +163,14 @@ The confirmation says in full what happens:
 
 - **their history goes too** — the loans they closed, counted line by line;
 - **the books stay in the catalogue**, right where they are: they had already
-  come back.
+  come back;
+- **the activity log forgets them too**: the events about them stay, with what
+  happened and when, but in place of their name it says *persona dimenticata*
+  (forgotten person). Whoever had the same book at another time stays named.
+
+**Backups already made still contain them**, and the confirmation says so: a
+person who has to disappear for good disappears from there too only once those
+backups are gone.
 
 This cannot be undone.
 

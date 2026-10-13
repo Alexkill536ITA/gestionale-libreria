@@ -34,7 +34,7 @@ you: **Scan** (turns on the webcam) and **Look up metadata**.
 |---|---|
 | ISBN | 10 or 13 digits; the key metadata is looked up by |
 | Shelf | free text: `SAL-1`, `Bedside`, `Lent to Marco` |
-| Reading status | To read · Reading · Read |
+| Reading status | To read · Reading · Read · Dropped |
 | Title | **required** |
 | Authors | one or more, each with a role: Author, Illustrator, Translator, Editor |
 | Publisher | |
@@ -42,6 +42,9 @@ you: **Scan** (turns on the webcam) and **Look up metadata**.
 | Genre | just one |
 | Series | the name, plus the volume number |
 | Total volumes | how many volumes the series has altogether |
+
+The reading status does not need the form: it also changes from the «Read» cell
+of the catalogue, with one click — see [The catalogue](The-catalogue.md#changing-the-reading-status).
 
 **+ Add author** adds a second author; the `×` on the right removes a row. With
 two authors or more, two arrows show up next to the role — «Move … up» and
@@ -51,10 +54,15 @@ arrow is off, and on the last one the down arrow.
 
 ## More details
 
-Ten further fields live under **More details**, collapsed at first. It opens by
-itself when a metadata lookup has filled something down there — and the label
-says how many fields were filled (`· 4 filled in`), so you know it is worth a
-look.
+Ten further fields live under **More details**, collapsed every time the form
+opens. It opens by itself when a metadata lookup has filled something down
+there — and the label says how many fields were filled (`· 4 filled in`), so you
+know it is worth a look.
+
+**Once opened, it stays open while you scroll through the catalogue** with the
+form's arrows (see [further down](#moving-from-one-book-to-the-next-without-closing)):
+if you are comparing the price of twenty volumes, you do not reopen it twenty
+times. It only closes again when you close the form.
 
 ![More details](images/modulo-altri-dettagli.png)
 

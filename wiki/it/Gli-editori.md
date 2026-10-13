@@ -112,8 +112,8 @@ quello che entrerà domani.** I libri che avevi sono già passati al nome buono;
 regola serve perché la prossima ricerca dei metadati non riporti dentro la grafia
 sbagliata.
 
-**Tag e autori hanno la stessa faccenda in una pagina loro**: rinominare una
-grafia, unire due voci che sono la stessa cosa, togliere quelle che non usa più
+**Tag, autori, generi, collane, posizioni e lingue hanno la stessa faccenda in
+una pagina loro**: rinominare una grafia, unire due voci che sono la stessa cosa, togliere quelle che non usa più
 nessuno si fa da [I dizionari del catalogo](I-dizionari-del-catalogo.md).
 
 ## Aggiungere una grafia

@@ -8,9 +8,8 @@ All under **Settings → Backup**.
 export, import and restore speak to the catalogue you are using right now, here
 or over there. Where the two roads part, the page says so.
 
-**With the library's service, not yet**: backup, CSV export and restore show
-switched off, with a sentence saying they come later. Importing from a
-spreadsheet does work there too.
+**With the library's service things change a little**, and the section
+[further down](#with-the-librarys-service) says how.
 
 ![The Backup section](images/impostazioni-backup.png)
 
@@ -70,9 +69,15 @@ not take the backups with it, nor a failed disk here the catalogue. The advice
 to keep a copy elsewhere still stands.
 
 Settings **do not go** into the backups: theme, language, currency, API key,
-camera, catalogue order and **the connection to the server**, password
-included, live in `impostazioni.json` and stay with this computer. The reason is
-in [Where the data lives](Where-the-data-lives.md).
+camera, catalogue order and **the connection to the server** stay with this
+computer. The reason is in [Where the data lives](Where-the-data-lives.md).
+
+**Passwords and keys are not even in the settings file.** The Google Books key,
+the server password and that of an S3 archive are kept by the system keychain —
+**Credential Manager** on Windows, **Keychain** on the Mac — under the entry
+*Gestionale Libreria - impostazioni*. They stay in `impostazioni.json` only if
+the keychain is missing or refuses them, and in that case the program's log says
+so with a warning. Into a backup, in any case, they never go.
 
 ## Exporting to CSV
 
@@ -89,6 +94,10 @@ posizione;stato di lettura;note;aggiunto il
 
 Several authors or several tags of the same book share one cell, separated by
 ` | `: `Terry Pratchett | Neil Gaiman`.
+
+The reading status is written `Da leggere`, `In lettura`, `Letto` or
+`Abbandonato`, in Italian like the headers: what the catalogue calls **Dropped**
+has its long Italian name in the file.
 
 The file is meant to **open cleanly in Italian Excel**: `;` separator, UTF-8 with
 BOM, price with a decimal comma (`980,00`). Double-click and it opens already in
@@ -134,7 +143,11 @@ Every row comes in through the same door as a book typed by hand, so:
   lands under the latter instead of splitting it in two;
 - publisher aliases apply here too;
 - a series that was not there is created;
-- an impossible price or date drops **that row alone**, and the others come in.
+- an impossible price or date drops **that row alone**, and the others come in;
+- the reading status is read regardless of case among `da leggere`, `in
+  lettura`, `letto` and `abbandonato`. A book put aside halfway is written
+  `abbandonato`, the way the export writes it: `Dropped` or `Lasciato` are not
+  among the words the sheet knows, and that row does not come in.
 
 **An ISBN you already have is skipped**, even when it shows up twice in the same
 sheet. **Books without an ISBN, though, have nothing to be recognised by**, and
@@ -234,11 +247,32 @@ catalogue has not been touched. Three worth recognising:
   …» — on MongoDB the catalogue, and the restore with it, needs a replica set.
   How to fix it is in [The catalogue on a server](The-catalogue-on-a-server.md).
 
+## With the library's service
+
+When the catalogue lives on the library's service, **the backup is made by the
+service**, on its own disk, and it counts for every connected computer; there too
+the last seven copies are kept. The Backup section lists them under **Copies on
+the service**, and **Download** brings one to this computer, into the backup
+folder: a downloaded copy lives outside the server, and if its disk fails that is
+the way back.
+
+**The CSV is put together by the service, and lands on this computer**, in the
+same folder. **The restore** is chosen here, as always, and the service runs its
+own checks again before replacing everyone's catalogue. Importing from a
+spreadsheet works as on this computer's catalogue.
+
+Each of these actions needs its own permission — **Back up the catalogue**,
+**Export the catalogue**, **Restore an archive**, **Import from a spreadsheet**
+— and whoever lacks it finds the button switched off. Who hands out the
+permissions is told in [Working in a library](Working-in-a-library.md).
+
 ## If the computer dies
 
 On the new computer:
 
-1. [install the application](Installation.md) and open it once;
+1. [install the application](Installation.md) and open it once: the
+   [first-start guide](Installation.md#first-start) shows up, and you go through
+   it keeping the catalogue on this computer, or close it with **Decide later**;
 2. Settings → Backup → **Restore from a backup…**;
 3. pick the `.zip` you had put aside.
 

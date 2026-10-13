@@ -16,7 +16,7 @@ On Windows nothing else is needed: the system component that draws the window
 
 ## Installing on Windows
 
-1. Download `Gestionale Libreria_0.7.5_x64-setup.exe`.
+1. Download `Gestionale Libreria_0.8.0_x64-setup.exe`.
 2. Double-click it. The installer first asks for the language, Italian or
    English, proposing the one Windows uses; after that it asks very little.
 3. Done: you get a shortcut **on the desktop** and **in the Start menu**.
@@ -35,7 +35,7 @@ To go on: **More info** → **Run anyway**.
 
 ## On a Mac
 
-The file is `Gestionale Libreria_0.7.5_universal.dmg`, a single one for Intel Macs
+The file is `Gestionale Libreria_0.8.0_universal.dmg`, a single one for Intel Macs
 and Apple Silicon ones: open it, drag the application into **Applications**, and
 start it from there. It has been tried on a Mac, and it works.
 
@@ -63,6 +63,78 @@ Your data sits here, and everything the rest of this page says still holds:
 ~/Library/Application Support/it.alexkill536ita.gestionale-libreria/
 ```
 
+## First start
+
+The first time you open the program, with the catalogue still empty, the
+**first-start guide** appears. It has one question: **How will you use
+Libreria?**
+
+![The first-start guide](images/primo-avvio.png)
+
+- **On my own** — the catalogue is yours. The next step, **Where does the
+  catalogue live?**, offers **On this computer**, which asks for nothing, or
+  **On a database of yours**: host, port, database name, user and password,
+  then **Test the connection**, and **Use this database** lights up once the
+  database has answered. An empty database is fine: the catalogue is created
+  there by itself. The databases that can hold it are the ones in [The
+  catalogue on a server](The-catalogue-on-a-server.md);
+- **In a library** — several computers work on the same catalogue, through the
+  **library's service**, each with its own name. There are two roads, told in
+  the paragraph below.
+
+**Decide later**, at any step, closes the guide and leaves the catalogue on this
+computer. **The guide does not come back**, however it is closed — with a
+choice or with “Decide later” —, and it does not appear at all to whoever
+updates from an earlier version with books in the catalogue. The same choices
+stay in **Settings → Database**, told in [Where the data
+lives](Where-the-data-lives.md).
+
+### In a library
+
+**I'll connect to the library's service** is the road for whoever uses a
+service that already runs on another computer. You write the **Address** given
+by whoever runs it — always `https://`, with the port — and press **Test the
+connection**. The service's fingerprint appears: compare it with the one on the
+computer where it runs, and if it is the same press **I trust it**. Then **Sign
+in**, or **Create the first administrator** if the service has no users yet. How
+you sign in is told in [Ways to sign in](Ways-to-sign-in.md).
+
+**This computer is the library's server** installs the service here, on Windows
+or on a Mac; on Linux the road is not there, and a Linux or Docker server is set
+up following [Installing the service](Installing-the-service.md), then you come
+back here and choose “I'll connect”. You need the password of an administrator
+of this computer, and a computer that stays on. The guide takes four steps, and
+shows them one under the other:
+
+1. **Downloading the service installer**, of the same version as this app, from
+   the releases page;
+2. **Checking it's the release's own, with SHA256SUMS**: if the file's SHA-256
+   fingerprint is not the published one, the file is deleted and nothing runs;
+3. **Installation, in its own window**: on Windows the system asks for
+   administrator permission, and you answer “Yes”; the service's setup opens,
+   and it must be left open, because its last page shows the **Setup code** and
+   the **Certificate fingerprint**. On a Mac the Installer program opens, and if
+   macOS says the package cannot be verified you go through **System Settings →
+   Privacy & Security → Open Anyway**; code and fingerprint are read from the
+   Terminal, with the two commands the guide shows;
+4. **Waiting for the service to answer on this computer.**
+
+While it downloads you can cancel, and nothing has been installed. At the end
+the guide says **The service is installed** and shows the fingerprint: compare
+it by eye with the one on the installation's last page — or with the
+Terminal's, on a Mac — and press **I trust it**. Then you create the first
+administrator with the setup code.
+
+If Windows does not grant the permission, the guide says so and offers **Try
+again**. **Open the downloads page** leads to the files, for whoever would
+rather install the service themselves and then come back with “Back” to “I'll
+connect”.
+
+> **Not yet tested on a real machine.** Installing the service from the guide
+> has been tested on Windows up to the administrator permission request — the
+> download, the SHA256SUMS check and the denied permission —, but not an
+> installation carried through from here. On a Mac it has never been tested.
+
 ## Where your data ends up
 
 On Windows, out of the box, everything of yours sits in one folder:
@@ -79,7 +151,7 @@ Paste that path into the File Explorer address bar and you are there. Inside:
 | `covers\` | the covers, one JPEG per book |
 | `miniature\` and `intermedie\` | reduced copies of the covers, for the small views and the large ones: they are remade on their own from the original, and deleting them loses nothing |
 | `backups\` | the backups you ask for, unless you picked another folder |
-| `impostazioni.json` | theme, language, currency, API key, camera, backup and catalogue folders, the version you skipped, and the connection to the server — **password included**, like the keys of the S3 storage |
+| `impostazioni.json` | theme, language, currency, camera, backup and catalogue folders, the version you skipped, the connection to the server and the one to the library's service. The secrets — the Google Books key, the database password and the S3 storage secret — **are not here** but in the system keychain: why is in [Where the data lives](Where-the-data-lives.md) |
 
 The catalogue — `libreria.db` and `covers\`, with its `backups\` unless you
 picked another folder — **can be moved** to another folder, or live **on a

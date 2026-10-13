@@ -5,7 +5,10 @@
 The **library's service** is a separate program, with no window, that keeps
 the catalogue on one of the library's computers and answers the other
 computers on the network, where the app runs. Everyone signs in with their own
-name and password, and whoever runs the service decides what each one can do.
+name — with a service password, through the domain, a sign-in provider or
+Kerberos, as [Ways to sign in](Ways-to-sign-in.md) says — and whoever runs the
+service decides what each one can do, as
+[Users, groups and permissions](Users-groups-and-permissions.md) says.
 How the app connects is told in [Where the data lives](Where-the-data-lives.md#with-the-librarys-service);
 this page tells how to set the service up.
 
@@ -17,10 +20,11 @@ enough, [installed as usual](Installation.md).
 - **A computer that stays on**, so the others can reach it: a 64-bit Windows
   PC, a Mac (Intel or Apple Silicon), a Linux server with systemd (amd64 or
   arm64), or Docker. The app is not needed on the service's computer.
-- **The same version of the app.** The service and the app only talk to each
-  other when they come from the same release: an app newer or older than the
-  service is told “The service is at version … and this program at another”.
-  When you update one, update the other too.
+- **The same version of the app, exactly.** The service and the app only talk
+  to each other when they carry the same version number, down to the last
+  digit: an app newer or older than the service, even slightly, is told “The
+  service is at version … and this program at another: update whichever of the
+  two is behind.” When you update one, update the other too, together.
 - **Where to keep the catalogue.** Out of the box the service keeps it in a
   file in its data folder, and nothing else needs installing. If the library
   already has a database — **PostgreSQL**, **MySQL**, **SQL Server** or
@@ -35,7 +39,7 @@ next to the app's.
 
 ## On Windows
 
-The file is `Gestionale Libreria Servizio_0.7.5_x64-setup.exe`. It asks for
+The file is `Gestionale Libreria Servizio_0.8.0_x64-setup.exe`. It asks for
 administrator rights, because it installs a Windows service; and as with the
 app, **SmartScreen** warns that the program is not signed: **More info** →
 **Run anyway**.
@@ -71,12 +75,17 @@ What stays on the computer:
 | the data folder | `C:\ProgramData\Gestionale Libreria\servizio`, open only to SYSTEM, the administrators and the service: inside are `servizio.json`, the catalogue, the covers, the users, the certificate and the log `servizio.log` |
 | the firewall | a “Gestionale Libreria Servizio” rule that opens the port on **Private** and **Domain** networks, not on public ones |
 
-If the service does not start, the last page says so and shows the log, with
-**Open the log**.
+If the service does not start, the last page — “The service did not start” —
+says so and shows the last line of the log, with **Open the log**. If it is
+Windows that denies starting the program (error 5, access denied) and the log
+knows nothing about it, the page says that **an antivirus** is probably
+examining or blocking it: add an exception for the program's folder in the
+antivirus, then start “Gestionale Libreria - Servizio” from **Services**. Setup
+code and fingerprint are born at the first successful start.
 
 ## On a Mac
 
-The file is `Gestionale Libreria Servizio_0.7.5_universal.pkg`, a single one for
+The file is `Gestionale Libreria Servizio_0.8.0_universal.pkg`, a single one for
 Intel Macs and Apple Silicon ones. Like the app, **it is not signed**: macOS
 says it cannot be verified, and you go through **System Settings → Privacy &
 Security → Open Anyway**.
@@ -110,6 +119,11 @@ sudo -u _gestionalelibreria /usr/local/bin/gestionale-libreria-servizio --impron
 The **address** to type into the app is `https://NAME.local:7878`, where `NAME`
 is what `scutil --get LocalHostName` answers; the Mac's IP address works too.
 
+> **Not yet tested on a real machine.** The service's `.pkg` package is built
+> and is in the releases, but nobody has installed and started it on a Mac yet:
+> not even that the “Open Anyway” notice appears as described here has been
+> checked.
+
 If the **macOS firewall** is on, incoming connections have to be allowed by
 hand, because the service has no window to ask from:
 
@@ -127,12 +141,12 @@ sudo launchctl kickstart -k system/it.alexkill536ita.gestionale-libreria.servizi
 ## On Linux
 
 On **Debian and Ubuntu** there is a `.deb` package:
-`gestionale-libreria-servizio_0.7.5_amd64.deb` for PCs and
-`gestionale-libreria-servizio_0.7.5_arm64.deb` for ARM servers (a 64-bit
+`gestionale-libreria-servizio_0.8.0_amd64.deb` for PCs and
+`gestionale-libreria-servizio_0.8.0_arm64.deb` for ARM servers (a 64-bit
 Raspberry Pi, for instance).
 
 ```
-sudo apt install ./gestionale-libreria-servizio_0.7.5_amd64.deb
+sudo apt install ./gestionale-libreria-servizio_0.8.0_amd64.deb
 ```
 
 The package creates the system user `gestionale-libreria`, the data folder
@@ -142,9 +156,13 @@ listening on `0.0.0.0:7878`, and turns on the systemd unit
 not touch the firewall**: if there is one, port `7878/tcp` has to be opened by
 hand.
 
+> **Not yet tested on a real machine.** The `.deb` has been installed, started,
+> updated, removed and purged inside containers running Ubuntu 22.04 and 24.04
+> with systemd, not on a real server.
+
 For **other distributions with systemd** there is an archive,
-`gestionale-libreria-servizio_0.7.5_linux-x86_64.tar.gz` or
-`gestionale-libreria-servizio_0.7.5_linux-aarch64.tar.gz`. Inside are the
+`gestionale-libreria-servizio_0.8.0_linux-x86_64.tar.gz` or
+`gestionale-libreria-servizio_0.8.0_linux-aarch64.tar.gz`. Inside are the
 program, the systemd unit and `README.txt` (in Italian `LEGGIMI.txt`), with the
 steps to do by hand: they are the same ones the `.deb` does by itself. The
 program needs OpenSSL 3 and a glibc at least as recent as Ubuntu 22.04's.
@@ -170,7 +188,7 @@ version's Linux archive from the release. Copy it into an empty folder.
 ```dockerfile
 FROM debian:bookworm-slim
 
-ARG VERSIONE=0.7.5
+ARG VERSIONE=0.8.0
 ARG ARCH=x86_64
 
 RUN apt-get update \
@@ -237,13 +255,23 @@ The database password can stay out of the file, in a variable:
 ## The `servizio.json` file
 
 The service reads its configuration from `servizio.json`, in the data folder.
-The keys are three:
+The keys are four:
 
 | | |
 |---|---|
 | `ascolta` | where it answers: `0.0.0.0:7878` for the whole network, `127.0.0.1:7878` for that computer only. Without it, it is the latter |
 | `database` | where the catalogue lives. Without it, it is a file in the data folder, with the covers next to it |
 | `dati` | another data folder; usually not needed |
+| `accesso` | the ways to sign in: the service's password, Active Directory, an OIDC provider, Kerberos. Without it, only the password works |
+
+**A key the service does not know makes it refuse the file**, at the top as
+inside the `accesso` block: the service does not start and the log says which
+key, so a misspelt key does not pass in silence. Inside the `database` block,
+instead, an unknown key is ignored.
+
+**The installers do not write the `accesso` block**: it is written by hand, and
+how it is made, with an example for each way, is in
+[Ways to sign in](Ways-to-sign-in.md#the-accesso-block-of-serviziojson).
 
 Here is a catalogue on the library's PostgreSQL, with the covers in S3
 storage:
@@ -284,12 +312,18 @@ storage:
 - **The password** can stay in the file, which only the service and the
   administrators read, or in the `GESTIONALE_LIBRERIA_PASSWORD` environment
   variable. The listening address can be given with a variable too,
-  `GESTIONALE_LIBRERIA_ASCOLTA`, which wins over the file.
+  `GESTIONALE_LIBRERIA_ASCOLTA`, which wins over the file. The secrets of the
+  `accesso` block have their own three variables,
+  `GESTIONALE_LIBRERIA_SEGRETO_OIDC`, `GESTIONALE_LIBRERIA_PASSWORD_DI_SERVIZIO`
+  and `GESTIONALE_LIBRERIA_KEYTAB`, told in
+  [Ways to sign in](Ways-to-sign-in.md#the-accesso-block-of-serviziojson).
 
 An empty database is fine: the service installs the catalogue there by itself
 at the first start. To know whether the connection works **before** restarting
 the service, there is the `--prova` option, which tries the database of
-`servizio.json`, says in one line how it went and exits:
+`servizio.json` and, if there is an `accesso` block, the domain, the OIDC
+provider and the Kerberos keytab too; it says in one line how it went and
+exits:
 
 ```
 sudo -u gestionale-libreria gestionale-libreria-servizio --prova
@@ -318,8 +352,17 @@ On every computer of the library, in the app:
    scanning on.
 4. The **first** computer that connects creates the first administrator: the
    dialog asks for the **Setup code**, then a name and a password. The code
-   works only once. The other computers sign in with their own name and
-   password.
+   works only once.
+5. The administrator adds the others from **Users and groups…**, in the menu
+   with their name at the top, and gives them their groups: this is told in
+   [Users, groups and permissions](Users-groups-and-permissions.md). The other
+   computers sign in with their own name, in the way the service has switched
+   on.
+
+On the computer acting as the server, if it is Windows or a Mac, there is also
+a shorter road: the app's [first-start guide](Installation.md#first-start),
+choosing **This computer is the library's server**, downloads the service's
+setup, checks it and starts it by itself.
 
 The details — a fingerprint that changes, the session, what you can do with
 the catalogue on the service — are in [Where the data lives](Where-the-data-lives.md#with-the-librarys-service).
@@ -340,8 +383,9 @@ configuration stays as it is.
   `--build-arg VERSIONE=…`), rebuild the image and recreate the container with
   the **same volume**.
 
-Remember to update **the app too** on the library's computers, or they no
-longer connect.
+**Update the service and the app together**, on the library's computers: the
+versions must be identical, and an app left behind — or gone ahead — no longer
+connects until the other catches up.
 
 ## Uninstalling
 

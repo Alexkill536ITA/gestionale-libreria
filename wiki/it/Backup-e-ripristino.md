@@ -8,9 +8,8 @@ Tutto in **Impostazioni → Backup**.
 backup, esportazione, import e ripristino parlano al catalogo che stai usando
 adesso, di qua o di là. Dove le due strade si separano, la pagina lo dice.
 
-**Col servizio della biblioteca non ancora**: backup, esportazione in CSV e
-ripristino si vedono spenti, con una frase che dice che arrivano più avanti.
-L'import da un foglio invece funziona anche lì.
+**Col servizio della biblioteca le cose cambiano un poco**, e la sezione
+[più sotto](#col-servizio-della-biblioteca) dice come.
 
 ![La sezione Backup](immagini/impostazioni-backup.png)
 
@@ -70,9 +69,16 @@ via i backup, né un guasto di questo disco il catalogo. Il consiglio di
 tenerne una copia altrove resta buono comunque.
 
 Le impostazioni **non entrano** nei backup: tema, lingua, valuta, chiave API,
-fotocamera, ordine del catalogo e **il collegamento al server**, con la sua
-password, stanno in `impostazioni.json` e restano di questo computer. Il perché
-sta in [Dove stanno i dati](Dove-stanno-i-dati.md).
+fotocamera, ordine del catalogo e **il collegamento al server** restano di questo
+computer. Il perché sta in [Dove stanno i dati](Dove-stanno-i-dati.md).
+
+**Le password e le chiavi non stanno nemmeno nel file delle impostazioni.** La
+chiave di Google Books, la password del server e quella di un archivio S3 le
+tiene il portachiavi del sistema — **Gestione credenziali** su Windows,
+**Portachiavi** sul Mac — sotto la voce *Gestionale Libreria - impostazioni*.
+Restano in `impostazioni.json` solo se il portachiavi manca o le rifiuta, e in
+quel caso il registro del programma lo dice con un avviso. In un backup, in ogni
+caso, non entrano mai.
 
 ## Esportare in CSV
 
@@ -89,6 +95,10 @@ posizione;stato di lettura;note;aggiunto il
 
 Più autori o più tag dello stesso libro stanno nella stessa cella, separati da
 ` | `: `Terry Pratchett | Neil Gaiman`.
+
+Lo stato di lettura si scrive `Da leggere`, `In lettura`, `Letto` o
+`Abbandonato`: quello che nel catalogo si chiama **Lasciato**, nel file ha il
+nome lungo.
 
 Il file è pensato per **aprirsi bene in Excel italiano**: separatore `;`,
 codifica UTF-8 con BOM, prezzo con la virgola decimale (`980,00`). Doppio clic e
@@ -134,7 +144,11 @@ Ogni riga entra dalla stessa porta di un libro scritto a mano, quindi:
 - gli alias degli editori valgono anche qui;
 - una serie che non c'era viene creata;
 - un prezzo o una data impossibili fanno saltare **quella riga sola**, e le
-  altre entrano.
+  altre entrano;
+- lo stato di lettura si legge senza badare alle maiuscole fra `da leggere`, `in
+  lettura`, `letto` e `abbandonato`. Un libro lasciato a metà va scritto
+  `abbandonato`, come lo scrive l'esportazione: `Lasciato` non è fra le parole
+  che il foglio conosce, e quella riga non entra.
 
 **Un ISBN che hai già si salta**, anche se compare due volte nello stesso
 foglio. **I libri senza ISBN invece non hanno niente con cui riconoscersi**, e
@@ -234,11 +248,32 @@ catalogo non è stato toccato. Tre che vale la pena riconoscere:
   …» — su MongoDB il catalogo, e con lui il ripristino, vuole un replica set.
   Come si sistema sta in [Il catalogo su un server](Il-catalogo-su-un-server.md).
 
+## Col servizio della biblioteca
+
+Quando il catalogo sta sul servizio della biblioteca, **il backup lo fa il
+servizio**, sul suo disco, e vale per tutti i computer collegati; anche lì
+restano le ultime sette copie. La sezione Backup le elenca sotto **Le copie sul
+servizio**, e **Scarica** ne porta una su questo computer, nella cartella dei
+backup: una copia scaricata sta fuori dal server, e se il suo disco si guasta da
+lì si torna indietro.
+
+**Il CSV lo compone il servizio, e nasce su questo computer**, nella stessa
+cartella. **Il ripristino** si sceglie qui, come sempre, e il servizio rifà i suoi
+controlli prima di sostituire il catalogo di tutti. L'import da un foglio
+funziona come sul catalogo di questo computer.
+
+Ognuno di questi gesti vuole il suo permesso — **Fare un backup del catalogo**,
+**Esportare il catalogo**, **Ripristinare un archivio**, **Importare da un
+foglio** — e chi non ce l'ha trova il pulsante spento. Chi assegna i permessi lo
+racconta [Lavorare in biblioteca](Lavorare-in-biblioteca.md).
+
 ## Se il computer si rompe
 
 Sul computer nuovo:
 
-1. [installa l'applicazione](Installazione.md) e aprila una volta;
+1. [installa l'applicazione](Installazione.md) e aprila una volta: compare la
+   [guida al primo avvio](Installazione.md#il-primo-avvio), che attraversi
+   lasciando il catalogo su questo computer, o chiudi con **Decido dopo**;
 2. Impostazioni → Backup → **Ripristina da un backup…**;
 3. scegli lo `.zip` che avevi messo da parte.
 

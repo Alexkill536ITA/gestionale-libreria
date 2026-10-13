@@ -234,9 +234,13 @@ MongoDB. Le copertine vanno in un posto che tutti i computer raggiungono —
 e da lì ogni computer vede gli stessi libri. Il giro è in [Il catalogo su un
 server](Il-catalogo-su-un-server.md).
 
-Non è un programma per più persone, però: non ci sono account, e se due
-modificano lo stesso libro insieme vince chi salva per ultimo, senza che
-l'altro lo sappia.
+Così, però, non è un programma per più persone: su un tuo database non ci sono
+account, e se due modificano lo stesso libro insieme vince chi salva per ultimo,
+senza che l'altro lo sappia. **Per più persone c'è il servizio della
+biblioteca**: ognuno entra col suo nome, coi suoi permessi, e un libro aperto da
+uno si vede «in modifica» dagli altri. Lo raccontano [Installare il
+servizio](Installare-il-servizio.md) e [Lavorare in
+biblioteca](Lavorare-in-biblioteca.md).
 
 Due copie del catalogo di questo computer, invece, restano due cataloghi
 distinti: non si parlano, e ripristinare l'uno sull'altro cancellerebbe il
@@ -244,6 +248,34 @@ lavoro del secondo. E la cartella del catalogo dentro OneDrive o Dropbox si può
 tenere, ma aperta **su un computer per volta**: due scritture insieme sul file
 del database lo **danneggiano**. Il perché sta in [Dove stanno i
 dati](Dove-stanno-i-dati.md).
+
+## Il servizio dice che è a un'altra versione
+
+«Il servizio è alla versione …, questo programma a un'altra: aggiorna quello dei
+due che è indietro.» L'app e il servizio si parlano solo se la versione è
+**identica**, fino all'ultima cifra. Si aggiorna quello che è rimasto indietro —
+di solito l'app, come dice [Aggiornamenti](Aggiornamenti.md) — e conviene
+aggiornarli sempre insieme. Come si aggiorna il servizio sta in [Installare il
+servizio](Installare-il-servizio.md#aggiornare).
+
+## Ho dimenticato la password del servizio
+
+La password del servizio la reimposta un amministratore, o chi gestisce gli
+utenti, da **Utenti e gruppi**: lo racconta [Utenti, gruppi e
+permessi](Utenti-gruppi-e-permessi.md). Se a perderla è l'amministratore, sulla
+macchina del servizio si fa nascere un codice di configurazione nuovo, come dice
+[Installare il servizio](Installare-il-servizio.md#il-codice-perso-o-la-password-dellamministratore).
+Una password del dominio, invece, si cambia nel dominio.
+
+## Una versione precedente non salva un libro «Lasciato»
+
+Da questa versione lo stato di lettura ha un quarto valore, **Lasciato**: un
+libro cominciato e messo da parte. Una versione precedente del programma apre
+ancora un catalogo che ne contiene, ma **rifiuta di salvare** quei libri — dice
+«Stato di lettura sconosciuto» — e nell'import da un foglio lascia fuori le
+righe che lo portano. Succede soprattutto con un catalogo su un tuo database
+aperto da computer con versioni diverse. Il rimedio è aggiornare il programma su tutti i computer. Col servizio
+il problema non si pone: un'app di un'altra versione non si collega affatto.
 
 ## Come porto i miei libri sul server?
 

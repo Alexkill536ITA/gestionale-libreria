@@ -16,7 +16,7 @@ l'installazione.
 
 ## Installare su Windows
 
-1. Scarica il file `Gestionale Libreria_0.7.5_x64-setup.exe`.
+1. Scarica il file `Gestionale Libreria_0.8.0_x64-setup.exe`.
 2. Doppio clic. L'installatore chiede per prima cosa la lingua, italiano o
    inglese, e propone quella di Windows; poi chiede poco.
 3. Finito: trovi il collegamento **sul desktop** e **nel menu Start**.
@@ -35,7 +35,7 @@ Per proseguire: **Ulteriori informazioni** → **Esegui comunque**.
 
 ## Su un Mac
 
-Il file è `Gestionale Libreria_0.7.5_universal.dmg`, uno solo per i Mac Intel e
+Il file è `Gestionale Libreria_0.8.0_universal.dmg`, uno solo per i Mac Intel e
 per quelli con Apple Silicon: si apre, si trascina l'applicazione in
 **Applicazioni**, e da lì si avvia. È stato provato su un Mac, e funziona.
 
@@ -64,6 +64,79 @@ I tuoi dati stanno qui, e vale tutto quello che dice il resto di questa pagina:
 ~/Library/Application Support/it.alexkill536ita.gestionale-libreria/
 ```
 
+## Il primo avvio
+
+La prima volta che apri il programma, con il catalogo ancora vuoto, compare la
+**guida al primo avvio**. La domanda è una: **Come userai Libreria?**
+
+![La guida al primo avvio](immagini/primo-avvio.png)
+
+- **Da solo** — il catalogo è tuo. Il passo dopo, **Dove sta il catalogo?**,
+  offre **Su questo computer**, che non chiede niente, oppure **Su un tuo
+  database**: host, porta, nome del database, utente e password, poi **Prova il
+  collegamento**, e **Usa questo database** si accende quando il database ha
+  risposto. Un database vuoto va bene: il catalogo ci nasce da sé. I database
+  che lo possono tenere sono quelli di [Il catalogo su un
+  server](Il-catalogo-su-un-server.md);
+- **In una biblioteca** — più computer lavorano sullo stesso catalogo,
+  attraverso il **servizio della biblioteca**, ognuno col suo nome. Le strade
+  sono due, e le racconta il paragrafo qui sotto.
+
+**Decido dopo**, in qualunque passo, chiude la guida e lascia il catalogo su
+questo computer. **La guida non ricompare più**, comunque la si chiuda — con una
+scelta o con «Decido dopo» —, e non compare affatto a chi aggiorna da una
+versione precedente con dei libri in catalogo. Le stesse scelte restano in
+**Impostazioni → Database**, raccontate in [Dove stanno i
+dati](Dove-stanno-i-dati.md).
+
+### In una biblioteca
+
+**Mi collego al servizio della biblioteca** è la strada di chi usa un servizio
+che gira già su un altro computer. Si scrive l'**Indirizzo** che dà chi lo
+gestisce — sempre `https://`, con la porta — e si preme **Prova il
+collegamento**. Compare l'impronta del servizio: confrontala con quella del
+computer dove gira, e se è uguale premi **Mi fido**. Poi **Entra**, oppure **Crea
+il primo amministratore** se il servizio non ha ancora nessun utente. Come si
+entra lo racconta [I modi di entrare](I-modi-di-entrare.md).
+
+**Questo computer è il server della biblioteca** installa il servizio qui, su
+Windows o su un Mac; su Linux la strada non c'è, e un server Linux o Docker si
+prepara seguendo [Installare il servizio](Installare-il-servizio.md), per poi
+tornare qui e scegliere «Mi collego». Serve la password di un amministratore di
+questo computer, e un computer che resta acceso. La guida fa quattro passi, e li
+mostra uno sotto l'altro:
+
+1. **Scarico l'installer del servizio**, della stessa versione di quest'app,
+   dalla pagina dei rilasci;
+2. **Controllo che sia quello del rilascio, con SHA256SUMS**: se l'impronta
+   SHA-256 del file non è quella pubblicata, il file si cancella e non parte
+   niente;
+3. **Installazione, nella sua finestra**: su Windows il sistema chiede il
+   permesso di amministratore, e si risponde «Sì»; si apre l'installazione del
+   servizio, che va lasciata aperta, perché la sua ultima pagina mostra il
+   **Codice di configurazione** e l'**Impronta del certificato**. Su un Mac si
+   apre il programma Installer, e se macOS dice che il pacchetto non si può
+   verificare si passa da **Impostazioni di sistema → Privacy e sicurezza → Apri
+   comunque**; codice e impronta si leggono dal Terminale, coi due comandi che la
+   guida mostra;
+4. **Aspetto che il servizio risponda su questo computer.**
+
+Finché scarica si può annullare, e non è stato installato niente. Alla fine la
+guida dice **Il servizio è installato** e mostra l'impronta: confrontala a
+occhio con quella dell'ultima pagina dell'installazione — o con quella del
+Terminale, su un Mac — e premi **Mi fido**. Poi si crea il primo
+amministratore col codice di configurazione.
+
+Se Windows non dà il permesso, la guida lo dice e propone **Riprova**. **Apri la
+pagina dei download** porta ai file, per chi preferisce installare il servizio
+da sé e poi tornare con «Indietro» a «Mi collego».
+
+> **Non ancora provato su una macchina vera.** L'installazione del servizio dalla
+> guida è stata provata su Windows fino alla richiesta del permesso di
+> amministratore — lo scaricamento, il controllo con SHA256SUMS e il permesso
+> negato —, ma non un'installazione portata a termine da qui. Su un Mac non è
+> mai stata provata.
+
 ## Dove finiscono i dati
 
 Su Windows, di partenza, tutto quello che è tuo sta in una cartella sola:
@@ -80,7 +153,7 @@ Incolla quel percorso nella barra di Esplora risorse e ci arrivi. Dentro trovi:
 | `covers\` | le copertine, un JPEG per libro |
 | `miniature\` e `intermedie\` | copie ridotte delle copertine, per le viste piccole e per quelle grandi: si rifanno da sole dall'originale, e cancellarle non perde niente |
 | `backups\` | i backup che chiedi tu, se non ne hai scelta un'altra |
-| `impostazioni.json` | tema, lingua, valuta, chiave API, fotocamera, cartella dei backup e del catalogo, la versione che hai saltato, e il collegamento al server — **password compresa**, come le chiavi dell'archivio S3 |
+| `impostazioni.json` | tema, lingua, valuta, fotocamera, cartella dei backup e del catalogo, la versione che hai saltato, il collegamento al server e quello al servizio della biblioteca. I segreti — la chiave di Google Books, la password del database e il segreto dell'archivio S3 — **non stanno qui** ma nel portachiavi del sistema: il perché è in [Dove stanno i dati](Dove-stanno-i-dati.md) |
 
 Il catalogo — `libreria.db` e `covers\`, con i suoi `backups\` se non ne hai
 scelta un'altra — **si può spostare** in un'altra cartella, o stare **su un

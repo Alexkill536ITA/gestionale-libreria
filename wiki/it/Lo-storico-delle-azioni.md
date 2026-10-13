@@ -22,7 +22,7 @@ il primo evento dello storico è l'accensione stessa.
 **Spegnerlo cancella quello che ha registrato**, ed è la cosa più importante di
 questa pagina. Sotto la casella compare la domanda — *«Spegnere lo storico
 cancella quello che ha registrato»* — che dice **quanti eventi sta per portare
-via**: *«I 20 eventi registrati finora vengono cancellati, e non si possono
+via**: *«I 13 eventi registrati finora vengono cancellati, e non si possono
 riavere. Riaccendendolo si ricomincia da zero.»* I due pulsanti sono **Spegni e
 cancella** e **Lascia acceso**.
 
@@ -64,8 +64,8 @@ storico da aprire.
 
 ## Come si legge la tabella
 
-In alto a sinistra il conto degli eventi — `20 eventi` — e a destra quando è
-arrivato l'ultimo: *«l'ultimo oggi alle 12:30»*.
+In alto a sinistra il conto degli eventi — `13 eventi` — e a destra quando è
+arrivato l'ultimo: *«l'ultimo oggi alle 21:23»*.
 
 | Colonna | Cosa mostra |
 |---|---|
@@ -152,6 +152,15 @@ computer** — `Impostazioni`, `Database configurato`, `Catalogo spostato` e
 catalogo. Mentre guardi il server quegli eventi non li vedi: tornano a comparire
 quando torni al catalogo di questo computer.
 
+## Con il servizio
+
+Quando più persone lavorano sullo stesso catalogo attraverso il servizio, ogni
+riga è **firmata col nome di chi è entrato**, e la tabella porta una colonna in
+più, **Chi**, subito dopo **Quando**; una riga senza firma mostra `—`. Chi può
+aprire la pagina, e chi può accendere e spegnere lo storico, lo decidono i
+permessi **Vedere lo storico** e **Accendere e spegnere lo storico**: il resto
+sta in [Lavorare in biblioteca](Lavorare-in-biblioteca.md).
+
 ## Lo storico completo di una cosa
 
 Il tasto in fondo a ogni riga apre la storia intera di quel libro — o di quella
@@ -160,9 +169,9 @@ intero**, senza `+N`, e la riga da cui sei partito è segnata, così non la perd
 fra sette eventi.
 
 **Quella storia non passa dai filtri della pagina**, perché «completo» vuol dire
-completo: con **Restituzioni** addosso la tabella mostra due righe in tutto, e la
-storia di uno di quei due volumi ne mostra tre — la restituzione che hai
-filtrato, il prestito che l'ha preceduta e la modifica di prima.
+completo: con **Modifiche** addosso la tabella mostra quattro righe, e la storia
+di *Il Gattopardo*, che non è più in catalogo, ne mostra tre — la modifica che
+hai filtrato, la creazione che l'ha preceduta e l'eliminazione venuta dopo.
 
 ![Lo storico completo di un volume](immagini/storico-storia.png)
 
@@ -185,7 +194,7 @@ filtri che hai adesso, non resta niente*. I sette stati restano in fila anche
 quando valgono zero: una fila che cambia numero di voci mentre filtri è peggio di
 una voce che dice zero.
 
-Con un filtro addosso il conto in testa diventa `9 di 20`, e accanto compare
+Con un filtro addosso il conto in testa diventa `4 di 13`, e accanto compare
 **Azzera i filtri**, che li toglie tutti in un colpo.
 
 ![La barra dei filtri dello storico](immagini/storico-filtri.png)
@@ -212,6 +221,14 @@ vai a leggere.
   catalogo, e quel libro potresti non salvarlo mai. Il cambio di copertina si
   legge come il campo `Copertina` dentro la modifica del libro, che è il momento
   in cui succede davvero.
+
+## Una persona dimenticata
+
+Quando togli una persona dal registro dei [prestiti](I-prestiti.md), **lo storico
+la dimentica con lei**: gli eventi restano, con che cosa è successo e quando, ma
+al posto del suo nome — nel titolo e nelle note — c'è scritto *persona
+dimenticata*. Chi ha avuto lo stesso libro in un altro momento resta nominato. I
+backup fatti prima, invece, quel nome lo contengono ancora.
 
 ## Un ripristino sostituisce anche lo storico
 

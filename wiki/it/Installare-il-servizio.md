@@ -4,8 +4,11 @@
 
 Il **servizio della biblioteca** è un programma a parte, senza finestra, che
 tiene il catalogo su un computer della biblioteca e risponde agli altri
-computer della rete, dove gira l'app. Ognuno entra con il suo nome e la sua
-password, e chi gestisce il servizio decide cosa può fare. Come si collega
+computer della rete, dove gira l'app. Ognuno entra con il suo nome — con una
+password del servizio, dal dominio, da un fornitore di accesso o con Kerberos,
+come dice [I modi di entrare](I-modi-di-entrare.md) — e chi gestisce il servizio
+decide cosa può fare, come dice
+[Utenti, gruppi e permessi](Utenti-gruppi-e-permessi.md). Come si collega
 l'app lo racconta [Dove stanno i dati](Dove-stanno-i-dati.md#col-servizio-della-biblioteca);
 questa pagina dice come si mette in piedi il servizio.
 
@@ -18,10 +21,11 @@ Se il catalogo lo usi da solo, il servizio non ti serve: basta l'app,
   Windows a 64 bit, un Mac (Intel o Apple Silicon), un server Linux con
   systemd (amd64 o arm64), oppure Docker. Sul computer del servizio l'app non
   serve.
-- **La stessa versione dell'app.** Il servizio e l'app si parlano solo se sono
-  dello stesso rilascio: un'app più nuova o più vecchia del servizio si sente
-  dire «Il servizio è alla versione …, questo programma a un'altra». Quando
-  aggiorni l'una, aggiorna anche l'altro.
+- **La stessa versione dell'app, identica.** Il servizio e l'app si parlano
+  solo se portano lo stesso numero di versione, fino all'ultima cifra: un'app
+  più nuova o più vecchia del servizio, anche di poco, si sente dire «Il
+  servizio è alla versione …, questo programma a un'altra: aggiorna quello dei
+  due che è indietro.» Quando aggiorni l'uno, aggiorna anche l'altra, insieme.
 - **Dove tenere il catalogo.** Di partenza il servizio lo tiene in un file
   nella sua cartella dati, e non serve installare nient'altro. Se la biblioteca
   ha già un database — **PostgreSQL**, **MySQL**, **SQL Server** o **MongoDB**
@@ -36,7 +40,7 @@ accanto a quelli dell'app.
 
 ## Su Windows
 
-Il file è `Gestionale Libreria Servizio_0.7.5_x64-setup.exe`. Chiede i permessi
+Il file è `Gestionale Libreria Servizio_0.8.0_x64-setup.exe`. Chiede i permessi
 di amministratore, perché installa un servizio di Windows; e come per l'app,
 **SmartScreen** avvisa che il programma non è firmato: **Ulteriori
 informazioni** → **Esegui comunque**.
@@ -72,12 +76,17 @@ Cosa resta sul computer:
 | la cartella dati | `C:\ProgramData\Gestionale Libreria\servizio`, aperta solo a SYSTEM, agli amministratori e al servizio: dentro ci sono `servizio.json`, il catalogo, le copertine, gli utenti, il certificato e il registro `servizio.log` |
 | il firewall | una regola «Gestionale Libreria Servizio» che apre la porta sulle reti **Private** e di **Dominio**, non su quelle pubbliche |
 
-Se il servizio non parte, l'ultima pagina lo dice e mostra il registro, con
-**Apri il registro**.
+Se il servizio non parte, l'ultima pagina — «Il servizio non è partito» — lo
+dice e mostra l'ultima riga del registro, con **Apri il registro**. Se è Windows
+a negare l'avvio del programma (errore 5, accesso negato) e il registro non ne
+sa niente, la pagina dice che probabilmente **un antivirus** lo sta esaminando o
+lo ha bloccato: aggiungi nell'antivirus un'eccezione per la cartella del
+programma, poi avvia «Gestionale Libreria - Servizio» da **Servizi**. Codice di
+configurazione e impronta nascono al primo avvio riuscito.
 
 ## Su un Mac
 
-Il file è `Gestionale Libreria Servizio_0.7.5_universal.pkg`, uno solo per i Mac
+Il file è `Gestionale Libreria Servizio_0.8.0_universal.pkg`, uno solo per i Mac
 Intel e per quelli con Apple Silicon. Come l'app **non è firmato**: macOS dice
 che non si può verificare, e si passa da **Impostazioni di sistema → Privacy e
 sicurezza → Apri comunque**.
@@ -112,6 +121,11 @@ L'**indirizzo** da scrivere nell'app è `https://NOME.local:7878`, dove `NOME` �
 quello che risponde `scutil --get LocalHostName`; va bene anche l'indirizzo IP
 del Mac.
 
+> **Non ancora provato su una macchina vera.** Il pacchetto `.pkg` del servizio
+> si costruisce e sta nei rilasci, ma nessuno l'ha ancora installato e avviato
+> su un Mac: non è provato nemmeno che l'avviso «Apri comunque» compaia come
+> descritto qui.
+
 Se il **firewall di macOS** è acceso, le connessioni in arrivo vanno consentite
 a mano, perché il servizio non ha una finestra da cui chiederlo:
 
@@ -129,12 +143,12 @@ sudo launchctl kickstart -k system/it.alexkill536ita.gestionale-libreria.servizi
 ## Su Linux
 
 Su **Debian e Ubuntu** c'è un pacchetto `.deb`:
-`gestionale-libreria-servizio_0.7.5_amd64.deb` per i PC e
-`gestionale-libreria-servizio_0.7.5_arm64.deb` per i server ARM (un Raspberry Pi
+`gestionale-libreria-servizio_0.8.0_amd64.deb` per i PC e
+`gestionale-libreria-servizio_0.8.0_arm64.deb` per i server ARM (un Raspberry Pi
 a 64 bit, per esempio).
 
 ```
-sudo apt install ./gestionale-libreria-servizio_0.7.5_amd64.deb
+sudo apt install ./gestionale-libreria-servizio_0.8.0_amd64.deb
 ```
 
 Il pacchetto crea l'utente di sistema `gestionale-libreria`, la cartella dati
@@ -143,9 +157,13 @@ su `0.0.0.0:7878`, e accende l'unità systemd `gestionale-libreria-servizio`, ch
 parte da sola a ogni avvio. **Il firewall non lo tocca**: se c'è, la porta
 `7878/tcp` va aperta a mano.
 
+> **Non ancora provato su una macchina vera.** Il `.deb` è stato installato,
+> avviato, aggiornato, rimosso e cancellato del tutto dentro contenitori con
+> Ubuntu 22.04 e 24.04 e systemd, non su un server vero.
+
 Per le **altre distribuzioni con systemd** c'è un archivio,
-`gestionale-libreria-servizio_0.7.5_linux-x86_64.tar.gz` o
-`gestionale-libreria-servizio_0.7.5_linux-aarch64.tar.gz`. Dentro ci sono il
+`gestionale-libreria-servizio_0.8.0_linux-x86_64.tar.gz` o
+`gestionale-libreria-servizio_0.8.0_linux-aarch64.tar.gz`. Dentro ci sono il
 programma, l'unità systemd e `LEGGIMI.txt` (in inglese `README.txt`), con i
 passi da fare a mano: sono gli stessi che il `.deb` fa da solo. Il programma
 vuole OpenSSL 3 e una glibc almeno come quella di Ubuntu 22.04.
@@ -171,7 +189,7 @@ Linux della versione dal rilascio. Copialo in una cartella vuota.
 ```dockerfile
 FROM debian:bookworm-slim
 
-ARG VERSIONE=0.7.5
+ARG VERSIONE=0.8.0
 ARG ARCH=x86_64
 
 RUN apt-get update \
@@ -238,13 +256,23 @@ La password del database può restare fuori dal file, in una variabile:
 ## Il file `servizio.json`
 
 Il servizio legge la sua configurazione da `servizio.json`, nella cartella dati.
-Le chiavi sono tre:
+Le chiavi sono quattro:
 
 | | |
 |---|---|
 | `ascolta` | dove risponde: `0.0.0.0:7878` per tutta la rete, `127.0.0.1:7878` solo per quel computer. Senza, è il secondo |
 | `database` | dove sta il catalogo. Senza, è un file nella cartella dati, con le copertine accanto |
 | `dati` | un'altra cartella dati; di solito non serve |
+| `accesso` | i modi di entrare: la password del servizio, Active Directory, un fornitore OIDC, Kerberos. Senza, si entra con la sola password |
+
+**Una chiave che il servizio non conosce fa rifiutare il file**, in cima come
+dentro il blocco `accesso`: il servizio non parte e il registro dice quale, così
+una chiave scritta male non passa in silenzio. Dentro il blocco `database`,
+invece, una chiave sconosciuta si ignora.
+
+**Gli installer non scrivono il blocco `accesso`**: va scritto a mano, e com'è
+fatto, con un esempio per ogni modo, lo dice
+[I modi di entrare](I-modi-di-entrare.md#il-blocco-accesso-di-serviziojson).
 
 Ecco un catalogo su un PostgreSQL della biblioteca, con le copertine in un
 archivio S3:
@@ -284,12 +312,16 @@ archivio S3:
 - **La password** può stare nel file, che solo il servizio e gli amministratori
   leggono, oppure nella variabile d'ambiente `GESTIONALE_LIBRERIA_PASSWORD`.
   Anche l'indirizzo di ascolto si può dare con una variabile,
-  `GESTIONALE_LIBRERIA_ASCOLTA`, che vince sul file.
+  `GESTIONALE_LIBRERIA_ASCOLTA`, che vince sul file. I segreti del blocco
+  `accesso` hanno le loro tre variabili, `GESTIONALE_LIBRERIA_SEGRETO_OIDC`,
+  `GESTIONALE_LIBRERIA_PASSWORD_DI_SERVIZIO` e `GESTIONALE_LIBRERIA_KEYTAB`,
+  raccontate in [I modi di entrare](I-modi-di-entrare.md#il-blocco-accesso-di-serviziojson).
 
 Un database vuoto va bene: il servizio ci installa il catalogo da sé al primo
 avvio. Per sapere se il collegamento funziona **prima** di riavviare il
-servizio, c'è l'opzione `--prova`, che prova il database di `servizio.json`,
-dice in una riga com'è andata ed esce:
+servizio, c'è l'opzione `--prova`, che prova il database di `servizio.json` e,
+se c'è il blocco `accesso`, anche il dominio, il fornitore OIDC e il keytab di
+Kerberos; dice in una riga com'è andata ed esce:
 
 ```
 sudo -u gestionale-libreria gestionale-libreria-servizio --prova
@@ -317,8 +349,16 @@ Su ogni computer della biblioteca, nell'app:
    collegamento», di solito è un antivirus con la scansione HTTPS accesa.
 4. Il **primo** computer che si collega crea il primo amministratore: il dialogo
    chiede il **Codice di configurazione**, poi un nome e una password. Il codice
-   vale una volta sola. Gli altri computer entrano con il loro nome e la loro
-   password.
+   vale una volta sola.
+5. L'amministratore aggiunge gli altri da **Utenti e gruppi…**, nel menu col suo
+   nome in alto, e dà loro i gruppi: lo racconta
+   [Utenti, gruppi e permessi](Utenti-gruppi-e-permessi.md). Gli altri computer
+   entrano col loro nome, nel modo che il servizio ha acceso.
+
+Sul computer che fa da server, se è Windows o un Mac, c'è anche una strada più
+corta: la [guida al primo avvio](Installazione.md#il-primo-avvio) dell'app,
+scegliendo **Questo computer è il server della biblioteca**, scarica
+l'installazione del servizio, la controlla e la avvia da sé.
 
 I dettagli — l'impronta che cambia, la sessione, cosa si fa col catalogo sul
 servizio — stanno in [Dove stanno i dati](Dove-stanno-i-dati.md#col-servizio-della-biblioteca).
@@ -339,8 +379,9 @@ resta com'è.
   `--build-arg VERSIONE=…`), si ricostruisce l'immagine e si ricrea il
   contenitore con lo **stesso volume**.
 
-Ricorda di aggiornare **anche l'app** sui computer della biblioteca, o non si
-collegano più.
+**Aggiorna il servizio e l'app insieme**, sui computer della biblioteca: le
+versioni devono essere identiche, e un'app rimasta indietro — o andata avanti —
+non si collega più finché l'altro non la raggiunge.
 
 ## Disinstallare
 

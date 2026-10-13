@@ -159,10 +159,13 @@ service runs on. On the first connection the section shows the service's
 fingerprint and asks **I trust it**: first you compare it with the one the
 service prints when it starts, and until you trust it this computer sends it
 nothing. Name and password are not here: a dialog that opens by itself when
-needed asks for them, and who is signed in shows in the top bar. With the
-catalogue on the service, backup, export, restore and **Bring
-this computer's catalogue here** stay off until they arrive, while importing
-from a spreadsheet works; the rest is in
+needed asks for them — the ways to sign in are in
+[Ways to sign in](Ways-to-sign-in.md) — and who is signed in shows in the top
+bar. With the catalogue on the service the covers are served by it, and backup,
+export, restore, importing from a spreadsheet and **Bring this computer's
+catalogue here** go through it, each with its own permission: whoever lacks it
+sees the button switched off, with a sentence naming the missing permission.
+The rest is in
 [Where the data lives](Where-the-data-lives.md#with-the-librarys-service).
 
 ## Backup
@@ -202,24 +205,30 @@ In `impostazioni.json`, in this computer's data folder, **outside the database
 and outside the backups**. It holds:
 
 - the preferences — theme, language, currency, catalogue order, log on or off;
-- the contact address and the Google Books key;
+- the contact address;
 - where the catalogue lives: the choice between “On this computer”, “On a
   database of yours” and “With the library's service”, and the catalogue folder
   when it is not the default one;
-- the server connection, **with its password**, and the covers archive, **with
-  its secret**;
+- the server connection and the covers archive, without their secrets;
 - the address of the library's service and the fingerprint you trusted. The
   service's session is not there: it lives in the system keychain;
 - the backup folder, the scanner's camera, the update check and the version you
   chose to skip.
+
+**The secrets live in the system keychain**, not in the file: the Google Books
+key, the database password and the S3 archive secret, under the entry
+“Gestionale Libreria - impostazioni” in Credential Manager on Windows or in the
+Keychain on a Mac. Only if the keychain is missing or refuses them do they stay
+in the file, and the program notes it in its log.
 
 That is not a detail: a restored archive does not bring you another computer's
 theme, API key and camera. These are *this* machine's preferences, and they stay
 put even after a restore — and even after the catalogue has moved to another
 folder, because that file always stays in the starting folder.
 
-**Do not share it**, and do not attach it to a report: the keys and passwords
-you gave the program are inside.
+**Do not share it** all the same, and do not attach it to a report: it says
+where your data lives and which server you connect to, and if there was no
+keychain it also holds the keys and passwords you gave the program.
 
 ## Licence
 
